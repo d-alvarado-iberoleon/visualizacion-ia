@@ -1,0 +1,66 @@
+
+.reveal .slides section {
+  overflow-y: auto !important;
+  
+}
+
+.scroll-box {
+  max-height: 100vh;   /* Altura con scroll */
+  max-width: 100vh;   /* Altura con scroll */
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+/* ==== Scroll en el TOC ==== 
+.sidebar nav[role="doc-toc"],
+.sidebar.sidebar-navigation {
+  overflow-y: auto !important;
+  max-height: 80vh !important;
+  padding-right: 0.5rem;
+}
+/* === TOC scroll fix — ajustar altura disponible y mostrar scroll === */
+
+/* selectors comunes usados por Quarto / reveal.js para el índice */
+.reveal .slides section.table-of-contents,
+.reveal .slides section.toc,
+.reveal .slides section.contents,
+.reveal .slides .table-of-contents,
+.reveal .slides .toc,
+.reveal .slides .contents {
+  /* limitar la altura al viewport restante (resta header + footer + 2*padding) */
+  max-height: calc(100vh - var(--header-height, 56px) - var(--footer-height, 44px) - 40px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* smoother scrolling en móviles */
+  padding-right: 12px; /* espacio para el scrollbar sin cubrir texto */
+}
+
+/* si el índice tiene un contenedor interno (lista) */
+.reveal .slides section.table-of-contents .contents,
+.reveal .slides section.toc .contents,
+.reveal .slides .table-of-contents .contents,
+.reveal .slides .toc .contents {
+  max-height: inherit;
+  overflow: inherit;
+}
+
+/* Asegurar que el fondo del TOC sea legible sobre el panel del header/footer */
+.reveal .slides section.table-of-contents,
+.reveal .slides section.toc,
+.reveal .slides section.contents {
+  background: transparent;
+}
+
+/* Opcional: estilizar scrollbar (webkit browsers) para que sea visible y discreto */
+.reveal .slides section.table-of-contents::-webkit-scrollbar,
+.reveal .slides section.toc::-webkit-scrollbar,
+.reveal .slides section.contents::-webkit-scrollbar {
+  width: 10px;
+}
+.reveal .slides section.table-of-contents::-webkit-scrollbar-thumb,
+.reveal .slides section.toc::-webkit-scrollbar-thumb,
+.reveal .slides section.contents::-webkit-scrollbar-thumb {
+  background: rgba(30,102,245,0.16); /* tono suave acorde a tu paleta */
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}

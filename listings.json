@@ -1,0 +1,13 @@
+[
+  {
+    "listing": "/labs/index.html",
+    "items": []
+  },
+  {
+    "listing": "/clases/index.html",
+    "items": [
+      "/clases/01-introduccion-visualizacion.html",
+      "/clases/02-formacion-imagen.html"
+    ]
+  }
+]
