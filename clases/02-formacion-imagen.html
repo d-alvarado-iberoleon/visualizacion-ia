@@ -285,9 +285,9 @@ h = \frac{fH}{Z}
 </li>
 <li>$ f(x, y) $ es el valor de intensidad o color en ese punto.</li>
 </ul></li>
-<li><p>En una <strong>imagen analógica</strong> (como una pintura), la función $ f(x, y)$ es continua. Cada punto tiene un valor definido en un espacio continuo.<br>
+<li><p>En una <strong>imagen analógica</strong> (como una pintura), la función <span class="math inline">\(f(x, y)\)</span> es continua. Cada punto tiene un valor definido en un espacio continuo.<br>
 </p></li>
-<li><p>En una <strong>imagen digital</strong>, $ f(x, y) $ es discreta porque la imagen se divide en una cuadrícula de píxeles. Las coordenadas $ x, y $ y los valores $ f(x, y) $ solo existen en puntos discretos.</p></li>
+<li><p>En una <strong>imagen digital</strong>, <span class="math inline">\(f(x, y)\)</span> es discreta porque la imagen se divide en una cuadrícula de píxeles. Las coordenadas $ x, y $ y los valores <span class="math inline">\(f(x, y)\)</span> solo existen en puntos discretos.</p></li>
 </ul>
 </div><div class="column" style="width:45%;">
 <div class="quarto-figure quarto-figure-center">
@@ -300,12 +300,16 @@ h = \frac{fH}{Z}
 </section>
 <section class="slide level2">
 
-<p>Para imágenes en escala de grises, $ f(x, y) $ es un escalar que representa la intensidad de luz, por ejemplo:</p>
+<p>Para imágenes en escala de grises, <span class="math inline">\(f(x, y)\)</span> es un escalar que representa la intensidad de luz, por ejemplo:</p>
 <p><span class="math display">\[
 f(x, y) \in [0, 255]
-\]</span> donde:<br>
-- 0 = negro (ausencia de luz).<br>
-- 255 = blanco (máxima intensidad).</p>
+\]</span></p>
+<p>donde:</p>
+<ul>
+<li>0 = negro (ausencia de luz).<br>
+</li>
+<li>255 = blanco (máxima intensidad).</li>
+</ul>
 <p><span style="background-color: #fffdaf; margin-left:auto; margin-right:auto; width: 100%;"><strong>📢PREGUNTA: ¿Por qué los colores toman valores entre 0 y 255?</strong></span></p>
 </section>
 <section class="slide level2">
@@ -319,9 +323,9 @@ f(x, y) =
 \end{bmatrix}
 \]</span></p>
 <ul>
-<li>¿Qué color tiene el píxel en $ (0, 0) $?<br>
+<li>¿Qué color tiene el píxel en <span class="math inline">\((0, 0)\)</span>?<br>
 </li>
-<li>¿Qué color tiene el píxel en $ (0, 2) $?</li>
+<li>¿Qué color tiene el píxel en <span class="math inline">\((0, 2)\)</span>?</li>
 </ul>
 </section>
 <section class="slide level2">
@@ -333,7 +337,7 @@ f(x, y) =
 f(x, y) = \begin{bmatrix} R \\ G \\ B \end{bmatrix}
 \]</span></p>
 <p>Donde <span class="math inline">\(R, G, B\)</span> son las intensidades de los colores rojo, verde y azul, típicamente en el rango <span class="math inline">\([0, 255]\)</span>.</p>
-<p>Esta representación vectorial es lo que justifica la notación <span class="math inline">\(f: \mathbb{R}^2 \to \mathbb{R}^3\)</span>.</p>
+<p>Esta representación vectorial justifica la notación <span class="math inline">\(f: \mathbb{R}^2 \to \mathbb{R}^3\)</span>.</p>
 </div><div class="column" style="width:48%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -537,7 +541,7 @@ x_{\text{pantalla}} = \frac{x_{\text{modelo}} - x_{\text{min}}}{x_{\text{max}} -
 <p><span class="math display">\[
 y_{\text{pantalla}} = \left(1 - \frac{y_{\text{modelo}} - y_{\text{min}}}{y_{\text{max}} - y_{\text{min}}} \right) \cdot (H - 1)
 \]</span></p>
-<p>Es decir, cada coordenada del modelo se escala para ajustarse al rango de píxeles de la pantalla <span class="math inline">\([0, W - 1]\)</span> para <span class="math inline">\(x\)</span> y <span class="math inline">\([0, H - 1]\)</span> para <span class="math inline">\(y\)</span>).</p>
+<p>Es decir, cada coordenada del modelo se escala para ajustarse al rango de píxeles de la pantalla <span class="math inline">\([0, W - 1]\)</span> para <span class="math inline">\(x\)</span> y <span class="math inline">\([0, H - 1]\)</span> para <span class="math inline">\(y\)</span>.</p>
 <p>En las coordenadas de pantalla, el eje <span class="math inline">\(Y\)</span> apunta hacia abajo, mientras que en el modelo normalmente apunta hacia arriba. Por eso usamos <span class="math inline">\(1 - \dots\)</span> en la fórmula de <span class="math inline">\(y\)</span>.</p>
 </section>
 <section id="ejemplo-mapeo-de-punto" class="slide level2 scrollable">
@@ -549,6 +553,10 @@ y_{\text{pantalla}} = \left(1 - \frac{y_{\text{modelo}} - y_{\text{min}}}{y_{\te
 <li><span class="math inline">\(W = 800\)</span>, <span class="math inline">\(H = 600\)</span></li>
 </ul>
 <p>y deseo mapear el punto: <span class="math inline">\((x_{\text{modelo}}, y_{\text{modelo}}) = (-5, 2)\)</span>.</p>
+</section>
+<section class="slide level2">
+
+<div class="fragment">
 <p><strong>Cálculo del mapeo:</strong></p>
 <p><span class="math display">\[
 x_{\text{pantalla}} = \frac{-5 - (-10)}{10 - (-10)} \cdot (800 - 1) = \frac{5}{20} \cdot 799 = 199.75 \approx 200
@@ -557,6 +565,7 @@ x_{\text{pantalla}} = \frac{-5 - (-10)}{10 - (-10)} \cdot (800 - 1) = \frac{5}{2
 y_{\text{pantalla}} = \left(1 - \frac{2 - (-5)}{5 - (-5)}\right) \cdot (600 - 1) = \left(1 - \frac{7}{10}\right) \cdot 599 = 0.3 \cdot 599 = 179.7 \approx 180
 \]</span></p>
 <p>El punto <span class="math inline">\((-5, 2)\)</span> en el modelo se mapea al píxel <span class="math inline">\((200, 180)\)</span> en la pantalla.</p>
+</div>
 </section>
 <section id="linea" class="slide level2">
 <h2>¿Cómo dibujar una línea en una pantalla? 🖥️✏️</h2>
@@ -739,7 +748,6 @@ l(x, y) = ax + by + c = 0
 </ul></li>
 </ol>
 <h3 id="ejemplo-1">Ejemplo:</h3>
-<h4 id="ejemplo-2">Ejemplo:</h4>
 <p>Supongamos que queremos dibujar una línea desde <span class="math inline">\((2, 2)\)</span> hasta <span class="math inline">\((8, 5)\)</span>:</p>
 <div class="fragment">
 <h3 id="solución">Solución</h3>
