@@ -1,199 +1,129 @@
 [
   {
-    "objectID": "proyectos/02-proyecto-final.html",
-    "href": "proyectos/02-proyecto-final.html",
-    "title": "Proyecto final — Visualización para IA",
+    "objectID": "proyectos/index.html",
+    "href": "proyectos/index.html",
+    "title": "Proyectos intermedios y final",
     "section": "",
-    "text": "1 Requisitos mínimos\n\nPresentación (reveal.js)\nNotebook reproducible (.qmd)\nVisualización interactiva / dashboard\nInforme técnico (3–5 páginas)\n\n\n\n2 Rúbrica (resumen)\n\nDiseño & narrativa: 30%\nCorrectitud técnica: 40%\nInteractividad & reproducibilidad: 20%\nReflexión ética: 10%"
+    "text": "Bienvenidos a la sección de proyectos. Aquí encontrarán las descripciones de los proyectos intermedios y final de la materia."
   },
   {
-    "objectID": "notas/04-geometria-2d-3d.html",
-    "href": "notas/04-geometria-2d-3d.html",
-    "title": "Geometría 2D/3D",
+    "objectID": "proyectos/index.html#listado-de-proyectos",
+    "href": "proyectos/index.html#listado-de-proyectos",
+    "title": "Proyectos intermedios y final",
+    "section": "1 Listado de proyectos",
+    "text": "1 Listado de proyectos"
+  },
+  {
+    "objectID": "proyectos/01-proyecto-intermedio.html",
+    "href": "proyectos/01-proyecto-intermedio.html",
+    "title": "Proyecto intermedio",
     "section": "",
-    "text": "1 Geometría 2D/3D\nCoordenadas, transformaciones, cámara, proyección, mallas."
+    "text": "1 Proyecto intermedio\nTBA."
   },
   {
-    "objectID": "notas/02-percepcion-color.html",
-    "href": "notas/02-percepcion-color.html",
-    "title": "Percepción y modelos de color",
+    "objectID": "notas/03-formacion-imagen.html",
+    "href": "notas/03-formacion-imagen.html",
+    "title": "Formación de imagen",
     "section": "",
-    "text": "1 Percepción y modelos de color\nPercepción visual, canales, paletas, CIELAB, recomendaciones."
+    "text": "1 Formación de imagen\nRaster vs vector, píxeles, muestreo, aliasing, profundidad de bits."
   },
   {
-    "objectID": "labs/index.html",
-    "href": "labs/index.html",
-    "title": "Ejercicios prácticos de Visualización Gráfica para IA",
+    "objectID": "notas/01-introduccion.html",
+    "href": "notas/01-introduccion.html",
+    "title": "Introducción — Notas del curso",
     "section": "",
-    "text": "Bienvenidos a la sección de ejercicios prácticos. Aquí encontrarán los notebooks y guías para aplicar los conceptos vistos en clase."
+    "text": "1 Introducción — Notas del curso\n¿Qué es la visualización? Objetivos, alcance y pipeline."
   },
   {
-    "objectID": "labs/index.html#listado-de-prácticas",
-    "href": "labs/index.html#listado-de-prácticas",
-    "title": "Ejercicios prácticos de Visualización Gráfica para IA",
-    "section": "1 Listado de Prácticas",
-    "text": "1 Listado de Prácticas"
-  },
-  {
-    "objectID": "labs/01-pipeline-viz.html",
-    "href": "labs/01-pipeline-viz.html",
-    "title": "01 — Análisis de una visualización gráfica",
+    "objectID": "labs/02-timeline-viz.html",
+    "href": "labs/02-timeline-viz.html",
+    "title": "02 — Línea del tiempo de la visualización gráfica",
     "section": "",
-    "text": "Que el estudiante comprenda la visualización gráfica como un proceso, identificando las etapas que van desde la información original hasta la imagen final, y reconociendo que en dicho proceso confluyen varias áreas relacionadas con la Inteligencia Artificial.\n\n\n\n\nObserva la imagen proporcionada por la docente (ver también el siguiente enlace).\nIndividualmente, responde las siguientes preguntas. Las respuestas deben ser claras, razonadas y redactadas con tus propias palabras:\n¿De dónde crees que proviene la información que se muestra en la imagen?\n¿Corresponde a datos capturados del mundo real o a una simulación? Explica tu respuesta.\n\nAntes de convertirse en una imagen visual, ¿en qué forma crees que existía esta información?\nDescribe qué tipo de datos podrían haberse utilizado para generar esta visualización.\n\n¿Crees que la imagen fue procesada antes de mostrarse al usuario?\nMenciona al menos una transformación que pudo haberse aplicado y explica qué efecto tiene en la imagen final.\n\n\n\n\n\nRealiza un diagrama, esquema o imagen anotada que muestre qué elementos visuales se utilizan para mostrar la información. Considera aspectos como color, brillo, forma, etiquetas o profundidad. Puedes hacerlo a mano, con software de dibujo, o directamente sobre la imagen (añadiendo anotaciones).\nEl diagrama debe contener las leyendas o explicaciones suficientes para responder de manera autocontenida: ¿Qué información se vuelve más evidente gracias a la visualización? ¿Qué información no es evidente a simple vista o depende de conocimiento previo para interpretarse?\n\n\n\n\n\nCon base en tus respuestas anteriores, describe de manera continua el proceso que va desde la información original hasta la imagen final que se observa.\nRespuesta.\nA partir del proceso que describiste, identifica al menos tres áreas o disciplinas que consideres que intervienen en la creación de esta visualización. Explica brevemente qué aporta cada una al resultado final.\nRespuesta.\n\n\n\n\nNombra tu archivo como: 01_VG_ApellidoNombre.pdf y súbelo al espacio correspondiente en Moodle. La actividad se evaluará considerando los siguientes aspectos:\n\nAnálisis claro y coherente del proceso de visualización gráfica (1 punto)\nRepresentación visual adecuada del análisis (diagrama, esquema o imagen anotada) (1 punto)\nInterpretación y reflexión sobre la visualización presentada (1 punto)\nConexión entre la visualización y las áreas que intervienen en su construcción (1 punto)\nEntrega completa, en tiempo y utilizando el formato solicitado (1 punto)"
+    "text": "Que el estudiantado comprenda la evolución histórica de la visualización gráfica a partir de eventos concretos, entendiendo cada uno como un punto de inflexión en la manera de representar, analizar o comunicar información y fenómenos visuales.\n\n\n\nEn esta actividad investigaremos eventos clave de la visualización gráfica en diferentes categorías. El objetivo final será la construcción de una línea del tiempo interactiva y la presentación de los eventos investigados.\nCada equipo trabajará sobre un evento histórico específico de la historia de la visualización gráfica, previamente asignado. Dicho evento corresponde a un momento en el que una persona o un equipo desarrolló una visualización, técnica, sistema o enfoque que cambió de manera significativa la forma en que se representaba, analizaba o comunicaba información, fenómenos o procesos visuales.\nEl trabajo se realizará en equipos, y cada equipo será responsable de investigar, analizar y presentar un evento:\n\nEl trabajo debe comenzar con una descripción del contexto histórico, es decir, explicar la época en la que ocurre el evento, las limitaciones técnicas o conceptuales existentes en ese momento y el problema que hacía necesaria una nueva forma de visualización.\nEl equipo deberá presentar de manera explícita a la o las figuras principales asociadas al evento. Esto incluye identificar quiénes fueron, desde qué disciplinas trabajaban y cuál fue su contribución específica.\nEl núcleo del trabajo debe ser una explicación detallada de la visualización, técnica o sistema desarrollado. Se espera una descripción clara de qué se construyó, cómo funcionaba conceptualmente y qué lo hacía distinto de representaciones anteriores.\nEs obligatorio incluir material visual (imágenes, diagramas, capturas, esquemas, videos) que permitan al lector o espectador entender la visualización sin recurrir únicamente al texto.\nEl equipo deberá analizar el impacto del evento en la historia de la visualización gráfica, es decir, explicar por qué este evento es considerado relevante, qué prácticas influyó o transformó, y cómo se relaciona con formas actuales de visualización, ya sea en visualización de datos, interacción, animación, simulación, gráficas por computadora o narrativa visual.\nFinalmente, el trabajo debe cerrar con una reflexión en la que el equipo explique, con sus propias palabras, por qué considera que este evento representa un punto de inflexión en la manera de “ver” información, fenómenos o procesos.\nEl trabajo debe estar respaldado por mínimo tres fuentes confiables y pertinentes, que pueden incluir libros, artículos académicos, documentos históricos, sitios institucionales, museos o archivos especializados. Las fuentes deben citarse correctamente en formato APA y corresponder al contenido presentado. No se aceptarán referencias genéricas o no verificables.\nCada equipo dispondrá de 15 minutos para presentar su trabajo. La exposición debe apoyarse en la visualización desarrollada y en los elementos gráficos analizados. Exponer no es realizar un lectura del texto de las diapositivas.\n\nAdemás, el grupo construirá de manera colaborativa una línea del tiempo interactiva general sobre la historia de la visualización gráfica, la cual funcionará como material de apoyo para el estudio del curso y será utilizada como referencia para el examen.\n\nCada equipo será responsable de integrar el evento histórico que se les ha asignado correctamente en una línea del tiempo general. El objetivo es construir una narrativa histórica visual que permita identificar relaciones, transiciones conceptuales y conexiones entre distintas áreas de la visualización gráfica.\nPara la implementación técnica, pueden utilizar TimelineJS u otra herramienta de línea del tiempo interactiva, siempre y cuando cumpla con los siguientes requisitos mínimos:\n\nPermita visualizar los eventos de forma cronológica.\nIncluya texto descriptivo y recursos visuales.\nSea accesible mediante un enlace web.\n\nLa línea del tiempo general deberá estar completa, revisada y funcional antes del inicio de las exposiciones.\n\n\n\n\nCada estudiante deberá presentar los siguientes elementos en el espacio correspondiente de Moodle:\n\nUn documento en formato PDF, nombrado 02_VG_ApellidoNombre.pdf, que incluya:\n\n\nNombre del evento.\nFecha o periodo histórico.\nDescripción del evento (contexto, qué ocurrió y por qué es relevante).\nJustificación de su importancia dentro de la historia de la visualización gráfica.\nAl menos una imagen, diagrama o recurso visual (con fuente).\nEnlace a la línea del tiempo interactiva general.\nEvidencia de que el evento fue correctamente integrado (captura de pantalla o indicación del lugar que ocupa en la línea del tiempo).\nReferencias bibliográficas en formato APA.\n\n\nPresentación oral breve del evento investigado (subir diapositivas adicionales si aplica, 02_VG_slides_ApellidoNombre.pdf), con duración de 5 a 7 minutos por estudiante, 10 a 15 minutos por equipo, incluyendo:\n\n\nContexto histórico del evento.\nExplicación de su relevancia.\nRelación con otros eventos o categorías de la línea del tiempo.\nLa presentación podrá apoyarse directamente en la línea del tiempo interactiva o en diapositivas adicionales, si así lo desean.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCriterio\nExcelente\nBueno\nBásico\nInsuficiente\n\n\n\n\nInvestigación y comprensión del evento (40 pts)\nEl evento está claramente contextualizado. Explica qué ocurrió, por qué es importante y cómo contribuye a la evolución de la visualización gráfica, incluyendo consecuencias o influencias posteriores.\nEl evento está bien descrito y su relevancia es correcta, aunque el análisis histórico o conceptual es limitado.\nDescripción superficial, con poca contextualización o relación débil con la visualización gráfica.\nDescripción incompleta, incorrecta o sin relación clara con la visualización gráfica.\n\n\nPresentación oral y comunicación (30 pts)\nExposición clara, bien estructurada y dentro del tiempo. Usa la línea del tiempo como apoyo para explicar el evento.\nExposición comprensible, con uso limitado del apoyo visual o pequeños problemas de organización.\nExposición poco clara o desorganizada; uso mínimo de la línea del tiempo.\nExposición confusa, incompleta o ausente.\n\n\nContribución a la línea del tiempo general (20 pts)\nFecha correcta y bien delimitada; descripción clara y adecuada para estudio; recurso visual pertinente y correctamente integrado.\nFecha y descripción correctas, con detalles mejorables o uso limitado del recurso visual.\nFecha imprecisa, descripción poco clara o recurso visual poco relevante.\nEvento mal ubicado, con errores de fecha o sin contenido suficiente.\n\n\nEntregables y formato académico (10 pts)\nTodos los entregables completos, bien organizados y con referencias adecuadas.\nEntregables completos con errores menores de formato o citación.\nEntregables incompletos o con problemas importantes de formato.\nFaltan entregables o no cumplen con los requisitos mínimos."
   },
   {
-    "objectID": "labs/01-pipeline-viz.html#objetivos-de-la-práctica",
-    "href": "labs/01-pipeline-viz.html#objetivos-de-la-práctica",
-    "title": "01 — Análisis de una visualización gráfica",
+    "objectID": "labs/02-timeline-viz.html#objetivos-de-la-práctica",
+    "href": "labs/02-timeline-viz.html#objetivos-de-la-práctica",
+    "title": "02 — Línea del tiempo de la visualización gráfica",
     "section": "",
-    "text": "Que el estudiante comprenda la visualización gráfica como un proceso, identificando las etapas que van desde la información original hasta la imagen final, y reconociendo que en dicho proceso confluyen varias áreas relacionadas con la Inteligencia Artificial."
+    "text": "Que el estudiantado comprenda la evolución histórica de la visualización gráfica a partir de eventos concretos, entendiendo cada uno como un punto de inflexión en la manera de representar, analizar o comunicar información y fenómenos visuales."
   },
   {
-    "objectID": "labs/01-pipeline-viz.html#análisis-del-proceso-de-visualización",
-    "href": "labs/01-pipeline-viz.html#análisis-del-proceso-de-visualización",
-    "title": "01 — Análisis de una visualización gráfica",
+    "objectID": "labs/02-timeline-viz.html#descripción",
+    "href": "labs/02-timeline-viz.html#descripción",
+    "title": "02 — Línea del tiempo de la visualización gráfica",
     "section": "",
-    "text": "Observa la imagen proporcionada por la docente (ver también el siguiente enlace).\nIndividualmente, responde las siguientes preguntas. Las respuestas deben ser claras, razonadas y redactadas con tus propias palabras:\n¿De dónde crees que proviene la información que se muestra en la imagen?\n¿Corresponde a datos capturados del mundo real o a una simulación? Explica tu respuesta.\n\nAntes de convertirse en una imagen visual, ¿en qué forma crees que existía esta información?\nDescribe qué tipo de datos podrían haberse utilizado para generar esta visualización.\n\n¿Crees que la imagen fue procesada antes de mostrarse al usuario?\nMenciona al menos una transformación que pudo haberse aplicado y explica qué efecto tiene en la imagen final."
+    "text": "En esta actividad investigaremos eventos clave de la visualización gráfica en diferentes categorías. El objetivo final será la construcción de una línea del tiempo interactiva y la presentación de los eventos investigados.\nCada equipo trabajará sobre un evento histórico específico de la historia de la visualización gráfica, previamente asignado. Dicho evento corresponde a un momento en el que una persona o un equipo desarrolló una visualización, técnica, sistema o enfoque que cambió de manera significativa la forma en que se representaba, analizaba o comunicaba información, fenómenos o procesos visuales.\nEl trabajo se realizará en equipos, y cada equipo será responsable de investigar, analizar y presentar un evento:\n\nEl trabajo debe comenzar con una descripción del contexto histórico, es decir, explicar la época en la que ocurre el evento, las limitaciones técnicas o conceptuales existentes en ese momento y el problema que hacía necesaria una nueva forma de visualización.\nEl equipo deberá presentar de manera explícita a la o las figuras principales asociadas al evento. Esto incluye identificar quiénes fueron, desde qué disciplinas trabajaban y cuál fue su contribución específica.\nEl núcleo del trabajo debe ser una explicación detallada de la visualización, técnica o sistema desarrollado. Se espera una descripción clara de qué se construyó, cómo funcionaba conceptualmente y qué lo hacía distinto de representaciones anteriores.\nEs obligatorio incluir material visual (imágenes, diagramas, capturas, esquemas, videos) que permitan al lector o espectador entender la visualización sin recurrir únicamente al texto.\nEl equipo deberá analizar el impacto del evento en la historia de la visualización gráfica, es decir, explicar por qué este evento es considerado relevante, qué prácticas influyó o transformó, y cómo se relaciona con formas actuales de visualización, ya sea en visualización de datos, interacción, animación, simulación, gráficas por computadora o narrativa visual.\nFinalmente, el trabajo debe cerrar con una reflexión en la que el equipo explique, con sus propias palabras, por qué considera que este evento representa un punto de inflexión en la manera de “ver” información, fenómenos o procesos.\nEl trabajo debe estar respaldado por mínimo tres fuentes confiables y pertinentes, que pueden incluir libros, artículos académicos, documentos históricos, sitios institucionales, museos o archivos especializados. Las fuentes deben citarse correctamente en formato APA y corresponder al contenido presentado. No se aceptarán referencias genéricas o no verificables.\nCada equipo dispondrá de 15 minutos para presentar su trabajo. La exposición debe apoyarse en la visualización desarrollada y en los elementos gráficos analizados. Exponer no es realizar un lectura del texto de las diapositivas.\n\nAdemás, el grupo construirá de manera colaborativa una línea del tiempo interactiva general sobre la historia de la visualización gráfica, la cual funcionará como material de apoyo para el estudio del curso y será utilizada como referencia para el examen.\n\nCada equipo será responsable de integrar el evento histórico que se les ha asignado correctamente en una línea del tiempo general. El objetivo es construir una narrativa histórica visual que permita identificar relaciones, transiciones conceptuales y conexiones entre distintas áreas de la visualización gráfica.\nPara la implementación técnica, pueden utilizar TimelineJS u otra herramienta de línea del tiempo interactiva, siempre y cuando cumpla con los siguientes requisitos mínimos:\n\nPermita visualizar los eventos de forma cronológica.\nIncluya texto descriptivo y recursos visuales.\nSea accesible mediante un enlace web.\n\nLa línea del tiempo general deberá estar completa, revisada y funcional antes del inicio de las exposiciones.\n\n\n\n\nCada estudiante deberá presentar los siguientes elementos en el espacio correspondiente de Moodle:\n\nUn documento en formato PDF, nombrado 02_VG_ApellidoNombre.pdf, que incluya:\n\n\nNombre del evento.\nFecha o periodo histórico.\nDescripción del evento (contexto, qué ocurrió y por qué es relevante).\nJustificación de su importancia dentro de la historia de la visualización gráfica.\nAl menos una imagen, diagrama o recurso visual (con fuente).\nEnlace a la línea del tiempo interactiva general.\nEvidencia de que el evento fue correctamente integrado (captura de pantalla o indicación del lugar que ocupa en la línea del tiempo).\nReferencias bibliográficas en formato APA.\n\n\nPresentación oral breve del evento investigado (subir diapositivas adicionales si aplica, 02_VG_slides_ApellidoNombre.pdf), con duración de 5 a 7 minutos por estudiante, 10 a 15 minutos por equipo, incluyendo:\n\n\nContexto histórico del evento.\nExplicación de su relevancia.\nRelación con otros eventos o categorías de la línea del tiempo.\nLa presentación podrá apoyarse directamente en la línea del tiempo interactiva o en diapositivas adicionales, si así lo desean."
   },
   {
-    "objectID": "labs/01-pipeline-viz.html#representación-visual-e-interpretación",
-    "href": "labs/01-pipeline-viz.html#representación-visual-e-interpretación",
-    "title": "01 — Análisis de una visualización gráfica",
+    "objectID": "labs/02-timeline-viz.html#evaluación",
+    "href": "labs/02-timeline-viz.html#evaluación",
+    "title": "02 — Línea del tiempo de la visualización gráfica",
     "section": "",
-    "text": "Realiza un diagrama, esquema o imagen anotada que muestre qué elementos visuales se utilizan para mostrar la información. Considera aspectos como color, brillo, forma, etiquetas o profundidad. Puedes hacerlo a mano, con software de dibujo, o directamente sobre la imagen (añadiendo anotaciones).\nEl diagrama debe contener las leyendas o explicaciones suficientes para responder de manera autocontenida: ¿Qué información se vuelve más evidente gracias a la visualización? ¿Qué información no es evidente a simple vista o depende de conocimiento previo para interpretarse?"
+    "text": "Criterio\nExcelente\nBueno\nBásico\nInsuficiente\n\n\n\n\nInvestigación y comprensión del evento (40 pts)\nEl evento está claramente contextualizado. Explica qué ocurrió, por qué es importante y cómo contribuye a la evolución de la visualización gráfica, incluyendo consecuencias o influencias posteriores.\nEl evento está bien descrito y su relevancia es correcta, aunque el análisis histórico o conceptual es limitado.\nDescripción superficial, con poca contextualización o relación débil con la visualización gráfica.\nDescripción incompleta, incorrecta o sin relación clara con la visualización gráfica.\n\n\nPresentación oral y comunicación (30 pts)\nExposición clara, bien estructurada y dentro del tiempo. Usa la línea del tiempo como apoyo para explicar el evento.\nExposición comprensible, con uso limitado del apoyo visual o pequeños problemas de organización.\nExposición poco clara o desorganizada; uso mínimo de la línea del tiempo.\nExposición confusa, incompleta o ausente.\n\n\nContribución a la línea del tiempo general (20 pts)\nFecha correcta y bien delimitada; descripción clara y adecuada para estudio; recurso visual pertinente y correctamente integrado.\nFecha y descripción correctas, con detalles mejorables o uso limitado del recurso visual.\nFecha imprecisa, descripción poco clara o recurso visual poco relevante.\nEvento mal ubicado, con errores de fecha o sin contenido suficiente.\n\n\nEntregables y formato académico (10 pts)\nTodos los entregables completos, bien organizados y con referencias adecuadas.\nEntregables completos con errores menores de formato o citación.\nEntregables incompletos o con problemas importantes de formato.\nFaltan entregables o no cumplen con los requisitos mínimos."
   },
   {
-    "objectID": "labs/01-pipeline-viz.html#el-proceso-completo-de-visualización",
-    "href": "labs/01-pipeline-viz.html#el-proceso-completo-de-visualización",
-    "title": "01 — Análisis de una visualización gráfica",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Visualización Gráfica para IA",
     "section": "",
-    "text": "Con base en tus respuestas anteriores, describe de manera continua el proceso que va desde la información original hasta la imagen final que se observa.\nRespuesta.\nA partir del proceso que describiste, identifica al menos tres áreas o disciplinas que consideres que intervienen en la creación de esta visualización. Explica brevemente qué aporta cada una al resultado final.\nRespuesta."
+    "text": "Este curso aborda los fundamentos teóricos y prácticos de la visualización gráfica aplicada a Inteligencia Artificial. Se estudian principios perceptuales, geométricos y computacionales que permiten diseñar visualizaciones correctas, efectivas y éticamente responsables para el análisis y comunicación de datos.\n\n\n\nHorario: Lunes y Miércoles\n\n9 a 11 hrs\n11 a 13 hrs\n\n\nDocente: Dra. Dora Alvarado\n\nEmail: 27382@iberoleon.edu.mx; doraelisa.alvaradocarrillo@iberoleon.edu.mx\n\n\nAvisos, exámenes, tareas en Moodle."
   },
   {
-    "objectID": "labs/01-pipeline-viz.html#entrega",
-    "href": "labs/01-pipeline-viz.html#entrega",
-    "title": "01 — Análisis de una visualización gráfica",
+    "objectID": "index.html#acercade",
+    "href": "index.html#acercade",
+    "title": "Visualización Gráfica para IA",
     "section": "",
-    "text": "Nombra tu archivo como: 01_VG_ApellidoNombre.pdf y súbelo al espacio correspondiente en Moodle. La actividad se evaluará considerando los siguientes aspectos:\n\nAnálisis claro y coherente del proceso de visualización gráfica (1 punto)\nRepresentación visual adecuada del análisis (diagrama, esquema o imagen anotada) (1 punto)\nInterpretación y reflexión sobre la visualización presentada (1 punto)\nConexión entre la visualización y las áreas que intervienen en su construcción (1 punto)\nEntrega completa, en tiempo y utilizando el formato solicitado (1 punto)"
+    "text": "Este curso aborda los fundamentos teóricos y prácticos de la visualización gráfica aplicada a Inteligencia Artificial. Se estudian principios perceptuales, geométricos y computacionales que permiten diseñar visualizaciones correctas, efectivas y éticamente responsables para el análisis y comunicación de datos.\n\n\n\nHorario: Lunes y Miércoles\n\n9 a 11 hrs\n11 a 13 hrs\n\n\nDocente: Dra. Dora Alvarado\n\nEmail: 27382@iberoleon.edu.mx; doraelisa.alvaradocarrillo@iberoleon.edu.mx\n\n\nAvisos, exámenes, tareas en Moodle."
   },
   {
-    "objectID": "clases/index.html",
-    "href": "clases/index.html",
-    "title": "Clases del curso",
-    "section": "",
-    "text": "Bienvenidos a la sección de clases. Aquí encontrarán el material actualizado cada semana."
+    "objectID": "index.html#objetivos",
+    "href": "index.html#objetivos",
+    "title": "Visualización Gráfica para IA",
+    "section": "2 Objetivos del curso",
+    "text": "2 Objetivos del curso\n\nAplicar técnicas y herramientas para el análisis y la visualización de datos, que serán utilizados para la toma de decisiones en proyectos de inteligencia artificial."
   },
   {
-    "objectID": "clases/index.html#listado-de-clases",
-    "href": "clases/index.html#listado-de-clases",
-    "title": "Clases del curso",
-    "section": "1 Listado de clases",
-    "text": "1 Listado de clases"
+    "objectID": "index.html#prerrequisitos",
+    "href": "index.html#prerrequisitos",
+    "title": "Visualización Gráfica para IA",
+    "section": "3 Prerrequisitos",
+    "text": "3 Prerrequisitos\n\nBases sólidas en pensamiento computacional y programación en Python\nConocimientos matemáticos básicos (estadística, cálculo, álgebra lineal)\nComprensión general del análisis de datos (limpieza, preprocesamiento, exploración).\n\nExperiencia previa con herramientas de visualización es un plus, pero no es estrictamente necesaria.\nAdicional a los conocimientos académicos, se espera:\n\nCapacidad de pensar críticamente y abordar problemas de manera sistemática.\nInterés en comprender cómo se construyen y explican las visualizaciones.\nDisposición para explorar distintas formas de presentar información visualmente."
   },
   {
-    "objectID": "clases/01-introduccion-visualizacion.html",
-    "href": "clases/01-introduccion-visualizacion.html",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Horario: Lunes y Miércoles\n\n9 a 11 hrs\n11 a 13 hrs\n\n\nDocente: Dra. Dora Alvarado\n\nEmail: 27382@iberoleon.edu.mx; doraelisa.alvaradocarrillo@iberoleon.edu.mx\n\n\nAvisos, exámenes, tareas en Moodle.\n\n\n\n\n\n\n\n\n\nAplicar técnicas y herramientas para el análisis y la visualización de datos, que serán utilizados para la toma de decisiones en proyectos de inteligencia artificial.\n\n\n\n\n\n\nBases sólidas en pensamiento computacional y programación en Python\nConocimientos matemáticos básicos (estadística, cálculo, álgebra lineal)\nComprensión general del análisis de datos (limpieza, preprocesamiento, exploración).\n\nExperiencia previa con herramientas de visualización es un plus, pero no es estrictamente necesaria.\n\nAdicional a los conocimientos académicos, se espera:\n\nCapacidad de pensar críticamente y abordar problemas de manera sistemática.\nInterés en comprender cómo se construyen y explican las visualizaciones.\nDisposición para explorar distintas formas de presentar información visualmente.\n\n\n\n\n\n\n\nLo que sí veremos\n\nFundamentos de la visualización.\nTransformaciones 2D y 3D.\nVisualización de datos multidimensionales.\nInteractividad y narrativa visual.\n\n\nLo que no veremos\n\nModelado o rendering avanzado.\nMotores de videojuegos.\nDiseño gráfico profesional.\nEdición avanzada de imágenes.\n\n\n\n\n\n\n\n\n\n\n\nPipeline de visualización\n\nPercepción visual y codificaciones\n\nFormación de imagen: raster, vector, muestreo\n\nTransformaciones 2D/3D y coordenadas\n\nColor y mapeo de color\n\nProyecto U1:\n\nConstruir una pinhole camera casera y analizar cómo se forma la imagen.\n\nCrear una pequeña animación de un sistema solar usando usando únicamente transformaciones geométricas implementadas por ustedes (sin utilizar funciones prehechas de animación o gráficos).\n\n\n\n\n\n\nGráficas básicas y estadísticas\n\nInterpretación adecuada de gráficos\n\nStorytelling con datos\n\nÉtica visual y detección de manipulación\n\nProyecto U2:\n\nAnalizar visualizaciones reales de medios o artículos y detectar sesgos/diseño engañoso.\n\nDiseñar una mini–historia con datos usando varias gráficas encadenadas.\n\n\n\n\n\n\nDatos multivariados (PCA, parallel coords, t-SNE)\n\nVisualización científica (campos escalares, vectoriales, volúmenes)\n\nRenderizado volumétrico\n\nDashboards e interactividad\n\nComunicación visual de resultados\n\nProyecto U3:\n\nConstruir un dashboard interactivo con filtros y explicaciones narradas.\n\nVisualizar datos volumétricos o campos vectoriales en 3D con color, transparencia o isosuperficies.\n\nCrear una visualización interactiva para explicar resultados de un modelo de IA (embeddings, métricas, comparaciones).\n\n\n\n\n\n\n\n\n\nEvento\nFecha\n\n\n\n\n🟢 INICIO DE SEMESTRE\nMartes 13 de Enero\n\n\n🟡 1era evaluación parcial\nMiércoles 11 de febrero\n\n\n🟡 2da evaluación parcial\nMiércoles 25 de marzo\n\n\n🟡 Evaluación final\nLunes 04 de mayo\n\n\n🔵 Entrega de calificaciones finales\nMiércoles 06 de mayo\n\n\n🔴 FIN DE SEMESTRE\nViernes 08 de Mayo\n\n\n\n\n\n\n\nEVALUACIÓN PARCIAL\n\n\n\nCriterio\n%\n\n\n\n\n📚Examen\n40\n\n\n✏️Ejercicios de clase y tareas\n15\n\n\n📝Laboratorio\n30\n\n\n💬Proyecto\n15\n\n\n\nEVALUACIÓN FINAL\n\n\n\nCriterio\n%\n\n\n\n\n1er Parcial\n30\n\n\n2do Parcial\n30\n\n\nFinal\n40\n\n\n\n\n\n\n\n\nGraphics & Visualization: Principles & Algorithms — Theoharis et al.\nFundamentals of Computer Graphics — Marschner & Shirley\nComputer Graphics: Principles and Practice — Foley et al.\nFundamentals of Data Visualization — C. Wilke\nThe Visual Display of Quantitative Information — E. Tufte\nData Visualization: A Practical Introduction — K. Healy\nPython Data Science Handbook — VanderPlas\nDocumentación Pandas, NumPy, Matplotlib, Plotly\n\n\n\n\n\n\nRespetar las opiniones, antecedentes y experiencias de todos los miembros del grupo.\n\nTodas las preguntas sobre la clase son bienvenidas. Evitar lenguaje ofensivo o actitudes que desalienten la participación.\nSer responsables. Revisar notas de clase, asistir a clases, completar ejercicios y tareas, prepararse para los exámenes.\n\nSer proactivas y proactivos durante el curso. Participar en la clase y compartir el conocimiento, sin caer en el plagio.\nDurante las clases, evitar distracciones como el uso innecesario de dispositivos electrónicos.\n\nLas tareas y ejercicios deben entregarse en la fecha indicada. Los retrasos tendrán una penalización del 20% por día. Los proyectos no se aceptan después de la fecha límite, sin excepciones.\nLa asistencia se registra al inicio de la sesión. Las llegadas dentro de los primeros 10 minutos se consideran retardos. Cada conjunto de tres retardos se contabiliza como una falta en el registro oficial.\n\n\nProhibido compartir o copiar código.\n\nEsta permitido apoyarse de ejemplos en internet, pero asegúrate de entenderlos y adaptarlos a tu propio trabajo. Además, si usas recursos abiertos, debes mencionarlos explícitamente en tus entregas.\n\nTodas las entregas deben reflejar el esfuerzo y aprendizaje propios. El plagio, en cualquier forma, será sancionado según las políticas institucionales.\n\n\n\n\n\nLos incumplimientos menores, como interrupciones en clase o descuidos ocasionales, resultarán en una advertencia inicial. Si la conducta persiste, se podrá descontar la asistencia del día y/o reducir la calificación en participación.\nLas faltas graves, como el plagio o comportamientos irrespetuosos, se reportarán formalmente a las autoridades académicas y podrán implicar calificaciones de “0” en actividades específicas, e incluso la exclusión del curso en casos de gravedad o reincidencia.\n\nComunicación Oficial No. 455: Lineamientos académicos sobre plagio y fraude"
+    "objectID": "index.html#fechas",
+    "href": "index.html#fechas",
+    "title": "Visualización Gráfica para IA",
+    "section": "4 Fechas importantes",
+    "text": "4 Fechas importantes\n\n\n\nEvento\nFecha\n\n\n\n\n🟢 INICIO DE SEMESTRE\nMartes 13 de Enero\n\n\n🟡 1era evaluación parcial\nMiércoles 11 de febrero\n\n\n🟡 2da evaluación parcial\nMiércoles 25 de marzo\n\n\n🟡 Evaluación final\nLunes 04 de mayo\n\n\n🔵 Entrega de calificaciones finales\nMiércoles 06 de mayo\n\n\n🔴 FIN DE SEMESTRE\nViernes 08 de Mayo"
   },
   {
-    "objectID": "clases/01-introduccion-visualizacion.html#objetivos",
-    "href": "clases/01-introduccion-visualizacion.html#objetivos",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Aplicar técnicas y herramientas para el análisis y la visualización de datos, que serán utilizados para la toma de decisiones en proyectos de inteligencia artificial."
+    "objectID": "index.html#evaluacion",
+    "href": "index.html#evaluacion",
+    "title": "Visualización Gráfica para IA",
+    "section": "5 Evaluación",
+    "text": "5 Evaluación\nEVALUACIÓN PARCIAL\n\n\n\nCriterio\n%\n\n\n\n\n📚Examen\n40\n\n\n✏️Ejercicios de clase y tareas\n15\n\n\n📝Laboratorio\n30\n\n\n💬Proyecto\n15\n\n\n\nEVALUACIÓN FINAL\n\n\n\nCriterio\n%\n\n\n\n\n1er Parcial\n30\n\n\n2do Parcial\n30\n\n\nFinal\n40"
   },
   {
-    "objectID": "clases/01-introduccion-visualizacion.html#prerrequisitos",
-    "href": "clases/01-introduccion-visualizacion.html#prerrequisitos",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Bases sólidas en pensamiento computacional y programación en Python\nConocimientos matemáticos básicos (estadística, cálculo, álgebra lineal)\nComprensión general del análisis de datos (limpieza, preprocesamiento, exploración).\n\nExperiencia previa con herramientas de visualización es un plus, pero no es estrictamente necesaria.\n\nAdicional a los conocimientos académicos, se espera:\n\nCapacidad de pensar críticamente y abordar problemas de manera sistemática.\nInterés en comprender cómo se construyen y explican las visualizaciones.\nDisposición para explorar distintas formas de presentar información visualmente."
+    "objectID": "index.html#bibliografia",
+    "href": "index.html#bibliografia",
+    "title": "Visualización Gráfica para IA",
+    "section": "6 Material de estudio",
+    "text": "6 Material de estudio\n\nGraphics & Visualization: Principles & Algorithms — Theoharis et al.\nFundamentals of Computer Graphics — Marschner & Shirley\nComputer Graphics: Principles and Practice — Foley et al.\nFundamentals of Data Visualization — C. Wilke\nThe Visual Display of Quantitative Information — E. Tufte\nData Visualization: A Practical Introduction — K. Healy\nPython Data Science Handbook — VanderPlas\nDocumentación Pandas, NumPy, Matplotlib, Plotly"
   },
   {
-    "objectID": "clases/01-introduccion-visualizacion.html#expectativas",
-    "href": "clases/01-introduccion-visualizacion.html#expectativas",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Lo que sí veremos\n\nFundamentos de la visualización.\nTransformaciones 2D y 3D.\nVisualización de datos multidimensionales.\nInteractividad y narrativa visual.\n\n\nLo que no veremos\n\nModelado o rendering avanzado.\nMotores de videojuegos.\nDiseño gráfico profesional.\nEdición avanzada de imágenes."
+    "objectID": "index.html#conducta",
+    "href": "index.html#conducta",
+    "title": "Visualización Gráfica para IA",
+    "section": "7 Código de conducta",
+    "text": "7 Código de conducta\n\nRespetar las opiniones, antecedentes y experiencias de todos los miembros del grupo.\n\nTodas las preguntas sobre la clase son bienvenidas. Evitar lenguaje ofensivo o actitudes que desalienten la participación.\nSer responsables. Revisar notas de clase, asistir a clases, completar ejercicios y tareas, prepararse para los exámenes.\n\nSer proactivas y proactivos durante el curso. Participar en la clase y compartir el conocimiento, sin caer en el plagio.\nDurante las clases, evitar distracciones como el uso innecesario de dispositivos electrónicos.\n\nLas tareas y ejercicios deben entregarse en la fecha indicada. Los retrasos tendrán una penalización del 20% por día. Los proyectos no se aceptan después de la fecha límite, sin excepciones.\nLa asistencia se registra al inicio de la sesión. Las llegadas dentro de los primeros 10 minutos se consideran retardos. Cada conjunto de tres retardos se contabiliza como una falta en el registro oficial.\n\nProhibido compartir o copiar código.\n\nEsta permitido apoyarse de ejemplos en internet, pero asegúrate de entenderlos y adaptarlos a tu propio trabajo. Además, si usas recursos abiertos, debes mencionarlos explícitamente en tus entregas.\n\nTodas las entregas deben reflejar el esfuerzo y aprendizaje propios. El plagio, en cualquier forma, será sancionado según las políticas institucionales."
   },
   {
-    "objectID": "clases/01-introduccion-visualizacion.html#temario",
-    "href": "clases/01-introduccion-visualizacion.html#temario",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Pipeline de visualización\n\nPercepción visual y codificaciones\n\nFormación de imagen: raster, vector, muestreo\n\nTransformaciones 2D/3D y coordenadas\n\nColor y mapeo de color\n\nProyecto U1:\n\nConstruir una pinhole camera casera y analizar cómo se forma la imagen.\n\nCrear una pequeña animación de un sistema solar usando usando únicamente transformaciones geométricas implementadas por ustedes (sin utilizar funciones prehechas de animación o gráficos).\n\n\n\n\n\n\nGráficas básicas y estadísticas\n\nInterpretación adecuada de gráficos\n\nStorytelling con datos\n\nÉtica visual y detección de manipulación\n\nProyecto U2:\n\nAnalizar visualizaciones reales de medios o artículos y detectar sesgos/diseño engañoso.\n\nDiseñar una mini–historia con datos usando varias gráficas encadenadas.\n\n\n\n\n\n\nDatos multivariados (PCA, parallel coords, t-SNE)\n\nVisualización científica (campos escalares, vectoriales, volúmenes)\n\nRenderizado volumétrico\n\nDashboards e interactividad\n\nComunicación visual de resultados\n\nProyecto U3:\n\nConstruir un dashboard interactivo con filtros y explicaciones narradas.\n\nVisualizar datos volumétricos o campos vectoriales en 3D con color, transparencia o isosuperficies.\n\nCrear una visualización interactiva para explicar resultados de un modelo de IA (embeddings, métricas, comparaciones)."
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#fechas",
-    "href": "clases/01-introduccion-visualizacion.html#fechas",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Evento\nFecha\n\n\n\n\n🟢 INICIO DE SEMESTRE\nMartes 13 de Enero\n\n\n🟡 1era evaluación parcial\nMiércoles 11 de febrero\n\n\n🟡 2da evaluación parcial\nMiércoles 25 de marzo\n\n\n🟡 Evaluación final\nLunes 04 de mayo\n\n\n🔵 Entrega de calificaciones finales\nMiércoles 06 de mayo\n\n\n🔴 FIN DE SEMESTRE\nViernes 08 de Mayo"
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#evaluacion",
-    "href": "clases/01-introduccion-visualizacion.html#evaluacion",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "EVALUACIÓN PARCIAL\n\n\n\nCriterio\n%\n\n\n\n\n📚Examen\n40\n\n\n✏️Ejercicios de clase y tareas\n15\n\n\n📝Laboratorio\n30\n\n\n💬Proyecto\n15\n\n\n\nEVALUACIÓN FINAL\n\n\n\nCriterio\n%\n\n\n\n\n1er Parcial\n30\n\n\n2do Parcial\n30\n\n\nFinal\n40"
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#bibliografia",
-    "href": "clases/01-introduccion-visualizacion.html#bibliografia",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Graphics & Visualization: Principles & Algorithms — Theoharis et al.\nFundamentals of Computer Graphics — Marschner & Shirley\nComputer Graphics: Principles and Practice — Foley et al.\nFundamentals of Data Visualization — C. Wilke\nThe Visual Display of Quantitative Information — E. Tufte\nData Visualization: A Practical Introduction — K. Healy\nPython Data Science Handbook — VanderPlas\nDocumentación Pandas, NumPy, Matplotlib, Plotly"
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#conducta",
-    "href": "clases/01-introduccion-visualizacion.html#conducta",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Respetar las opiniones, antecedentes y experiencias de todos los miembros del grupo.\n\nTodas las preguntas sobre la clase son bienvenidas. Evitar lenguaje ofensivo o actitudes que desalienten la participación.\nSer responsables. Revisar notas de clase, asistir a clases, completar ejercicios y tareas, prepararse para los exámenes.\n\nSer proactivas y proactivos durante el curso. Participar en la clase y compartir el conocimiento, sin caer en el plagio.\nDurante las clases, evitar distracciones como el uso innecesario de dispositivos electrónicos.\n\nLas tareas y ejercicios deben entregarse en la fecha indicada. Los retrasos tendrán una penalización del 20% por día. Los proyectos no se aceptan después de la fecha límite, sin excepciones.\nLa asistencia se registra al inicio de la sesión. Las llegadas dentro de los primeros 10 minutos se consideran retardos. Cada conjunto de tres retardos se contabiliza como una falta en el registro oficial.\n\n\nProhibido compartir o copiar código.\n\nEsta permitido apoyarse de ejemplos en internet, pero asegúrate de entenderlos y adaptarlos a tu propio trabajo. Además, si usas recursos abiertos, debes mencionarlos explícitamente en tus entregas.\n\nTodas las entregas deben reflejar el esfuerzo y aprendizaje propios. El plagio, en cualquier forma, será sancionado según las políticas institucionales.\n\n\n\n\n\nLos incumplimientos menores, como interrupciones en clase o descuidos ocasionales, resultarán en una advertencia inicial. Si la conducta persiste, se podrá descontar la asistencia del día y/o reducir la calificación en participación.\nLas faltas graves, como el plagio o comportamientos irrespetuosos, se reportarán formalmente a las autoridades académicas y podrán implicar calificaciones de “0” en actividades específicas, e incluso la exclusión del curso en casos de gravedad o reincidencia.\n\nComunicación Oficial No. 455: Lineamientos académicos sobre plagio y fraude"
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#diagnostico",
-    "href": "clases/01-introduccion-visualizacion.html#diagnostico",
-    "title": "01 - Introducción a la visualización",
-    "section": "2.1 Actividad diagnóstica",
-    "text": "2.1 Actividad diagnóstica\nAbrir formulario de diagnóstico: https://forms.office.com/r/QvQVTFwwgs\nEscanea el código QR:"
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#motivacion",
-    "href": "clases/01-introduccion-visualizacion.html#motivacion",
-    "title": "01 - Introducción a la visualización",
-    "section": "2.2 Motivación",
-    "text": "2.2 Motivación\n\n\n\nDedicamos una gran parte de nuestra atención a tareas relacionadas con la visión.\n\nLa casa en la que vivimos, el auto que conducimos, la ropa que usamos, suelen elegirse por sus cualidades visuales.\nAlrededor del 50% de las neuronas están asociadas con la visión.\nEl sistema visual humano tiene un ancho de banda equivalente a gigabits, permitiendo:\n\npercepción muy rápida,\nreconocimiento de patrones,\nidentificación de relaciones espaciales.\n\n\n\n\n\nVideo: https://www.youtube.com/watch?v=IQJL3htsDyQ\n\nVideo: https://www.youtube.com/watch?v=Cuo8eq9C3Ec"
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#def_viz",
-    "href": "clases/01-introduccion-visualizacion.html#def_viz",
-    "title": "01 - Introducción a la visualización",
-    "section": "2.3 Definición de visualización",
-    "text": "2.3 Definición de visualización\n\n\n\n\n\n\nTip\n\n\n\n\nLa visualización es el proceso de transformar datos en una forma visual que permite al espectador observar, explorar, darle sentido y comprender la información (Cambridge Dictionary).\n\n\n\n\n\n Arte rupestre en Arroyo Seco, Gto. Imagen de expansion.mx\n\n Mapa diseñado por Claudius Ptolemy (entre 85 y 165 A.C.), fue utilizado como referencia hasta el siglo XV. Imagen de interaction-design.org"
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#def_viz_gra",
-    "href": "clases/01-introduccion-visualizacion.html#def_viz_gra",
-    "title": "01 - Introducción a la visualización",
-    "section": "2.4 Definición de visualización gráfica",
-    "text": "2.4 Definición de visualización gráfica\n\n\n\n\n\n\nTip\n\n\n\n\nLa visualización gráfica es el proceso de convertir datos descriptivos (números, ecuaciones, geometría) en un conjunto de primitivas gráficas (formas, líneas, polígonos, etc.) para producir imágenes estáticas o animadas utilizando un medio computacional (Schroeder y colegas, The Visualization Toolkit).\n\n\n\n\n\n El conejo de Stanford, consiste de ~70k triángulos, usado para probar algoritmos gráficos. Imagen de researchgate.net\n\n Seguimiento del slogan republicano #JobsNotMobs, en las elecciones de mitad de periodo en EUA, 2018. Imagen de nytimes.com\n\n\n\n\nLa visualización gráfica incluye no solo la visualización de datos, sino también la creación y manipulación de modelos tridimensionales, simulaciones físicas y entornos virtuales interactivos.\nAbarca muchas disciplinas como: las gráficas por computadora, la visualización científica, los videojuegos, la animación y las tecnologías de realidad virtual y aumentada."
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#etapas-del-proceso-de-visualización-gráfica",
-    "href": "clases/01-introduccion-visualizacion.html#etapas-del-proceso-de-visualización-gráfica",
-    "title": "01 - Introducción a la visualización",
-    "section": "2.5 Etapas del proceso de visualización gráfica",
-    "text": "2.5 Etapas del proceso de visualización gráfica\nEl proceso de visualización gráfica tiene como objetivo articular el paso entre representaciones internas del sistema computacional (datos discretos, modelos) y representaciones externas perceptibles.\n \nProceso de Visualización. Imagen de Introduction to Computer Graphics, Hobart and William Smith Colleges\n\nSe inicia siempre con datos crudos: Los datos pueden originarse tanto en procesos de adquisición del mundo físico como en simulaciones científicas de gran escala.\nLos datos pueden convertirse en modelos geométricos o en imágenes:\n\nLas gráficas por computadora permiten generar imágenes a partir de modelos.\nLa visión por computadora aborda el problema inverso, extrayendo información a partir de imágenes.\nEl procesamiento de imágenes actúa como mecanismo de ajuste, análisis o post-procesamiento."
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#cierre",
-    "href": "clases/01-introduccion-visualizacion.html#cierre",
-    "title": "01 - Introducción a la visualización",
-    "section": "2.6 Cierre",
-    "text": "2.6 Cierre\n\nActividades de cierre:\n\nRealizar el ejercicio práctico 01 (actividad de clase)\nRealizar el ejercicio práctico 02 (tarea)\n\n¿Qué sigue?\n\nYa sabemos qué es la visualización gráfica. Ahora necesitamos entender cómo se construye.\n\n¿Qué significa realmente “ver” una imagen en una computadora?, ¿Qué se pierde cuando discretizamos el mundo?, ¿Cómo se forman las imágenes?\n¿Cómo se representan objetos y datos?, ¿Cómo se transforman en el espacio?\n¿Cómo se codifica información usando color y geometría?"
+    "objectID": "index.html#actividad-del-curso",
+    "href": "index.html#actividad-del-curso",
+    "title": "Visualización Gráfica para IA",
+    "section": "8 Actividad del curso",
+    "text": "8 Actividad del curso\n\nSemana actual: 1 / 16\nTema en curso: Introducción a la visualización gráfica"
   },
   {
     "objectID": "clases/02-formacion-imagen.html#como-formar-imagen",
@@ -242,7 +172,7 @@
     "href": "clases/02-formacion-imagen.html#def-imagen",
     "title": "02 - Formación de imagen y representación digital",
     "section": "Definición de imagen",
-    "text": "Definición de imagen\n\n\n\nDefinición 2: Una imagen es una función \\(f\\), que asigna un valor a cada punto de un espacio bidimensional.\nSea $ f(x, y) $ una función de dos variables:\n\n$ x $ y $ y $ son las coordenadas espaciales de un píxel en la imagen.\n\n$ f(x, y) $ es el valor de intensidad o color en ese punto.\n\nEn una imagen analógica (como una pintura), la función \\(f(x, y)\\) es continua. Cada punto tiene un valor definido en un espacio continuo.\n\nEn una imagen digital, \\(f(x, y)\\) es discreta porque la imagen se divide en una cuadrícula de píxeles. Las coordenadas $ x, y $ y los valores \\(f(x, y)\\) solo existen en puntos discretos.\n\n\n\n\n\n\n\nImagen de natural-resources.canada.ca"
+    "text": "Definición de imagen\n\n\n\nDefinición 2: Una imagen es una función \\(f\\), que asigna un valor a cada punto de un espacio bidimensional.\nSea \\(f(x, y)\\) una función de dos variables:\n\n\\(x\\) y \\(y\\) son las coordenadas espaciales de un píxel en la imagen.\n\n\\(f(x, y)\\) es el valor de intensidad o color en ese punto.\n\nEn una imagen analógica (como una pintura), la función \\(f(x, y)\\) es continua. Cada punto tiene un valor definido en un espacio continuo.\n\nEn una imagen digital, \\(f(x, y)\\) es discreta porque la imagen se divide en una cuadrícula de píxeles. Las coordenadas \\(x, y\\) y los valores \\(f(x, y)\\) solo existen en puntos discretos.\n\n\n\n\n\n\n\nImagen de natural-resources.canada.ca"
   },
   {
     "objectID": "clases/02-formacion-imagen.html#def-pixel",
@@ -354,7 +284,7 @@
     "href": "clases/02-formacion-imagen.html#enfoque-ingenuo",
     "title": "02 - Formación de imagen y representación digital",
     "section": "Enfoque ingenuo",
-    "text": "Enfoque ingenuo\nLa forma más sencilla sería evaluar cada píxel dentro de la cuadrícula de la pantalla para verificar si está lo suficientemente cerca de la línea.\n\nPartimos de la forma implícita de la línea: \\[\nl(x, y) = ax + by + c = 0\n\\] Donde: \\(a = y_2 - y_1\\), \\(b = x_1 - x_2\\), \\(c = x_2y_1 - x_1y_2\\)\nUna curva en forma implícita se define mediante una función \\(f(x, y)\\), la cual determina si un punto específico \\((x, y)\\) se encuentra:\n\nDentro de la curva \\((f(x, y) &lt; 0)\\).\nSobre la curva \\((f(x, y) = 0)\\).\nFuera de la curva \\((f(x, y) &gt; 0)\\).\n\nDebemos visitar toda la cuadrícula, evaluando la función para cada píxel, para determinar cuáles están dentro de la línea y colorearlos.\n\nNota: Este proceso es extremadamente ineficiente, ya que revisa cada píxel de la cuadrícula, incluso aquellos que están muy lejos de la línea."
+    "text": "Enfoque ingenuo\nLa forma más sencilla sería evaluar cada píxel dentro de la cuadrícula de la pantalla para verificar si está lo suficientemente cerca de la línea.\n\nPartimos de la forma implícita de la línea: \\[\nl(x, y) = ax + by + c = 0\n\\] Donde:\n\n\\(a = y_2 - y_1\\)\n\\(b = x_1 - x_2\\)\n\\(c = x_2y_1 - x_1y_2\\)\n\nUna curva en forma implícita se define mediante una función \\(f(x, y)\\), la cual determina si un punto específico \\((x, y)\\) se encuentra:\n\nDentro de la curva \\((f(x, y) &lt; 0)\\).\nSobre la curva \\((f(x, y) = 0)\\).\nFuera de la curva \\((f(x, y) &gt; 0)\\).\n\nDebemos visitar toda la cuadrícula, evaluando la función para cada píxel, para determinar cuáles están dentro de la línea y colorearlos.\n\nNota: Este proceso es extremadamente ineficiente, ya que revisa cada píxel de la cuadrícula, incluso aquellos que están muy lejos de la línea."
   },
   {
     "objectID": "clases/02-formacion-imagen.html#algoritmos-de-rasterización-de-líneas",
@@ -368,7 +298,7 @@
     "href": "clases/02-formacion-imagen.html#dda",
     "title": "02 - Formación de imagen y representación digital",
     "section": "Algoritmo DDA (Digital differential analyzer)",
-    "text": "Algoritmo DDA (Digital differential analyzer)\n\n\nEl algoritmo DDA calcula los valores intermedios utilizando la ecuación de la pendiente de la línea: \\(y = mx + b\\)\nPasos:\nEntrada: (x1, y1), (x2, y2)\n\nCalcular dx = x2 - x1\nCalcular dy = y2 - y1\npasos = máximo(|dx|, |dy|)\nΔx = dx / pasos\nΔy = dy / pasos\nInicializar x = x1, y = y1\nPara i desde 0 hasta pasos:\n\nDibujar el píxel en (redondear(x), redondear(y))\nx = x + Δx\ny = y + Δy\n\nFin\n\n\n\n\n\nDDA animation\n\n\nImagen de jcsites.juniata.edu\n\nEjemplo:\nSupongamos que queremos dibujar una línea desde \\((2, 2)\\) hasta \\((8, 5)\\):"
+    "text": "Algoritmo DDA (Digital differential analyzer)\n\n\nEl algoritmo DDA calcula los valores intermedios utilizando la ecuación de la pendiente de la línea: \\(y = mx + b\\)\nPasos:\nEntrada: (x1, y1), (x2, y2)\n\nCalcular dx = x2 - x1\nCalcular dy = y2 - y1\npasos = máximo(|dx|, |dy|)\nΔx = dx / pasos\nΔy = dy / pasos\nInicializar x = x1, y = y1\nPara i desde 0 hasta pasos:\n\nDibujar el píxel en (redondear(x), redondear(y))\nx = x + Δx\ny = y + Δy\n\nFin\n\n\n\n\n\nDDA animation\n\n\nImagen de jcsites.juniata.edu"
   },
   {
     "objectID": "clases/02-formacion-imagen.html#solución-dda",
@@ -396,7 +326,7 @@
     "href": "clases/02-formacion-imagen.html#pasos-del-algoritmo-de-bresenham",
     "title": "02 - Formación de imagen y representación digital",
     "section": "Pasos del algoritmo de Bresenham",
-    "text": "Pasos del algoritmo de Bresenham\nEntrada: (x1, y1), (x2, y2)\n\nCalcular dx = x2 - x1, dy = y2 - y1\nInicializar x = x1, y = y1\nSi |dx| &gt; |dy| (línea más horizontal):\n\nSi x1 &gt; x2, intercambiar: x1, x2 = x2, x1; y1, y2 = y2, y1; dx = -dx\nincremento_x = 1\nincremento_y = 1 si dy&gt;=0, de lo contrario incremento_y=-1\np = 2 * dy - dx (término de decisión inicial)\nPara x desde x1 hasta x2 (en incrementos de tamaño incremento_x):\n\nDibujar el píxel en (x, y)\nSi p &lt; 0: p = p + 2 * dy\nEn otro caso: p = p + 2 * dy - 2 * dx; y = y + incremento_y\n\n\nSi |dy| &gt; |dx| (línea más vertical):\n\nSi y1 &gt; y2, intercambiar: x1, x2 = x2, x1; y1, y2 = y2, y1; dy = -dy\nincremento_y = 1\nincremento_x = 1 si dx&gt;=0, de lo contrario incremento_x=-1\np = 2 * dx - dy\nPara y desde y1 hasta y2 (en incrementos de tamaño incremento_y):\n\nDibujar el píxel en (x, y)\nSi p &lt; 0: p = p + 2 * dx\nEn otro caso: p = p + 2 * dx - 2 * dy; x = x + incremento_x\n\n\n\nEjemplo:\nSupongamos que queremos dibujar una línea desde \\((2, 2)\\) hasta \\((8, 5)\\):\n\nSolución\n\nCalcular dx, dy:\n\n\\(dx = 8-2 = 6\\)\n\\(dy = 5-2 = 3\\).\n\nInicializar:\n\nx = 2\ny = 2\n\nDeterminar incrementos:\n\nincremento_x = 1\nincremento_y = 1\n\n|dx| &gt; |dy|, por lo tanto:\n\np = 2 * dy - dx = 2 * 3 - 6 = 0\nIteraciones:\n\nPaso 0 (x = 2, y = 2):\n\nDibujar pixel en \\((x, y) = (2, 2)\\)\np = p + 2 * dy - 2 * dx = 0 + 2 * 3 - 2 * 6 = - 6\ny = y + incremento_y = 2 + 1 = 3\n\nPaso 1 (x = 3, y = 3):\n\nDibujar pixel en \\((x, y) = (3, 3)\\)\np = p + 2 * dy = -6 + 2 * 3 = 0\n\nPaso 2 (x = 4, y = 3):\n\nDibujar pixel en \\((x, y) = (4, 3)\\)\np = p + 2 * dy - 2 * dx= 0 + 2 * 3 - 2 * 6= -6\ny = y + incremento_y = 3 + 1 = 4\n\nPaso 3 (x = 5, y = 4):\n\nDibujar pixel en \\((x, y) = (5, 4)\\)\np = p + 2 * dy = -6 + 2 * 3 = 0\n\n\n…\n\n\n\nEjercicio:\nDibuja la línea desde \\((3, 4)\\) hasta \\((6, 8)\\) utilizando: 1. El algoritmo dummy (usando la forma implícita). 2. El algoritmo DDA. 3. El algoritmo de Bresenham.\nPara cada paso, calcula los píxeles seleccionados y compáralos. ¿Cuál es más eficiente en términos de operaciones aritméticas?"
+    "text": "Pasos del algoritmo de Bresenham\nEntrada: (x1, y1), (x2, y2)\n\nCalcular diferencias:\n\nCalcular dx = |x2 - x1|\nCalcular dy = |y2 - y1|\n\nInicializar incrementos:\n\nincremento_x = 1 si x2&gt;=x1, de lo contrario incremento_x=-1\nincremento_y = 1 si y2&gt;=y1, de lo contrario incremento_y=-1\n\nInicializar primer punto: x = x1, y = y1\nSi dx &gt; dy (línea más horizontal):\n\np = 2 * dy - dx (término de decisión inicial)\nRepetir dx veces:\n\nDibujar el píxel en (x, y)\nx = x+incremento_x\np = p+2*dy\nSi p &gt;= 0:\np = p - 2 * dx\ny = y + incremento_y\n\n\nSi dy &gt; dx (línea más vertical):\n\np = 2 * dx - dy\nRepetir dy veces:\n\nDibujar el píxel en (x, y)\ny = y+incremento_y\np = p+2*dx\nSi p&gt;=0:\np = p - 2 *dy\nx = x + incremento_x"
   },
   {
     "objectID": "clases/02-formacion-imagen.html#tarea-parte-1",
@@ -410,14 +340,7 @@
     "href": "clases/02-formacion-imagen.html#rasterización-de-otras-primitivas-gráficas",
     "title": "02 - Formación de imagen y representación digital",
     "section": "Rasterización de otras primitivas gráficas",
-    "text": "Rasterización de otras primitivas gráficas\nRasterización de Círculos\n\nLa rasterización de un círculo también utiliza la idea de calcular qué píxeles deben encenderse para aproximar la forma curva.\nPara esto, podemos usar el algoritmo de Bresenham para círculos, que evita cálculos con decimales y trabaja con enteros de manera eficiente.\n\n\n\nAlgoritmo de Bresenham para círculos\nEntrada: Centro del círculo \\((xc, yc)\\) y su radio \\(r\\).\n\nInicializa:\n\n\\(x = 0\\)\n\n\\(y = r\\)\n\n\\(p = 1 - r\\) (término de decisión inicial).\n\nDibuja el primer octante (los otros puntos se reflejan automáticamente aprovechando la simetría del círculo). Mientras \\(x \\leq y\\):\n\nDibuja los ocho píxeles reflejados utilizando la simetría del círculo:\n\n\\((xc + x, yc + y)\\)\n\n\\((xc - x, yc + y)\\)\n\n\\((xc + x, yc - y)\\)\n\n\\((xc - x, yc - y)\\)\n\n\\((xc + y, yc + x)\\)\n\n\\((xc - y, yc + x)\\)\n\n\\((xc + y, yc - x)\\)\n\n\\((xc - y, yc - x)\\)\n\n\nSi \\(p &lt; 0\\) (el siguiente píxel está más cerca del borde):\n\n\\(p = p + 2x + 3\\)\n\nSi \\(p \\geq 0\\) (se necesita ajustar hacia adentro):\n\n\\(p = p + 2x - 2y + 5\\)\n\\(y = y - 1\\)\n\nIncrementa \\(x = x + 1\\).\n\n\n\n\nTarea (parte 2)\n\n\n\n\n\n\nImagen de wikipedia.org\n\n\nRasterización de Triángulos y polígonos\n\n\n\nLos triángulos y polígonos son fundamentales en gráficas por computadora, ya que casi todas las formas complejas se descomponen en triángulos.\n\nAlgoritmo de escaneo de triángulos\nPara rasterizar un triángulo, el enfoque más común es el algoritmo de escaneo (scanline):\n\nOrdena los vértices del triángulo por su coordenada \\(y\\).\nEncuentra los bordes activos (puntos donde la línea del triángulo cruza cada escaneo en \\(y\\)).\nPara cada fila \\(y\\) entre los límites superior e inferior:\n\nCalcula las intersecciones de los bordes con esa fila.\nLlena los píxeles entre las intersecciones.\n\n\n\n\n\n\n\n\nImagen de github.com\n\nantes de terminar este tema…"
-  },
-  {
-    "objectID": "clases/02-formacion-imagen.html#tarea-parte-2",
-    "href": "clases/02-formacion-imagen.html#tarea-parte-2",
-    "title": "02 - Formación de imagen y representación digital",
-    "section": "Tarea (parte 2)",
-    "text": "Tarea (parte 2)\n\n\n\n\n\n\nImagen de wikipedia.org"
+    "text": "Rasterización de otras primitivas gráficas\nRasterización de Círculos\n\nLa rasterización de un círculo también utiliza la idea de calcular qué píxeles deben encenderse para aproximar la forma curva.\nPara esto, podemos usar el algoritmo de Bresenham para círculos, que evita cálculos con decimales y trabaja con enteros de manera eficiente."
   },
   {
     "objectID": "clases/02-formacion-imagen.html#antialiasing",
@@ -431,118 +354,202 @@
     "href": "clases/02-formacion-imagen.html#referencias-bibliográficas",
     "title": "02 - Formación de imagen y representación digital",
     "section": "Referencias bibliográficas",
-    "text": "Referencias bibliográficas\n\nEck, D. J. (2023). Introduction to computer graphics (Version 1.4). Hobart and William Smith Colleges. Recuperado de https://math.hws.edu/graphicsbook\nFoley, J. D., van Dam, A., Feiner, S. K., & Hughes, J. F. (2013). Computer graphics: Principles and practice (3rd ed.). Addison-Wesley.\nShirley, P. (2020). Fundamentals of computer graphics (5th ed.). A K Peters/CRC Press.\nNVIDIA. (2021). Antialiasing. NVIDIA Developer Blog. Recuperado de [https://www.nvidia.com/content/Control-Panel-Help/vLatest/en-us/mergedProjects/nv3d/antialiasing.htm)"
+    "text": "Referencias bibliográficas\n\nEck, D. J. (2023). Introduction to computer graphics (Version 1.4). Hobart and William Smith Colleges. Recuperado de https://math.hws.edu/graphicsbook\nFoley, J. D., van Dam, A., Feiner, S. K., & Hughes, J. F. (2013). Computer graphics: Principles and practice (3rd ed.). Addison-Wesley.\nShirley, P. (2020). Fundamentals of computer graphics (5th ed.). A K Peters/CRC Press.\nNVIDIA. (2021). Antialiasing. NVIDIA Developer Blog. Recuperado de https://www.nvidia.com"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Visualización Gráfica para IA",
+    "objectID": "clases/01-introduccion-visualizacion.html",
+    "href": "clases/01-introduccion-visualizacion.html",
+    "title": "01 - Introducción a la visualización",
     "section": "",
-    "text": "Este curso aborda los fundamentos teóricos y prácticos de la visualización gráfica aplicada a Inteligencia Artificial. Se estudian principios perceptuales, geométricos y computacionales que permiten diseñar visualizaciones correctas, efectivas y éticamente responsables para el análisis y comunicación de datos.\n\n\n\nHorario: Lunes y Miércoles\n\n9 a 11 hrs\n11 a 13 hrs\n\n\nDocente: Dra. Dora Alvarado\n\nEmail: 27382@iberoleon.edu.mx; doraelisa.alvaradocarrillo@iberoleon.edu.mx\n\n\nAvisos, exámenes, tareas en Moodle."
+    "text": "Horario: Lunes y Miércoles\n\n9 a 11 hrs\n11 a 13 hrs\n\n\nDocente: Dra. Dora Alvarado\n\nEmail: 27382@iberoleon.edu.mx; doraelisa.alvaradocarrillo@iberoleon.edu.mx\n\n\nAvisos, exámenes, tareas en Moodle.\n\n\n\n\n\n\n\n\n\nAplicar técnicas y herramientas para el análisis y la visualización de datos, que serán utilizados para la toma de decisiones en proyectos de inteligencia artificial.\n\n\n\n\n\n\nBases sólidas en pensamiento computacional y programación en Python\nConocimientos matemáticos básicos (estadística, cálculo, álgebra lineal)\nComprensión general del análisis de datos (limpieza, preprocesamiento, exploración).\n\nExperiencia previa con herramientas de visualización es un plus, pero no es estrictamente necesaria.\n\nAdicional a los conocimientos académicos, se espera:\n\nCapacidad de pensar críticamente y abordar problemas de manera sistemática.\nInterés en comprender cómo se construyen y explican las visualizaciones.\nDisposición para explorar distintas formas de presentar información visualmente.\n\n\n\n\n\n\n\nLo que sí veremos\n\nFundamentos de la visualización.\nTransformaciones 2D y 3D.\nVisualización de datos multidimensionales.\nInteractividad y narrativa visual.\n\n\nLo que no veremos\n\nModelado o rendering avanzado.\nMotores de videojuegos.\nDiseño gráfico profesional.\nEdición avanzada de imágenes.\n\n\n\n\n\n\n\n\n\n\n\nPipeline de visualización\n\nPercepción visual y codificaciones\n\nFormación de imagen: raster, vector, muestreo\n\nTransformaciones 2D/3D y coordenadas\n\nColor y mapeo de color\n\nProyecto U1:\n\nConstruir una pinhole camera casera y analizar cómo se forma la imagen.\n\nCrear una pequeña animación de un sistema solar usando usando únicamente transformaciones geométricas implementadas por ustedes (sin utilizar funciones prehechas de animación o gráficos).\n\n\n\n\n\n\nGráficas básicas y estadísticas\n\nInterpretación adecuada de gráficos\n\nStorytelling con datos\n\nÉtica visual y detección de manipulación\n\nProyecto U2:\n\nAnalizar visualizaciones reales de medios o artículos y detectar sesgos/diseño engañoso.\n\nDiseñar una mini–historia con datos usando varias gráficas encadenadas.\n\n\n\n\n\n\nDatos multivariados (PCA, parallel coords, t-SNE)\n\nVisualización científica (campos escalares, vectoriales, volúmenes)\n\nRenderizado volumétrico\n\nDashboards e interactividad\n\nComunicación visual de resultados\n\nProyecto U3:\n\nConstruir un dashboard interactivo con filtros y explicaciones narradas.\n\nVisualizar datos volumétricos o campos vectoriales en 3D con color, transparencia o isosuperficies.\n\nCrear una visualización interactiva para explicar resultados de un modelo de IA (embeddings, métricas, comparaciones).\n\n\n\n\n\n\n\n\n\nEvento\nFecha\n\n\n\n\n🟢 INICIO DE SEMESTRE\nMartes 13 de Enero\n\n\n🟡 1era evaluación parcial\nMiércoles 11 de febrero\n\n\n🟡 2da evaluación parcial\nMiércoles 25 de marzo\n\n\n🟡 Evaluación final\nLunes 04 de mayo\n\n\n🔵 Entrega de calificaciones finales\nMiércoles 06 de mayo\n\n\n🔴 FIN DE SEMESTRE\nViernes 08 de Mayo\n\n\n\n\n\n\n\nEVALUACIÓN PARCIAL\n\n\n\nCriterio\n%\n\n\n\n\n📚Examen\n40\n\n\n✏️Ejercicios de clase y tareas\n15\n\n\n📝Laboratorio\n30\n\n\n💬Proyecto\n15\n\n\n\nEVALUACIÓN FINAL\n\n\n\nCriterio\n%\n\n\n\n\n1er Parcial\n30\n\n\n2do Parcial\n30\n\n\nFinal\n40\n\n\n\n\n\n\n\n\nGraphics & Visualization: Principles & Algorithms — Theoharis et al.\nFundamentals of Computer Graphics — Marschner & Shirley\nComputer Graphics: Principles and Practice — Foley et al.\nFundamentals of Data Visualization — C. Wilke\nThe Visual Display of Quantitative Information — E. Tufte\nData Visualization: A Practical Introduction — K. Healy\nPython Data Science Handbook — VanderPlas\nDocumentación Pandas, NumPy, Matplotlib, Plotly\n\n\n\n\n\n\nRespetar las opiniones, antecedentes y experiencias de todos los miembros del grupo.\n\nTodas las preguntas sobre la clase son bienvenidas. Evitar lenguaje ofensivo o actitudes que desalienten la participación.\nSer responsables. Revisar notas de clase, asistir a clases, completar ejercicios y tareas, prepararse para los exámenes.\n\nSer proactivas y proactivos durante el curso. Participar en la clase y compartir el conocimiento, sin caer en el plagio.\nDurante las clases, evitar distracciones como el uso innecesario de dispositivos electrónicos.\n\nLas tareas y ejercicios deben entregarse en la fecha indicada. Los retrasos tendrán una penalización del 20% por día. Los proyectos no se aceptan después de la fecha límite, sin excepciones.\nLa asistencia se registra al inicio de la sesión. Las llegadas dentro de los primeros 10 minutos se consideran retardos. Cada conjunto de tres retardos se contabiliza como una falta en el registro oficial.\n\n\nProhibido compartir o copiar código.\n\nEsta permitido apoyarse de ejemplos en internet, pero asegúrate de entenderlos y adaptarlos a tu propio trabajo. Además, si usas recursos abiertos, debes mencionarlos explícitamente en tus entregas.\n\nTodas las entregas deben reflejar el esfuerzo y aprendizaje propios. El plagio, en cualquier forma, será sancionado según las políticas institucionales.\n\n\n\n\n\nLos incumplimientos menores, como interrupciones en clase o descuidos ocasionales, resultarán en una advertencia inicial. Si la conducta persiste, se podrá descontar la asistencia del día y/o reducir la calificación en participación.\nLas faltas graves, como el plagio o comportamientos irrespetuosos, se reportarán formalmente a las autoridades académicas y podrán implicar calificaciones de “0” en actividades específicas, e incluso la exclusión del curso en casos de gravedad o reincidencia.\n\nComunicación Oficial No. 455: Lineamientos académicos sobre plagio y fraude"
   },
   {
-    "objectID": "index.html#acercade",
-    "href": "index.html#acercade",
-    "title": "Visualización Gráfica para IA",
+    "objectID": "clases/01-introduccion-visualizacion.html#objetivos",
+    "href": "clases/01-introduccion-visualizacion.html#objetivos",
+    "title": "01 - Introducción a la visualización",
     "section": "",
-    "text": "Este curso aborda los fundamentos teóricos y prácticos de la visualización gráfica aplicada a Inteligencia Artificial. Se estudian principios perceptuales, geométricos y computacionales que permiten diseñar visualizaciones correctas, efectivas y éticamente responsables para el análisis y comunicación de datos.\n\n\n\nHorario: Lunes y Miércoles\n\n9 a 11 hrs\n11 a 13 hrs\n\n\nDocente: Dra. Dora Alvarado\n\nEmail: 27382@iberoleon.edu.mx; doraelisa.alvaradocarrillo@iberoleon.edu.mx\n\n\nAvisos, exámenes, tareas en Moodle."
+    "text": "Aplicar técnicas y herramientas para el análisis y la visualización de datos, que serán utilizados para la toma de decisiones en proyectos de inteligencia artificial."
   },
   {
-    "objectID": "index.html#objetivos",
-    "href": "index.html#objetivos",
-    "title": "Visualización Gráfica para IA",
-    "section": "2 Objetivos del curso",
-    "text": "2 Objetivos del curso\n\nAplicar técnicas y herramientas para el análisis y la visualización de datos, que serán utilizados para la toma de decisiones en proyectos de inteligencia artificial."
-  },
-  {
-    "objectID": "index.html#prerrequisitos",
-    "href": "index.html#prerrequisitos",
-    "title": "Visualización Gráfica para IA",
-    "section": "3 Prerrequisitos",
-    "text": "3 Prerrequisitos\n\nBases sólidas en pensamiento computacional y programación en Python\nConocimientos matemáticos básicos (estadística, cálculo, álgebra lineal)\nComprensión general del análisis de datos (limpieza, preprocesamiento, exploración).\n\nExperiencia previa con herramientas de visualización es un plus, pero no es estrictamente necesaria.\nAdicional a los conocimientos académicos, se espera:\n\nCapacidad de pensar críticamente y abordar problemas de manera sistemática.\nInterés en comprender cómo se construyen y explican las visualizaciones.\nDisposición para explorar distintas formas de presentar información visualmente."
-  },
-  {
-    "objectID": "index.html#fechas",
-    "href": "index.html#fechas",
-    "title": "Visualización Gráfica para IA",
-    "section": "4 Fechas importantes",
-    "text": "4 Fechas importantes\n\n\n\nEvento\nFecha\n\n\n\n\n🟢 INICIO DE SEMESTRE\nMartes 13 de Enero\n\n\n🟡 1era evaluación parcial\nMiércoles 11 de febrero\n\n\n🟡 2da evaluación parcial\nMiércoles 25 de marzo\n\n\n🟡 Evaluación final\nLunes 04 de mayo\n\n\n🔵 Entrega de calificaciones finales\nMiércoles 06 de mayo\n\n\n🔴 FIN DE SEMESTRE\nViernes 08 de Mayo"
-  },
-  {
-    "objectID": "index.html#evaluacion",
-    "href": "index.html#evaluacion",
-    "title": "Visualización Gráfica para IA",
-    "section": "5 Evaluación",
-    "text": "5 Evaluación\nEVALUACIÓN PARCIAL\n\n\n\nCriterio\n%\n\n\n\n\n📚Examen\n40\n\n\n✏️Ejercicios de clase y tareas\n15\n\n\n📝Laboratorio\n30\n\n\n💬Proyecto\n15\n\n\n\nEVALUACIÓN FINAL\n\n\n\nCriterio\n%\n\n\n\n\n1er Parcial\n30\n\n\n2do Parcial\n30\n\n\nFinal\n40"
-  },
-  {
-    "objectID": "index.html#bibliografia",
-    "href": "index.html#bibliografia",
-    "title": "Visualización Gráfica para IA",
-    "section": "6 Material de estudio",
-    "text": "6 Material de estudio\n\nGraphics & Visualization: Principles & Algorithms — Theoharis et al.\nFundamentals of Computer Graphics — Marschner & Shirley\nComputer Graphics: Principles and Practice — Foley et al.\nFundamentals of Data Visualization — C. Wilke\nThe Visual Display of Quantitative Information — E. Tufte\nData Visualization: A Practical Introduction — K. Healy\nPython Data Science Handbook — VanderPlas\nDocumentación Pandas, NumPy, Matplotlib, Plotly"
-  },
-  {
-    "objectID": "index.html#conducta",
-    "href": "index.html#conducta",
-    "title": "Visualización Gráfica para IA",
-    "section": "7 Código de conducta",
-    "text": "7 Código de conducta\n\nRespetar las opiniones, antecedentes y experiencias de todos los miembros del grupo.\n\nTodas las preguntas sobre la clase son bienvenidas. Evitar lenguaje ofensivo o actitudes que desalienten la participación.\nSer responsables. Revisar notas de clase, asistir a clases, completar ejercicios y tareas, prepararse para los exámenes.\n\nSer proactivas y proactivos durante el curso. Participar en la clase y compartir el conocimiento, sin caer en el plagio.\nDurante las clases, evitar distracciones como el uso innecesario de dispositivos electrónicos.\n\nLas tareas y ejercicios deben entregarse en la fecha indicada. Los retrasos tendrán una penalización del 20% por día. Los proyectos no se aceptan después de la fecha límite, sin excepciones.\nLa asistencia se registra al inicio de la sesión. Las llegadas dentro de los primeros 10 minutos se consideran retardos. Cada conjunto de tres retardos se contabiliza como una falta en el registro oficial.\n\nProhibido compartir o copiar código.\n\nEsta permitido apoyarse de ejemplos en internet, pero asegúrate de entenderlos y adaptarlos a tu propio trabajo. Además, si usas recursos abiertos, debes mencionarlos explícitamente en tus entregas.\n\nTodas las entregas deben reflejar el esfuerzo y aprendizaje propios. El plagio, en cualquier forma, será sancionado según las políticas institucionales."
-  },
-  {
-    "objectID": "index.html#actividad-del-curso",
-    "href": "index.html#actividad-del-curso",
-    "title": "Visualización Gráfica para IA",
-    "section": "8 Actividad del curso",
-    "text": "8 Actividad del curso\n\nSemana actual: 1 / 16\nTema en curso: Introducción a la visualización gráfica"
-  },
-  {
-    "objectID": "labs/02-timeline-viz.html",
-    "href": "labs/02-timeline-viz.html",
-    "title": "02 — Línea del tiempo de la visualización gráfica",
+    "objectID": "clases/01-introduccion-visualizacion.html#prerrequisitos",
+    "href": "clases/01-introduccion-visualizacion.html#prerrequisitos",
+    "title": "01 - Introducción a la visualización",
     "section": "",
-    "text": "Que el estudiantado comprenda la evolución histórica de la visualización gráfica a partir de eventos concretos, entendiendo cada uno como un punto de inflexión en la manera de representar, analizar o comunicar información y fenómenos visuales.\n\n\n\nEn esta actividad investigaremos eventos clave de la visualización gráfica en diferentes categorías. El objetivo final será la construcción de una línea del tiempo interactiva y la presentación de los eventos investigados.\nCada equipo trabajará sobre un evento histórico específico de la historia de la visualización gráfica, previamente asignado. Dicho evento corresponde a un momento en el que una persona o un equipo desarrolló una visualización, técnica, sistema o enfoque que cambió de manera significativa la forma en que se representaba, analizaba o comunicaba información, fenómenos o procesos visuales.\nEl trabajo se realizará en equipos, y cada equipo será responsable de investigar, analizar y presentar un evento:\n\nEl trabajo debe comenzar con una descripción del contexto histórico, es decir, explicar la época en la que ocurre el evento, las limitaciones técnicas o conceptuales existentes en ese momento y el problema que hacía necesaria una nueva forma de visualización.\nEl equipo deberá presentar de manera explícita a la o las figuras principales asociadas al evento. Esto incluye identificar quiénes fueron, desde qué disciplinas trabajaban y cuál fue su contribución específica.\nEl núcleo del trabajo debe ser una explicación detallada de la visualización, técnica o sistema desarrollado. Se espera una descripción clara de qué se construyó, cómo funcionaba conceptualmente y qué lo hacía distinto de representaciones anteriores.\nEs obligatorio incluir material visual (imágenes, diagramas, capturas, esquemas, videos) que permitan al lector o espectador entender la visualización sin recurrir únicamente al texto.\nEl equipo deberá analizar el impacto del evento en la historia de la visualización gráfica, es decir, explicar por qué este evento es considerado relevante, qué prácticas influyó o transformó, y cómo se relaciona con formas actuales de visualización, ya sea en visualización de datos, interacción, animación, simulación, gráficas por computadora o narrativa visual.\nFinalmente, el trabajo debe cerrar con una reflexión en la que el equipo explique, con sus propias palabras, por qué considera que este evento representa un punto de inflexión en la manera de “ver” información, fenómenos o procesos.\nEl trabajo debe estar respaldado por mínimo tres fuentes confiables y pertinentes, que pueden incluir libros, artículos académicos, documentos históricos, sitios institucionales, museos o archivos especializados. Las fuentes deben citarse correctamente en formato APA y corresponder al contenido presentado. No se aceptarán referencias genéricas o no verificables.\nCada equipo dispondrá de 15 minutos para presentar su trabajo. La exposición debe apoyarse en la visualización desarrollada y en los elementos gráficos analizados. Exponer no es realizar un lectura del texto de las diapositivas.\n\nAdemás, el grupo construirá de manera colaborativa una línea del tiempo interactiva general sobre la historia de la visualización gráfica, la cual funcionará como material de apoyo para el estudio del curso y será utilizada como referencia para el examen.\n\nCada equipo será responsable de integrar el evento histórico que se les ha asignado correctamente en una línea del tiempo general. El objetivo es construir una narrativa histórica visual que permita identificar relaciones, transiciones conceptuales y conexiones entre distintas áreas de la visualización gráfica.\nPara la implementación técnica, pueden utilizar TimelineJS u otra herramienta de línea del tiempo interactiva, siempre y cuando cumpla con los siguientes requisitos mínimos:\n\nPermita visualizar los eventos de forma cronológica.\nIncluya texto descriptivo y recursos visuales.\nSea accesible mediante un enlace web.\n\nLa línea del tiempo general deberá estar completa, revisada y funcional antes del inicio de las exposiciones.\n\n\n\n\nCada estudiante deberá presentar los siguientes elementos en el espacio correspondiente de Moodle:\n\nUn documento en formato PDF, nombrado 02_VG_ApellidoNombre.pdf, que incluya:\n\n\nNombre del evento.\nFecha o periodo histórico.\nDescripción del evento (contexto, qué ocurrió y por qué es relevante).\nJustificación de su importancia dentro de la historia de la visualización gráfica.\nAl menos una imagen, diagrama o recurso visual (con fuente).\nEnlace a la línea del tiempo interactiva general.\nEvidencia de que el evento fue correctamente integrado (captura de pantalla o indicación del lugar que ocupa en la línea del tiempo).\nReferencias bibliográficas en formato APA.\n\n\nPresentación oral breve del evento investigado (subir diapositivas adicionales si aplica, 02_VG_slides_ApellidoNombre.pdf), con duración de 5 a 7 minutos por estudiante, 10 a 15 minutos por equipo, incluyendo:\n\n\nContexto histórico del evento.\nExplicación de su relevancia.\nRelación con otros eventos o categorías de la línea del tiempo.\nLa presentación podrá apoyarse directamente en la línea del tiempo interactiva o en diapositivas adicionales, si así lo desean.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCriterio\nExcelente\nBueno\nBásico\nInsuficiente\n\n\n\n\nInvestigación y comprensión del evento (40 pts)\nEl evento está claramente contextualizado. Explica qué ocurrió, por qué es importante y cómo contribuye a la evolución de la visualización gráfica, incluyendo consecuencias o influencias posteriores.\nEl evento está bien descrito y su relevancia es correcta, aunque el análisis histórico o conceptual es limitado.\nDescripción superficial, con poca contextualización o relación débil con la visualización gráfica.\nDescripción incompleta, incorrecta o sin relación clara con la visualización gráfica.\n\n\nPresentación oral y comunicación (30 pts)\nExposición clara, bien estructurada y dentro del tiempo. Usa la línea del tiempo como apoyo para explicar el evento.\nExposición comprensible, con uso limitado del apoyo visual o pequeños problemas de organización.\nExposición poco clara o desorganizada; uso mínimo de la línea del tiempo.\nExposición confusa, incompleta o ausente.\n\n\nContribución a la línea del tiempo general (20 pts)\nFecha correcta y bien delimitada; descripción clara y adecuada para estudio; recurso visual pertinente y correctamente integrado.\nFecha y descripción correctas, con detalles mejorables o uso limitado del recurso visual.\nFecha imprecisa, descripción poco clara o recurso visual poco relevante.\nEvento mal ubicado, con errores de fecha o sin contenido suficiente.\n\n\nEntregables y formato académico (10 pts)\nTodos los entregables completos, bien organizados y con referencias adecuadas.\nEntregables completos con errores menores de formato o citación.\nEntregables incompletos o con problemas importantes de formato.\nFaltan entregables o no cumplen con los requisitos mínimos."
+    "text": "Bases sólidas en pensamiento computacional y programación en Python\nConocimientos matemáticos básicos (estadística, cálculo, álgebra lineal)\nComprensión general del análisis de datos (limpieza, preprocesamiento, exploración).\n\nExperiencia previa con herramientas de visualización es un plus, pero no es estrictamente necesaria.\n\nAdicional a los conocimientos académicos, se espera:\n\nCapacidad de pensar críticamente y abordar problemas de manera sistemática.\nInterés en comprender cómo se construyen y explican las visualizaciones.\nDisposición para explorar distintas formas de presentar información visualmente."
   },
   {
-    "objectID": "labs/02-timeline-viz.html#objetivos-de-la-práctica",
-    "href": "labs/02-timeline-viz.html#objetivos-de-la-práctica",
-    "title": "02 — Línea del tiempo de la visualización gráfica",
+    "objectID": "clases/01-introduccion-visualizacion.html#expectativas",
+    "href": "clases/01-introduccion-visualizacion.html#expectativas",
+    "title": "01 - Introducción a la visualización",
     "section": "",
-    "text": "Que el estudiantado comprenda la evolución histórica de la visualización gráfica a partir de eventos concretos, entendiendo cada uno como un punto de inflexión en la manera de representar, analizar o comunicar información y fenómenos visuales."
+    "text": "Lo que sí veremos\n\nFundamentos de la visualización.\nTransformaciones 2D y 3D.\nVisualización de datos multidimensionales.\nInteractividad y narrativa visual.\n\n\nLo que no veremos\n\nModelado o rendering avanzado.\nMotores de videojuegos.\nDiseño gráfico profesional.\nEdición avanzada de imágenes."
   },
   {
-    "objectID": "labs/02-timeline-viz.html#descripción",
-    "href": "labs/02-timeline-viz.html#descripción",
-    "title": "02 — Línea del tiempo de la visualización gráfica",
+    "objectID": "clases/01-introduccion-visualizacion.html#temario",
+    "href": "clases/01-introduccion-visualizacion.html#temario",
+    "title": "01 - Introducción a la visualización",
     "section": "",
-    "text": "En esta actividad investigaremos eventos clave de la visualización gráfica en diferentes categorías. El objetivo final será la construcción de una línea del tiempo interactiva y la presentación de los eventos investigados.\nCada equipo trabajará sobre un evento histórico específico de la historia de la visualización gráfica, previamente asignado. Dicho evento corresponde a un momento en el que una persona o un equipo desarrolló una visualización, técnica, sistema o enfoque que cambió de manera significativa la forma en que se representaba, analizaba o comunicaba información, fenómenos o procesos visuales.\nEl trabajo se realizará en equipos, y cada equipo será responsable de investigar, analizar y presentar un evento:\n\nEl trabajo debe comenzar con una descripción del contexto histórico, es decir, explicar la época en la que ocurre el evento, las limitaciones técnicas o conceptuales existentes en ese momento y el problema que hacía necesaria una nueva forma de visualización.\nEl equipo deberá presentar de manera explícita a la o las figuras principales asociadas al evento. Esto incluye identificar quiénes fueron, desde qué disciplinas trabajaban y cuál fue su contribución específica.\nEl núcleo del trabajo debe ser una explicación detallada de la visualización, técnica o sistema desarrollado. Se espera una descripción clara de qué se construyó, cómo funcionaba conceptualmente y qué lo hacía distinto de representaciones anteriores.\nEs obligatorio incluir material visual (imágenes, diagramas, capturas, esquemas, videos) que permitan al lector o espectador entender la visualización sin recurrir únicamente al texto.\nEl equipo deberá analizar el impacto del evento en la historia de la visualización gráfica, es decir, explicar por qué este evento es considerado relevante, qué prácticas influyó o transformó, y cómo se relaciona con formas actuales de visualización, ya sea en visualización de datos, interacción, animación, simulación, gráficas por computadora o narrativa visual.\nFinalmente, el trabajo debe cerrar con una reflexión en la que el equipo explique, con sus propias palabras, por qué considera que este evento representa un punto de inflexión en la manera de “ver” información, fenómenos o procesos.\nEl trabajo debe estar respaldado por mínimo tres fuentes confiables y pertinentes, que pueden incluir libros, artículos académicos, documentos históricos, sitios institucionales, museos o archivos especializados. Las fuentes deben citarse correctamente en formato APA y corresponder al contenido presentado. No se aceptarán referencias genéricas o no verificables.\nCada equipo dispondrá de 15 minutos para presentar su trabajo. La exposición debe apoyarse en la visualización desarrollada y en los elementos gráficos analizados. Exponer no es realizar un lectura del texto de las diapositivas.\n\nAdemás, el grupo construirá de manera colaborativa una línea del tiempo interactiva general sobre la historia de la visualización gráfica, la cual funcionará como material de apoyo para el estudio del curso y será utilizada como referencia para el examen.\n\nCada equipo será responsable de integrar el evento histórico que se les ha asignado correctamente en una línea del tiempo general. El objetivo es construir una narrativa histórica visual que permita identificar relaciones, transiciones conceptuales y conexiones entre distintas áreas de la visualización gráfica.\nPara la implementación técnica, pueden utilizar TimelineJS u otra herramienta de línea del tiempo interactiva, siempre y cuando cumpla con los siguientes requisitos mínimos:\n\nPermita visualizar los eventos de forma cronológica.\nIncluya texto descriptivo y recursos visuales.\nSea accesible mediante un enlace web.\n\nLa línea del tiempo general deberá estar completa, revisada y funcional antes del inicio de las exposiciones.\n\n\n\n\nCada estudiante deberá presentar los siguientes elementos en el espacio correspondiente de Moodle:\n\nUn documento en formato PDF, nombrado 02_VG_ApellidoNombre.pdf, que incluya:\n\n\nNombre del evento.\nFecha o periodo histórico.\nDescripción del evento (contexto, qué ocurrió y por qué es relevante).\nJustificación de su importancia dentro de la historia de la visualización gráfica.\nAl menos una imagen, diagrama o recurso visual (con fuente).\nEnlace a la línea del tiempo interactiva general.\nEvidencia de que el evento fue correctamente integrado (captura de pantalla o indicación del lugar que ocupa en la línea del tiempo).\nReferencias bibliográficas en formato APA.\n\n\nPresentación oral breve del evento investigado (subir diapositivas adicionales si aplica, 02_VG_slides_ApellidoNombre.pdf), con duración de 5 a 7 minutos por estudiante, 10 a 15 minutos por equipo, incluyendo:\n\n\nContexto histórico del evento.\nExplicación de su relevancia.\nRelación con otros eventos o categorías de la línea del tiempo.\nLa presentación podrá apoyarse directamente en la línea del tiempo interactiva o en diapositivas adicionales, si así lo desean."
+    "text": "Pipeline de visualización\n\nPercepción visual y codificaciones\n\nFormación de imagen: raster, vector, muestreo\n\nTransformaciones 2D/3D y coordenadas\n\nColor y mapeo de color\n\nProyecto U1:\n\nConstruir una pinhole camera casera y analizar cómo se forma la imagen.\n\nCrear una pequeña animación de un sistema solar usando usando únicamente transformaciones geométricas implementadas por ustedes (sin utilizar funciones prehechas de animación o gráficos).\n\n\n\n\n\n\nGráficas básicas y estadísticas\n\nInterpretación adecuada de gráficos\n\nStorytelling con datos\n\nÉtica visual y detección de manipulación\n\nProyecto U2:\n\nAnalizar visualizaciones reales de medios o artículos y detectar sesgos/diseño engañoso.\n\nDiseñar una mini–historia con datos usando varias gráficas encadenadas.\n\n\n\n\n\n\nDatos multivariados (PCA, parallel coords, t-SNE)\n\nVisualización científica (campos escalares, vectoriales, volúmenes)\n\nRenderizado volumétrico\n\nDashboards e interactividad\n\nComunicación visual de resultados\n\nProyecto U3:\n\nConstruir un dashboard interactivo con filtros y explicaciones narradas.\n\nVisualizar datos volumétricos o campos vectoriales en 3D con color, transparencia o isosuperficies.\n\nCrear una visualización interactiva para explicar resultados de un modelo de IA (embeddings, métricas, comparaciones)."
   },
   {
-    "objectID": "labs/02-timeline-viz.html#evaluación",
-    "href": "labs/02-timeline-viz.html#evaluación",
-    "title": "02 — Línea del tiempo de la visualización gráfica",
+    "objectID": "clases/01-introduccion-visualizacion.html#fechas",
+    "href": "clases/01-introduccion-visualizacion.html#fechas",
+    "title": "01 - Introducción a la visualización",
     "section": "",
-    "text": "Criterio\nExcelente\nBueno\nBásico\nInsuficiente\n\n\n\n\nInvestigación y comprensión del evento (40 pts)\nEl evento está claramente contextualizado. Explica qué ocurrió, por qué es importante y cómo contribuye a la evolución de la visualización gráfica, incluyendo consecuencias o influencias posteriores.\nEl evento está bien descrito y su relevancia es correcta, aunque el análisis histórico o conceptual es limitado.\nDescripción superficial, con poca contextualización o relación débil con la visualización gráfica.\nDescripción incompleta, incorrecta o sin relación clara con la visualización gráfica.\n\n\nPresentación oral y comunicación (30 pts)\nExposición clara, bien estructurada y dentro del tiempo. Usa la línea del tiempo como apoyo para explicar el evento.\nExposición comprensible, con uso limitado del apoyo visual o pequeños problemas de organización.\nExposición poco clara o desorganizada; uso mínimo de la línea del tiempo.\nExposición confusa, incompleta o ausente.\n\n\nContribución a la línea del tiempo general (20 pts)\nFecha correcta y bien delimitada; descripción clara y adecuada para estudio; recurso visual pertinente y correctamente integrado.\nFecha y descripción correctas, con detalles mejorables o uso limitado del recurso visual.\nFecha imprecisa, descripción poco clara o recurso visual poco relevante.\nEvento mal ubicado, con errores de fecha o sin contenido suficiente.\n\n\nEntregables y formato académico (10 pts)\nTodos los entregables completos, bien organizados y con referencias adecuadas.\nEntregables completos con errores menores de formato o citación.\nEntregables incompletos o con problemas importantes de formato.\nFaltan entregables o no cumplen con los requisitos mínimos."
+    "text": "Evento\nFecha\n\n\n\n\n🟢 INICIO DE SEMESTRE\nMartes 13 de Enero\n\n\n🟡 1era evaluación parcial\nMiércoles 11 de febrero\n\n\n🟡 2da evaluación parcial\nMiércoles 25 de marzo\n\n\n🟡 Evaluación final\nLunes 04 de mayo\n\n\n🔵 Entrega de calificaciones finales\nMiércoles 06 de mayo\n\n\n🔴 FIN DE SEMESTRE\nViernes 08 de Mayo"
   },
   {
-    "objectID": "notas/01-introduccion.html",
-    "href": "notas/01-introduccion.html",
-    "title": "Introducción — Notas del curso",
+    "objectID": "clases/01-introduccion-visualizacion.html#evaluacion",
+    "href": "clases/01-introduccion-visualizacion.html#evaluacion",
+    "title": "01 - Introducción a la visualización",
     "section": "",
-    "text": "1 Introducción — Notas del curso\n¿Qué es la visualización? Objetivos, alcance y pipeline."
+    "text": "EVALUACIÓN PARCIAL\n\n\n\nCriterio\n%\n\n\n\n\n📚Examen\n40\n\n\n✏️Ejercicios de clase y tareas\n15\n\n\n📝Laboratorio\n30\n\n\n💬Proyecto\n15\n\n\n\nEVALUACIÓN FINAL\n\n\n\nCriterio\n%\n\n\n\n\n1er Parcial\n30\n\n\n2do Parcial\n30\n\n\nFinal\n40"
   },
   {
-    "objectID": "notas/03-formacion-imagen.html",
-    "href": "notas/03-formacion-imagen.html",
-    "title": "Formación de imagen",
+    "objectID": "clases/01-introduccion-visualizacion.html#bibliografia",
+    "href": "clases/01-introduccion-visualizacion.html#bibliografia",
+    "title": "01 - Introducción a la visualización",
     "section": "",
-    "text": "1 Formación de imagen\nRaster vs vector, píxeles, muestreo, aliasing, profundidad de bits."
+    "text": "Graphics & Visualization: Principles & Algorithms — Theoharis et al.\nFundamentals of Computer Graphics — Marschner & Shirley\nComputer Graphics: Principles and Practice — Foley et al.\nFundamentals of Data Visualization — C. Wilke\nThe Visual Display of Quantitative Information — E. Tufte\nData Visualization: A Practical Introduction — K. Healy\nPython Data Science Handbook — VanderPlas\nDocumentación Pandas, NumPy, Matplotlib, Plotly"
   },
   {
-    "objectID": "proyectos/01-proyecto-intermedio.html",
-    "href": "proyectos/01-proyecto-intermedio.html",
-    "title": "Proyecto intermedio",
+    "objectID": "clases/01-introduccion-visualizacion.html#conducta",
+    "href": "clases/01-introduccion-visualizacion.html#conducta",
+    "title": "01 - Introducción a la visualización",
     "section": "",
-    "text": "1 Proyecto intermedio\nTBA."
+    "text": "Respetar las opiniones, antecedentes y experiencias de todos los miembros del grupo.\n\nTodas las preguntas sobre la clase son bienvenidas. Evitar lenguaje ofensivo o actitudes que desalienten la participación.\nSer responsables. Revisar notas de clase, asistir a clases, completar ejercicios y tareas, prepararse para los exámenes.\n\nSer proactivas y proactivos durante el curso. Participar en la clase y compartir el conocimiento, sin caer en el plagio.\nDurante las clases, evitar distracciones como el uso innecesario de dispositivos electrónicos.\n\nLas tareas y ejercicios deben entregarse en la fecha indicada. Los retrasos tendrán una penalización del 20% por día. Los proyectos no se aceptan después de la fecha límite, sin excepciones.\nLa asistencia se registra al inicio de la sesión. Las llegadas dentro de los primeros 10 minutos se consideran retardos. Cada conjunto de tres retardos se contabiliza como una falta en el registro oficial.\n\n\nProhibido compartir o copiar código.\n\nEsta permitido apoyarse de ejemplos en internet, pero asegúrate de entenderlos y adaptarlos a tu propio trabajo. Además, si usas recursos abiertos, debes mencionarlos explícitamente en tus entregas.\n\nTodas las entregas deben reflejar el esfuerzo y aprendizaje propios. El plagio, en cualquier forma, será sancionado según las políticas institucionales.\n\n\n\n\n\nLos incumplimientos menores, como interrupciones en clase o descuidos ocasionales, resultarán en una advertencia inicial. Si la conducta persiste, se podrá descontar la asistencia del día y/o reducir la calificación en participación.\nLas faltas graves, como el plagio o comportamientos irrespetuosos, se reportarán formalmente a las autoridades académicas y podrán implicar calificaciones de “0” en actividades específicas, e incluso la exclusión del curso en casos de gravedad o reincidencia.\n\nComunicación Oficial No. 455: Lineamientos académicos sobre plagio y fraude"
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#diagnostico",
+    "href": "clases/01-introduccion-visualizacion.html#diagnostico",
+    "title": "01 - Introducción a la visualización",
+    "section": "2.1 Actividad diagnóstica",
+    "text": "2.1 Actividad diagnóstica\nAbrir formulario de diagnóstico: https://forms.office.com/r/QvQVTFwwgs\nEscanea el código QR:"
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#motivacion",
+    "href": "clases/01-introduccion-visualizacion.html#motivacion",
+    "title": "01 - Introducción a la visualización",
+    "section": "2.2 Motivación",
+    "text": "2.2 Motivación\n\n\n\nDedicamos una gran parte de nuestra atención a tareas relacionadas con la visión.\n\nLa casa en la que vivimos, el auto que conducimos, la ropa que usamos, suelen elegirse por sus cualidades visuales.\nAlrededor del 50% de las neuronas están asociadas con la visión.\nEl sistema visual humano tiene un ancho de banda equivalente a gigabits, permitiendo:\n\npercepción muy rápida,\nreconocimiento de patrones,\nidentificación de relaciones espaciales.\n\n\n\n\n\nVideo: https://www.youtube.com/watch?v=IQJL3htsDyQ\n\nVideo: https://www.youtube.com/watch?v=Cuo8eq9C3Ec"
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#def_viz",
+    "href": "clases/01-introduccion-visualizacion.html#def_viz",
+    "title": "01 - Introducción a la visualización",
+    "section": "2.3 Definición de visualización",
+    "text": "2.3 Definición de visualización\n\n\n\n\n\n\nTip\n\n\n\n\nLa visualización es el proceso de transformar datos en una forma visual que permite al espectador observar, explorar, darle sentido y comprender la información (Cambridge Dictionary).\n\n\n\n\n\n Arte rupestre en Arroyo Seco, Gto. Imagen de expansion.mx\n\n Mapa diseñado por Claudius Ptolemy (entre 85 y 165 A.C.), fue utilizado como referencia hasta el siglo XV. Imagen de interaction-design.org"
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#def_viz_gra",
+    "href": "clases/01-introduccion-visualizacion.html#def_viz_gra",
+    "title": "01 - Introducción a la visualización",
+    "section": "2.4 Definición de visualización gráfica",
+    "text": "2.4 Definición de visualización gráfica\n\n\n\n\n\n\nTip\n\n\n\n\nLa visualización gráfica es el proceso de convertir datos descriptivos (números, ecuaciones, geometría) en un conjunto de primitivas gráficas (formas, líneas, polígonos, etc.) para producir imágenes estáticas o animadas utilizando un medio computacional (Schroeder y colegas, The Visualization Toolkit).\n\n\n\n\n\n El conejo de Stanford, consiste de ~70k triángulos, usado para probar algoritmos gráficos. Imagen de researchgate.net\n\n Seguimiento del slogan republicano #JobsNotMobs, en las elecciones de mitad de periodo en EUA, 2018. Imagen de nytimes.com\n\n\n\n\nLa visualización gráfica incluye no solo la visualización de datos, sino también la creación y manipulación de modelos tridimensionales, simulaciones físicas y entornos virtuales interactivos.\nAbarca muchas disciplinas como: las gráficas por computadora, la visualización científica, los videojuegos, la animación y las tecnologías de realidad virtual y aumentada."
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#etapas-del-proceso-de-visualización-gráfica",
+    "href": "clases/01-introduccion-visualizacion.html#etapas-del-proceso-de-visualización-gráfica",
+    "title": "01 - Introducción a la visualización",
+    "section": "2.5 Etapas del proceso de visualización gráfica",
+    "text": "2.5 Etapas del proceso de visualización gráfica\nEl proceso de visualización gráfica tiene como objetivo articular el paso entre representaciones internas del sistema computacional (datos discretos, modelos) y representaciones externas perceptibles.\n \nProceso de Visualización. Imagen de Introduction to Computer Graphics, Hobart and William Smith Colleges\n\nSe inicia siempre con datos crudos: Los datos pueden originarse tanto en procesos de adquisición del mundo físico como en simulaciones científicas de gran escala.\nLos datos pueden convertirse en modelos geométricos o en imágenes:\n\nLas gráficas por computadora permiten generar imágenes a partir de modelos.\nLa visión por computadora aborda el problema inverso, extrayendo información a partir de imágenes.\nEl procesamiento de imágenes actúa como mecanismo de ajuste, análisis o post-procesamiento."
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#cierre",
+    "href": "clases/01-introduccion-visualizacion.html#cierre",
+    "title": "01 - Introducción a la visualización",
+    "section": "2.6 Cierre",
+    "text": "2.6 Cierre\n\nActividades de cierre:\n\nRealizar el ejercicio práctico 01 (actividad de clase)\nRealizar el ejercicio práctico 02 (tarea)\n\n¿Qué sigue?\n\nYa sabemos qué es la visualización gráfica. Ahora necesitamos entender cómo se construye.\n\n¿Qué significa realmente “ver” una imagen en una computadora?, ¿Qué se pierde cuando discretizamos el mundo?, ¿Cómo se forman las imágenes?\n¿Cómo se representan objetos y datos?, ¿Cómo se transforman en el espacio?\n¿Cómo se codifica información usando color y geometría?"
+  },
+  {
+    "objectID": "clases/index.html",
+    "href": "clases/index.html",
+    "title": "Clases del curso",
+    "section": "",
+    "text": "Bienvenidos a la sección de clases. Aquí encontrarán el material actualizado cada semana."
+  },
+  {
+    "objectID": "clases/index.html#listado-de-clases",
+    "href": "clases/index.html#listado-de-clases",
+    "title": "Clases del curso",
+    "section": "1 Listado de clases",
+    "text": "1 Listado de clases"
+  },
+  {
+    "objectID": "labs/01-pipeline-viz.html",
+    "href": "labs/01-pipeline-viz.html",
+    "title": "01 — Análisis de una visualización gráfica",
+    "section": "",
+    "text": "Que el estudiante comprenda la visualización gráfica como un proceso, identificando las etapas que van desde la información original hasta la imagen final, y reconociendo que en dicho proceso confluyen varias áreas relacionadas con la Inteligencia Artificial.\n\n\n\n\nObserva la imagen proporcionada por la docente (ver también el siguiente enlace).\nIndividualmente, responde las siguientes preguntas. Las respuestas deben ser claras, razonadas y redactadas con tus propias palabras:\n¿De dónde crees que proviene la información que se muestra en la imagen?\n¿Corresponde a datos capturados del mundo real o a una simulación? Explica tu respuesta.\n\nAntes de convertirse en una imagen visual, ¿en qué forma crees que existía esta información?\nDescribe qué tipo de datos podrían haberse utilizado para generar esta visualización.\n\n¿Crees que la imagen fue procesada antes de mostrarse al usuario?\nMenciona al menos una transformación que pudo haberse aplicado y explica qué efecto tiene en la imagen final.\n\n\n\n\n\nRealiza un diagrama, esquema o imagen anotada que muestre qué elementos visuales se utilizan para mostrar la información. Considera aspectos como color, brillo, forma, etiquetas o profundidad. Puedes hacerlo a mano, con software de dibujo, o directamente sobre la imagen (añadiendo anotaciones).\nEl diagrama debe contener las leyendas o explicaciones suficientes para responder de manera autocontenida: ¿Qué información se vuelve más evidente gracias a la visualización? ¿Qué información no es evidente a simple vista o depende de conocimiento previo para interpretarse?\n\n\n\n\n\nCon base en tus respuestas anteriores, describe de manera continua el proceso que va desde la información original hasta la imagen final que se observa.\nRespuesta.\nA partir del proceso que describiste, identifica al menos tres áreas o disciplinas que consideres que intervienen en la creación de esta visualización. Explica brevemente qué aporta cada una al resultado final.\nRespuesta.\n\n\n\n\nNombra tu archivo como: 01_VG_ApellidoNombre.pdf y súbelo al espacio correspondiente en Moodle. La actividad se evaluará considerando los siguientes aspectos:\n\nAnálisis claro y coherente del proceso de visualización gráfica (1 punto)\nRepresentación visual adecuada del análisis (diagrama, esquema o imagen anotada) (1 punto)\nInterpretación y reflexión sobre la visualización presentada (1 punto)\nConexión entre la visualización y las áreas que intervienen en su construcción (1 punto)\nEntrega completa, en tiempo y utilizando el formato solicitado (1 punto)"
+  },
+  {
+    "objectID": "labs/01-pipeline-viz.html#objetivos-de-la-práctica",
+    "href": "labs/01-pipeline-viz.html#objetivos-de-la-práctica",
+    "title": "01 — Análisis de una visualización gráfica",
+    "section": "",
+    "text": "Que el estudiante comprenda la visualización gráfica como un proceso, identificando las etapas que van desde la información original hasta la imagen final, y reconociendo que en dicho proceso confluyen varias áreas relacionadas con la Inteligencia Artificial."
+  },
+  {
+    "objectID": "labs/01-pipeline-viz.html#análisis-del-proceso-de-visualización",
+    "href": "labs/01-pipeline-viz.html#análisis-del-proceso-de-visualización",
+    "title": "01 — Análisis de una visualización gráfica",
+    "section": "",
+    "text": "Observa la imagen proporcionada por la docente (ver también el siguiente enlace).\nIndividualmente, responde las siguientes preguntas. Las respuestas deben ser claras, razonadas y redactadas con tus propias palabras:\n¿De dónde crees que proviene la información que se muestra en la imagen?\n¿Corresponde a datos capturados del mundo real o a una simulación? Explica tu respuesta.\n\nAntes de convertirse en una imagen visual, ¿en qué forma crees que existía esta información?\nDescribe qué tipo de datos podrían haberse utilizado para generar esta visualización.\n\n¿Crees que la imagen fue procesada antes de mostrarse al usuario?\nMenciona al menos una transformación que pudo haberse aplicado y explica qué efecto tiene en la imagen final."
+  },
+  {
+    "objectID": "labs/01-pipeline-viz.html#representación-visual-e-interpretación",
+    "href": "labs/01-pipeline-viz.html#representación-visual-e-interpretación",
+    "title": "01 — Análisis de una visualización gráfica",
+    "section": "",
+    "text": "Realiza un diagrama, esquema o imagen anotada que muestre qué elementos visuales se utilizan para mostrar la información. Considera aspectos como color, brillo, forma, etiquetas o profundidad. Puedes hacerlo a mano, con software de dibujo, o directamente sobre la imagen (añadiendo anotaciones).\nEl diagrama debe contener las leyendas o explicaciones suficientes para responder de manera autocontenida: ¿Qué información se vuelve más evidente gracias a la visualización? ¿Qué información no es evidente a simple vista o depende de conocimiento previo para interpretarse?"
+  },
+  {
+    "objectID": "labs/01-pipeline-viz.html#el-proceso-completo-de-visualización",
+    "href": "labs/01-pipeline-viz.html#el-proceso-completo-de-visualización",
+    "title": "01 — Análisis de una visualización gráfica",
+    "section": "",
+    "text": "Con base en tus respuestas anteriores, describe de manera continua el proceso que va desde la información original hasta la imagen final que se observa.\nRespuesta.\nA partir del proceso que describiste, identifica al menos tres áreas o disciplinas que consideres que intervienen en la creación de esta visualización. Explica brevemente qué aporta cada una al resultado final.\nRespuesta."
+  },
+  {
+    "objectID": "labs/01-pipeline-viz.html#entrega",
+    "href": "labs/01-pipeline-viz.html#entrega",
+    "title": "01 — Análisis de una visualización gráfica",
+    "section": "",
+    "text": "Nombra tu archivo como: 01_VG_ApellidoNombre.pdf y súbelo al espacio correspondiente en Moodle. La actividad se evaluará considerando los siguientes aspectos:\n\nAnálisis claro y coherente del proceso de visualización gráfica (1 punto)\nRepresentación visual adecuada del análisis (diagrama, esquema o imagen anotada) (1 punto)\nInterpretación y reflexión sobre la visualización presentada (1 punto)\nConexión entre la visualización y las áreas que intervienen en su construcción (1 punto)\nEntrega completa, en tiempo y utilizando el formato solicitado (1 punto)"
+  },
+  {
+    "objectID": "labs/index.html",
+    "href": "labs/index.html",
+    "title": "Ejercicios prácticos de Visualización Gráfica para IA",
+    "section": "",
+    "text": "Bienvenidos a la sección de ejercicios prácticos. Aquí encontrarán los notebooks y guías para aplicar los conceptos vistos en clase."
+  },
+  {
+    "objectID": "labs/index.html#listado-de-prácticas",
+    "href": "labs/index.html#listado-de-prácticas",
+    "title": "Ejercicios prácticos de Visualización Gráfica para IA",
+    "section": "1 Listado de Prácticas",
+    "text": "1 Listado de Prácticas"
+  },
+  {
+    "objectID": "notas/02-percepcion-color.html",
+    "href": "notas/02-percepcion-color.html",
+    "title": "Percepción y modelos de color",
+    "section": "",
+    "text": "1 Percepción y modelos de color\nPercepción visual, canales, paletas, CIELAB, recomendaciones."
+  },
+  {
+    "objectID": "notas/04-geometria-2d-3d.html",
+    "href": "notas/04-geometria-2d-3d.html",
+    "title": "Geometría 2D/3D",
+    "section": "",
+    "text": "1 Geometría 2D/3D\nCoordenadas, transformaciones, cámara, proyección, mallas."
+  },
+  {
+    "objectID": "proyectos/02-proyecto-final.html",
+    "href": "proyectos/02-proyecto-final.html",
+    "title": "Proyecto final — Visualización para IA",
+    "section": "",
+    "text": "1 Requisitos mínimos\n\nPresentación (reveal.js)\nNotebook reproducible (.qmd)\nVisualización interactiva / dashboard\nInforme técnico (3–5 páginas)\n\n\n\n2 Rúbrica (resumen)\n\nDiseño & narrativa: 30%\nCorrectitud técnica: 40%\nInteractividad & reproducibilidad: 20%\nReflexión ética: 10%"
   }
 ]

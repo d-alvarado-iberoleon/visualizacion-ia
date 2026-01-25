@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Clases del curso – Visualización Gráfica para IA — Curso</title>
+<title>Proyectos intermedios y final – Visualización Gráfica para IA — Curso</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-filename','listing-file-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-filename-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-filename","listing-file-modified"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -156,7 +156,7 @@ window.Quarto = {
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../clases/index.html" aria-current="page"> 
+    <a class="nav-link" href="../clases/index.html"> 
 <span class="menu-text">Clases</span></a>
   </li>  
   <li class="nav-item">
@@ -183,17 +183,16 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#listado-de-clases" id="toc-listado-de-clases" class="nav-link active" data-scroll-target="#listado-de-clases"><span class="header-section-number">1</span> Listado de clases</a></li>
+  <li><a href="#listado-de-proyectos" id="toc-listado-de-proyectos" class="nav-link active" data-scroll-target="#listado-de-proyectos"><span class="header-section-number">1</span> Listado de proyectos</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RnVuZGFtZW50b3M=">Fundamentos <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SW1hZ2Vu">Imagen <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW50cm9kdWNjaSVDMyVCM24=">Introducción <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVwcmVzZW50YWNpJUMzJUIzbg==">Representación <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Clases del curso</h1>
-<p class="subtitle lead">Materiales, presentaciones y lecturas</p>
+<h1 class="title">Proyectos intermedios y final</h1>
 </div>
 
 
@@ -210,9 +209,9 @@ window.Quarto = {
 </header>
 
 
-<p>Bienvenidos a la sección de clases. Aquí encontrarán el material actualizado cada semana.</p>
-<section id="listado-de-clases" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="listado-de-clases"><span class="header-section-number">1</span> Listado de clases</h2>
+<p>Bienvenidos a la sección de proyectos. Aquí encontrarán las descripciones de los proyectos intermedios y final de la materia.</p>
+<section id="listado-de-proyectos" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="listado-de-proyectos"><span class="header-section-number">1</span> Listado de proyectos</h2>
 
 
 
@@ -225,14 +224,14 @@ window.Quarto = {
     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Fecha - Oldest
+      <option value="listing-filename-sort" data-direction="asc">
+        File Name
       </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Fecha - Newest
+      <option value="listing-file-modified-sort" data-direction="asc">
+        Modified - Oldest
       </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Tema
+      <option value="listing-file-modified-sort" data-direction="desc">
+        Modified - Newest
       </option>
     </select>
   </div>
@@ -246,43 +245,23 @@ window.Quarto = {
 <tr>
 
 <th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Tema</a>
+<a class="sort" data-sort="listing-filename-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">File Name</a>
 </th>
 
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Fecha</a>
-</th>
-
-<th>
-Categorías
+<a class="sort" data-sort="listing-file-modified-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Modified</a>
 </th>
 
 </tr>
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="SW50cm9kdWNjaSVDMyVCM24lMkNGdW5kYW1lbnRvcw==" data-listing-date-sort="1768370400000" data-listing-file-modified-sort="1768334410950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2131" data-listing-title-sort="01 - Introducción a la visualización" data-listing-filename-sort="01-introduccion-visualizacion.qmd">
+<tr data-index="0" data-listing-file-modified-sort="1769209792367" data-listing-filename-sort="miniproyecto1_VG.docx">
 <td>
-<a href="../clases/01-introduccion-visualizacion.html" class="title listing-title">01 - Introducción a la visualización</a>
+<a href="../proyectos\miniproyecto1_VG.docx" class="filename listing-filename">miniproyecto1_VG.docx</a>
 </td>
 <td>
-<span class="listing-date">Jan 14, 2026</span>
-</td>
-<td>
-<span class="listing-categories">Introducción, Fundamentos</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-categories="RnVuZGFtZW50b3MlMkNSZXByZXNlbnRhY2klQzMlQjNuJTJDSW1hZ2Vu" data-listing-date-sort="1768802400000" data-listing-file-modified-sort="1769365504390" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="26" data-listing-word-count-sort="5023" data-listing-title-sort="02 - Formación de imagen y representación digital" data-listing-filename-sort="02-formacion-imagen.qmd">
-<td>
-<a href="../clases/02-formacion-imagen.html" class="title listing-title">02 - Formación de imagen y representación digital</a>
-</td>
-<td>
-<span class="listing-date">Jan 19, 2026</span>
-</td>
-<td>
-<span class="listing-categories">Fundamentos, Representación, Imagen</span>
+<span class="listing-file-modified">1/23/26, 5:09:52 PM</span>
 </td>
 
 </tr>

@@ -279,15 +279,15 @@ h = \frac{fH}{Z}
 <div class="column" style="width:55%;">
 <ul>
 <li><p><strong>Definición 2:</strong> Una imagen es una función <span class="math inline">\(f\)</span>, que asigna un valor a cada punto de un espacio bidimensional.</p>
-<p>Sea $ f(x, y) $ una función de dos variables:</p>
+<p>Sea <span class="math inline">\(f(x, y)\)</span> una función de dos variables:</p>
 <ul>
-<li>$ x $ y $ y $ son las <strong>coordenadas espaciales</strong> de un píxel en la imagen.<br>
+<li><span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> son las <strong>coordenadas espaciales</strong> de un píxel en la imagen.<br>
 </li>
-<li>$ f(x, y) $ es el valor de intensidad o color en ese punto.</li>
+<li><span class="math inline">\(f(x, y)\)</span> es el valor de intensidad o color en ese punto.</li>
 </ul></li>
 <li><p>En una <strong>imagen analógica</strong> (como una pintura), la función <span class="math inline">\(f(x, y)\)</span> es continua. Cada punto tiene un valor definido en un espacio continuo.<br>
 </p></li>
-<li><p>En una <strong>imagen digital</strong>, <span class="math inline">\(f(x, y)\)</span> es discreta porque la imagen se divide en una cuadrícula de píxeles. Las coordenadas $ x, y $ y los valores <span class="math inline">\(f(x, y)\)</span> solo existen en puntos discretos.</p></li>
+<li><p>En una <strong>imagen digital</strong>, <span class="math inline">\(f(x, y)\)</span> es discreta porque la imagen se divide en una cuadrícula de píxeles. Las coordenadas <span class="math inline">\(x, y\)</span> y los valores <span class="math inline">\(f(x, y)\)</span> solo existen en puntos discretos.</p></li>
 </ul>
 </div><div class="column" style="width:45%;">
 <div class="quarto-figure quarto-figure-center">
@@ -517,7 +517,7 @@ f(x, y) =
 
 <img data-src="imgs/coordenadas.png" style="width:70.0%" data-pdf-width="45%" class="r-stretch quarto-figure-center"><p class="caption">Sistema de coordenadas</p><p><em>Imagen de <a href="https://es.slideshare.net/slideshow/lecture-line-scan-conversionppt/257526687">slideshare.net</a></em></p>
 </section>
-<section id="punto" class="slide level2 scrollable smaller">
+<section id="punto" class="slide level2 scrollable">
 <h2>¿Cómo dibujar un punto en una pantalla? 🟦</h2>
 <p>Para realizar el mapeo correcto de coordenadas de modelo a coordenadas de pantalla, es necesario conocer el rango de valores del modelo (es decir, el rango en el espacio continuo que queremos representar en la pantalla). Esto se conoce como el <strong>espacio del modelo</strong> o <strong>espacio de mundo</strong>.</p>
 <ol type="1">
@@ -593,20 +593,25 @@ y_{\text{pantalla}} = \left(1 - \frac{2 - (-5)}{5 - (-5)}\right) \cdot (600 - 1)
 </div>
 </div>
 </section>
-<section id="enfoque-ingenuo" class="slide level2 scrollable smaller">
+<section id="enfoque-ingenuo" class="slide level2 scrollable">
 <h2>Enfoque ingenuo</h2>
 <p>La forma más sencilla sería evaluar cada píxel dentro de la cuadrícula de la pantalla para verificar si está lo suficientemente cerca de la línea.</p>
 <ol type="1">
-<li><p>Partimos de la forma implícita de la línea: <span class="math display">\[
+<li>Partimos de la forma implícita de la línea: <span class="math display">\[
 l(x, y) = ax + by + c = 0
-\]</span> Donde: <span class="math inline">\(a = y_2 - y_1\)</span>, <span class="math inline">\(b = x_1 - x_2\)</span>, <span class="math inline">\(c = x_2y_1 - x_1y_2\)</span></p></li>
-<li><p>Una curva en <strong>forma implícita</strong> se define mediante una función <span class="math inline">\(f(x, y)\)</span>, la cual determina si un punto específico <span class="math inline">\((x, y)\)</span> se encuentra:</p>
+\]</span> Donde:
+<ul>
+<li><span class="math inline">\(a = y_2 - y_1\)</span></li>
+<li><span class="math inline">\(b = x_1 - x_2\)</span></li>
+<li><span class="math inline">\(c = x_2y_1 - x_1y_2\)</span></li>
+</ul></li>
+<li>Una curva en <strong>forma implícita</strong> se define mediante una función <span class="math inline">\(f(x, y)\)</span>, la cual determina si un punto específico <span class="math inline">\((x, y)\)</span> se encuentra:
 <ul>
 <li><strong>Dentro</strong> de la curva <span class="math inline">\((f(x, y) &lt; 0)\)</span>.</li>
 <li><strong>Sobre</strong> la curva <span class="math inline">\((f(x, y) = 0)\)</span>.</li>
 <li><strong>Fuera</strong> de la curva <span class="math inline">\((f(x, y) &gt; 0)\)</span>.</li>
 </ul></li>
-<li><p>Debemos visitar toda la cuadrícula, evaluando la función para cada píxel, para determinar cuáles están dentro de la línea y colorearlos.</p></li>
+<li>Debemos visitar toda la cuadrícula, evaluando la función para cada píxel, para determinar cuáles están dentro de la línea y colorearlos.</li>
 </ol>
 <p><strong>Nota:</strong> Este proceso es extremadamente <strong>ineficiente</strong>, ya que revisa cada píxel de la cuadrícula, incluso aquellos que están muy lejos de la línea.</p>
 </section>
@@ -649,6 +654,9 @@ l(x, y) = ax + by + c = 0
 </div>
 <p><em>Imagen de <a href="https://jcsites.juniata.edu/faculty/rhodes/graphics/verts2frags2.htm">jcsites.juniata.edu</a></em></p>
 </div></div>
+</section>
+<section class="slide level2">
+
 <h3 id="ejemplo">Ejemplo:</h3>
 <p>Supongamos que queremos dibujar una línea desde <span class="math inline">\((2, 2)\)</span> hasta <span class="math inline">\((8, 5)\)</span>:</p>
 </section>
@@ -685,7 +693,7 @@ l(x, y) = ax + by + c = 0
 </ul></li>
 </ol>
 </section>
-<section id="bresenham" class="slide level2 smaller">
+<section id="bresenham" class="slide level2">
 <h2>Algoritmo de Bresenham</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -714,39 +722,51 @@ l(x, y) = ax + by + c = 0
 </figure>
 </div>
 </section>
-<section id="pasos-del-algoritmo-de-bresenham" class="slide level2 scrollable smaller">
+<section id="pasos-del-algoritmo-de-bresenham" class="slide level2 smaller scrollable">
 <h2>Pasos del algoritmo de Bresenham</h2>
 <p><strong>Entrada:</strong> (x1, y1), (x2, y2)</p>
 <ol type="1">
-<li>Calcular dx = x2 - x1, dy = y2 - y1</li>
-<li>Inicializar x = x1, y = y1</li>
-<li>Si |dx| &gt; |dy| (línea más horizontal):
+<li>Calcular diferencias:
 <ul>
-<li>Si x1 &gt; x2, intercambiar: x1, x2 = x2, x1; y1, y2 = y2, y1; dx = -dx</li>
-<li>incremento_x = 1</li>
-<li>incremento_y = 1 si dy&gt;=0, de lo contrario incremento_y=-1</li>
+<li>Calcular dx = |x2 - x1|</li>
+<li>Calcular dy = |y2 - y1|</li>
+</ul></li>
+<li>Inicializar incrementos:
+<ul>
+<li>incremento_x = 1 si x2&gt;=x1, de lo contrario incremento_x=-1</li>
+<li>incremento_y = 1 si y2&gt;=y1, de lo contrario incremento_y=-1</li>
+</ul></li>
+<li>Inicializar primer punto: x = x1, y = y1</li>
+<li>Si dx &gt; dy (línea más horizontal):
+<ul>
 <li>p = 2 * dy - dx (término de decisión inicial)</li>
-<li>Para x desde x1 hasta x2 (en incrementos de tamaño incremento_x):
+<li>Repetir dx veces:
 <ul>
 <li>Dibujar el píxel en (x, y)</li>
-<li>Si p &lt; 0: p = p + 2 * dy</li>
-<li>En otro caso: p = p + 2 * dy - 2 * dx; y = y + incremento_y</li>
+<li>x = x+incremento_x</li>
+<li>p = p+2*dy</li>
+<li>Si p &gt;= 0:</li>
+<li>p = p - 2 * dx</li>
+<li>y = y + incremento_y</li>
 </ul></li>
 </ul></li>
-<li>Si |dy| &gt; |dx| (línea más vertical):
+<li>Si dy &gt; dx (línea más vertical):
 <ul>
-<li>Si y1 &gt; y2, intercambiar: x1, x2 = x2, x1; y1, y2 = y2, y1; dy = -dy</li>
-<li>incremento_y = 1</li>
-<li>incremento_x = 1 si dx&gt;=0, de lo contrario incremento_x=-1</li>
 <li>p = 2 * dx - dy</li>
-<li>Para y desde y1 hasta y2 (en incrementos de tamaño incremento_y):
+<li>Repetir dy veces:
 <ul>
 <li>Dibujar el píxel en (x, y)</li>
-<li>Si p &lt; 0: p = p + 2 * dx</li>
-<li>En otro caso: p = p + 2 * dx - 2 * dy; x = x + incremento_x</li>
+<li>y = y+incremento_y</li>
+<li>p = p+2*dx</li>
+<li>Si p&gt;=0:</li>
+<li>p = p - 2 *dy</li>
+<li>x = x + incremento_x</li>
 </ul></li>
 </ul></li>
 </ol>
+</section>
+<section class="slide level2 scrollable">
+
 <h3 id="ejemplo-1">Ejemplo:</h3>
 <p>Supongamos que queremos dibujar una línea desde <span class="math inline">\((2, 2)\)</span> hasta <span class="math inline">\((8, 5)\)</span>:</p>
 <div class="fragment">
@@ -799,6 +819,9 @@ l(x, y) = ax + by + c = 0
 </ul></li>
 </ol>
 </div>
+</section>
+<section class="slide level2">
+
 <h3 id="ejercicio">Ejercicio:</h3>
 <p>Dibuja la línea desde <span class="math inline">\((3, 4)\)</span> hasta <span class="math inline">\((6, 8)\)</span> utilizando: 1. El algoritmo <em>dummy</em> (usando la forma implícita). 2. El algoritmo DDA. 3. El algoritmo de Bresenham.</p>
 <p>Para cada paso, calcula los píxeles seleccionados y compáralos. ¿Cuál es más eficiente en términos de operaciones aritméticas?</p>
@@ -806,15 +829,18 @@ l(x, y) = ax + by + c = 0
 <section id="tarea-parte-1" class="slide level2">
 <h2>Tarea (parte 1)</h2>
 
-<img data-src="imgs/draw-a-line.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%" data-pdf-width="45%"><p><em>Imagen de <a href="https://medium.com/geekculture/bresenhams-line-drawing-algorithm-2e0e953901b3">medium.com</a></em></p>
+<img data-src="imgs/draw-a-line.gif" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%" data-pdf-width="45%"><p><em>Imagen de <a href="https://medium.com/geekculture/bresenhams-line-drawing-algorithm-2e0e953901b3">medium.com</a></em></p>
 </section>
-<section id="rasterización-de-otras-primitivas-gráficas" class="slide level2 scrollable">
+<section id="rasterización-de-otras-primitivas-gráficas" class="slide level2">
 <h2>Rasterización de otras primitivas gráficas</h2>
 <h3 id="rasterización-de-círculos">Rasterización de Círculos</h3>
 <ul>
 <li>La rasterización de un círculo también utiliza la idea de calcular qué píxeles deben encenderse para aproximar la forma curva.</li>
 <li>Para esto, podemos usar el <strong>algoritmo de Bresenham para círculos</strong>, que evita cálculos con decimales y trabaja con enteros de manera eficiente.</li>
 </ul>
+</section>
+<section class="slide level2 scrollable">
+
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="algoritmo-de-bresenham-para-círculos">Algoritmo de Bresenham para círculos</h4>
@@ -862,18 +888,23 @@ l(x, y) = ax + by + c = 0
 </ul></li>
 </ol>
 </div><div class="column" style="width:50%;">
-<section id="tarea-parte-2" class="slide level2">
-<h2>Tarea (parte 2)</h2>
-<!--![](https://upload.wikimedia.org/wikipedia/commons/f/fd/Midpoint_circle_algorithm_animation_%28radius_23%29.gif){width="70%"; margin-left="auto"; margin-right="auto"}-->
+<p><strong>Tarea (parte 2)</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="imgs/midpoint-circle-algorithm.png" class="quarto-figure quarto-figure-center" style="width:70.0%" data-pdf-width="45%"></p>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Midpoint_circle_algorithm_animation_%28radius_23%29.gif" class="quarto-figure quarto-figure-center" style="width:70.0%" data-pdf-width="45%"></p>
 </figure>
 </div>
+<!--![](imgs/midpoint-circle-algorithm.png){
+  width="70%"
+  fig-align="center"
+  pdf-width="45%"
+}-->
 <p><em>Imagen de <a href="https://en.wikipedia.org/wiki/Midpoint_circle_algorithm">wikipedia.org</a></em></p>
-</section>
 </div></div>
-<h3 id="rasterización-de-triángulos-y-polígonos">Rasterización de Triángulos y polígonos</h3>
+</section>
+<section class="slide level2 scrollable">
+
+<h3 id="rasterización-de-triángulos-y-polígonos">Rasterización de triángulos y polígonos</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -898,7 +929,10 @@ l(x, y) = ax + by + c = 0
 </div>
 <p><em>Imagen de <a href="https://github.com/TanukiSharp/SoftwareRasterizer?tab=readme-ov-file">github.com</a></em></p>
 </div></div>
-<h3 id="antes-de-terminar-este-tema">antes de terminar este tema…</h3>
+</section>
+<section class="slide level2">
+
+<p><strong>antes de terminar este tema… </strong></p>
 </section>
 <section id="antialiasing" class="slide level2">
 <h2>Antialiasing</h2>
@@ -959,7 +993,7 @@ l(x, y) = ax + by + c = 0
 <li><p>Eck, D. J. (2023). <em>Introduction to computer graphics</em> (Version 1.4). Hobart and William Smith Colleges. Recuperado de <a href="https://math.hws.edu/graphicsbook">https://math.hws.edu/graphicsbook</a></p></li>
 <li><p>Foley, J. D., van Dam, A., Feiner, S. K., &amp; Hughes, J. F. (2013). <em>Computer graphics: Principles and practice</em> (3rd ed.). Addison-Wesley.</p></li>
 <li><p>Shirley, P. (2020). <em>Fundamentals of computer graphics</em> (5th ed.). A K Peters/CRC Press.</p></li>
-<li><p>NVIDIA. (2021). <em>Antialiasing</em>. NVIDIA Developer Blog. Recuperado de [https://www.nvidia.com/content/Control-Panel-Help/vLatest/en-us/mergedProjects/nv3d/antialiasing.htm)</p></li>
+<li><p>NVIDIA. (2021). <em>Antialiasing</em>. NVIDIA Developer Blog. Recuperado de <a href="https://www.nvidia.com/content/Control-Panel-Help/vLatest/en-us/mergedProjects/nv3d/antialiasing.htm">https://www.nvidia.com</a></p></li>
 </ul>
 
 

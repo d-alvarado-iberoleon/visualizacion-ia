@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/labs/index.html",
+    "listing": "/proyectos/index.html",
     "items": []
   },
   {
@@ -9,5 +9,9 @@
       "/clases/01-introduccion-visualizacion.html",
       "/clases/02-formacion-imagen.html"
     ]
+  },
+  {
+    "listing": "/labs/index.html",
+    "items": []
   }
 ]
