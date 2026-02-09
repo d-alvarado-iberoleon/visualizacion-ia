@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<link href="../assets/logo.png" rel="icon" type="image/png">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.26">
+
+  <meta name="author" content="Dra. Dora Alvarado">
+  <meta name="dcterms.date" content="2026-02-09">
+  <title>Visualización Gráfica para IA — Curso – 03 - Representación en 2D y 3D</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-4330aa8f3fbdc9148502f1828ffea511.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">03 - Representación en 2D y 3D</h1>
+  <p class="subtitle">Visualización gráfica para IA</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Dra. Dora Alvarado 
+</div>
+</div>
+</div>
+
+  <p class="date">2026-02-09</p>
+</section>
+<section id="en-la-sesión-anterior" class="slide level2">
+<h2>En la sesión anterior…</h2>
+<ul>
+<li>Exploramos los conceptos básicos sobre imágenes digitales y cómo las imágenes pueden representarse de diferentes formas, ya sea a través de <strong>gráficas de ráster</strong> o <strong>gráficas vectoriales</strong>.</li>
+<li>Ahora, vamos a ver cómo estas representaciones se manipulan y transforman mediante <strong>transformaciones geométricas</strong>, que son herramientas esenciales para la creación y edición de gráficos digitales.</li>
+</ul>
+
+<img data-src="imgs/memeRotacion.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><p><em>Imagen de <a href="https://amosunov.wordpress.com/wp-content/uploads/2021/06/meme03.png">amosunov.wordpress.com</a></em></p>
+</section>
+<section id="representación-en-2d-y-3d" class="slide level2">
+<h2>03: Representación en 2D y 3D</h2>
+
+<img data-src="imgs/window-viewport.png" style="width:100.0%" class="r-stretch quarto-figure-center"><p class="caption"><em>Imagen de <a href="https://math.hws.edu/graphicsbook">Introduction to computer graphics</a></em></p><ul>
+<li>En una visualización digital, tenemos un rectángulo hecho de píxeles, con sus coordenadas naturales, donde se mostrará una imagen. Este rectángulo se llama <strong>viewport</strong>.</li>
+<li>También tenemos un conjunto de objetos definidos en un sistema de coordenadas diferente, que generalmente usa coordenadas de números reales en lugar de enteros. Estos objetos forman la <strong>escena</strong>, <strong>mundo</strong> o <strong>modelo</strong> que queremos visualizar, y las coordenadas se llaman <strong>coordenadas del mundo</strong> o <strong>coordenadas del modelo</strong>.</li>
+</ul>
+<p><em>No es posible mostrar una imagen de todo el plano infinito, por lo que necesitamos seleccionar un área rectangular del plano para mostrar en la imagen. A esta área la llamamos <strong>ventana</strong> o <strong>ventana de visualización</strong>.</em></p>
+</section>
+<section id="motivacion" class="slide level2">
+<h2>Motivación</h2>
+<ul>
+<li>Las transformaciones 2D y 3D permiten <em>controlar la posición y la orientación de objetos en un espacio</em>.</li>
+<li>Son la base de muchas aplicaciones prácticas en diversas áreas, por ejemplo…</li>
+</ul>
+</section>
+<section id="aplicaciones" class="slide level2">
+<h2>Aplicaciones</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>En la creación de mundos virtuales, los objetos deben ser:
+<ul>
+<li>posicionados</li>
+<li>escalados</li>
+<li>rotados</li>
+<li>reflejados</li>
+</ul></li>
+<li>Para procesar y analizar imágenes en aplicaciones de visión artificial, así como en la superposición de información digital sobre el mundo físico (como en aplicaciones de realidad aumentada).</li>
+</ul>
+</div><div class="column" style="width:48%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/3dColoringBook3.gif"></p>
+<figcaption><em>Imagen de <a href="https://thenextweb.com/news/researchers-use-ar-to-bring-your-coloring-book-to-3d">thenextweb.com</a></em></figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="transformaciones2d" class="slide level2">
+<h2>Transformaciones 2D</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Son operaciones que modifican la geometría de objetos bidimensionales en el plano.</li>
+<li>Permiten realizar cambios en la posición, el tamaño, la orientación y la forma de los objetos.</li>
+<li>Existen dos categorías:
+<ul>
+<li><em>transformaciones afines</em>.</li>
+<li>transformaciones no afines.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/TransformationsDifference.png" style="width:100.0%"></p>
+<figcaption>2d transformation</figcaption>
+</figure>
+</div>
+<p><em>Imagen de <a href="https://www.graphicsmill.com/docs/gm/affine-and-projective-transformations.htm">graphicsmill.com</a></em></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<h3 id="transformaciones-no-afines">Transformaciones NO afines</h3>
+<ul>
+<li>Alteran la geometría de los objetos de forma que no se mantienen las líneas rectas o las proporciones de las distancias.</li>
+<li>Son importantes en aplicaciones como la proyección en 3D y la perspectiva.</li>
+</ul>
+<h3 id="proyección-en-perspectiva">Proyección en perspectiva</h3>
+<ul>
+<li>La proyección en perspectiva transforma un objeto 3D a una representación 2D, con la característica de que las líneas paralelas en el espacio 3D parecen converger en un punto de fuga.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="transformaciones-afines">Transformaciones afines</h3>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Son un subconjunto de transformaciones que <strong>preservan las características de las figuras en términos de líneas rectas y proporciones de distancias</strong>, pero pueden alterar la orientación, el tamaño y la posición de los objetos.</p></li>
+<li><p>Pueden escribirse en la forma:</p>
+<p><span class="math display">\[
+    x' = a \cdot x + b \cdot y + e
+  \]</span> <span class="math display">\[
+    y' = c \cdot x + d \cdot y + f
+  \]</span></p>
+<p>Donde <span class="math inline">\((x, y)\)</span> representa el vector de coordenadas originales y <span class="math inline">\((x', y')\)</span> el vector de coordenadas transformadas.</p></li>
+<li><p>También podemos reescribir lo anterior en forma matricial (¿cómo?)</p></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/nested2dtransformation.gif" style="width:100.0%"></p>
+<figcaption>2d transformation</figcaption>
+</figure>
+</div>
+<p><em>Imagen de <a href="https://behreajj.medium.com/3d-transformations-in-processing-de11acdd1fbc">medium.com</a></em></p>
+</div></div>
+</section>
+<section class="slide level2 scrollable">
+
+<p><strong>Propiedades de las transformaciones afines:</strong></p>
+<ol type="1">
+<li>Preservación de la colinealidad: Puntos que están en una línea recta antes de la transformación, seguirán estando en una línea recta después de la transformación.</li>
+<li>Preservación del paralelismo: Líneas paralelas antes de la transformación siguen siendo paralelas después de la transformación.</li>
+<li>No necesariamente preserva ángulos o longitudes: A diferencia de las transformaciones rígidas, una transformación afín puede distorsionar ángulos y longitudes.</li>
+</ol>
+</section>
+<section class="slide level2">
+
+<ul>
+<li><strong>Las transformaciones afines incluyen:</strong></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h4 id="traslacion_2d">Traslación</h4>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Desplaza un objeto en el espacio 2D sin cambiar su forma ni orientación.</p>
+<p><span class="math display">\[
+  \begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} x \\ y \end{pmatrix} + \begin{pmatrix} t_x \\ t_y \end{pmatrix}
+  \]</span></p></li>
+</ul>
+<p>Es decir que a cada coordenada <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> se les suman los valores <span class="math inline">\(t_x\)</span> y <span class="math inline">\(t_y\)</span>, respectivamente.</p>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/traslacion.gif" style="width:100.0%"></p>
+<figcaption>Traslacion</figcaption>
+</figure>
+</div>
+<p><em>Imagen de <a href="https://towardsdatascience.com/understanding-transformations-in-computer-vision-b001f49a9e61/">towardsdatascience.com</a></em></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<div id="528cfa3a" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a></a></span>
+<span id="cb1-4"><a></a><span class="co"># Definimos el objeto original (una F)</span></span>
+<span id="cb1-5"><a></a>letra_F <span class="op">=</span> np.array([</span>
+<span id="cb1-6"><a></a>    [<span class="dv">0</span>, <span class="dv">0</span>], </span>
+<span id="cb1-7"><a></a>    [<span class="dv">0</span>, <span class="dv">5</span>], </span>
+<span id="cb1-8"><a></a>    [<span class="dv">3</span>, <span class="dv">5</span>], </span>
+<span id="cb1-9"><a></a>    [<span class="dv">3</span>, <span class="dv">4</span>], </span>
+<span id="cb1-10"><a></a>    [<span class="dv">1</span>, <span class="dv">4</span>], </span>
+<span id="cb1-11"><a></a>    [<span class="dv">1</span>, <span class="dv">3</span>], </span>
+<span id="cb1-12"><a></a>    [<span class="dv">3</span>, <span class="dv">3</span>], </span>
+<span id="cb1-13"><a></a>    [<span class="dv">3</span>, <span class="dv">2</span>], </span>
+<span id="cb1-14"><a></a>    [<span class="dv">1</span>, <span class="dv">2</span>], </span>
+<span id="cb1-15"><a></a>    [<span class="dv">1</span>, <span class="dv">0</span>], </span>
+<span id="cb1-16"><a></a>    [<span class="dv">0</span>, <span class="dv">0</span>]</span>
+<span id="cb1-17"><a></a>])</span>
+<span id="cb1-18"><a></a></span>
+<span id="cb1-19"><a></a><span class="co"># Aplicar traslación</span></span>
+<span id="cb1-20"><a></a><span class="kw">def</span> traslacion(objeto, dx, dy):</span>
+<span id="cb1-21"><a></a>    <span class="cf">return</span> objeto <span class="op">+</span> np.array([dx, dy])</span>
+<span id="cb1-22"><a></a></span>
+<span id="cb1-23"><a></a><span class="co"># Trasladamos la "F"</span></span>
+<span id="cb1-24"><a></a>F_trasladada <span class="op">=</span> traslacion(letra_F, <span class="dv">4</span>, <span class="dv">2</span>)</span>
+<span id="cb1-25"><a></a></span>
+<span id="cb1-26"><a></a><span class="kw">def</span> graficar(puntos_original, puntos_transformacion):</span>
+<span id="cb1-27"><a></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">6</span>))</span>
+<span id="cb1-28"><a></a>    plt.axis([<span class="op">-</span><span class="dv">10</span>, <span class="dv">10</span>, <span class="op">-</span><span class="dv">10</span>, <span class="dv">10</span>])</span>
+<span id="cb1-29"><a></a>    plt.plot(puntos_original[:, <span class="dv">0</span>], puntos_original[:, <span class="dv">1</span>], <span class="st">'blue'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, label<span class="op">=</span><span class="st">'Original'</span>)</span>
+<span id="cb1-30"><a></a>    plt.plot(puntos_transformacion[:, <span class="dv">0</span>], puntos_transformacion[:, <span class="dv">1</span>], <span class="st">'red'</span>, label<span class="op">=</span><span class="st">'Transformación'</span>)</span>
+<span id="cb1-31"><a></a>    plt.legend()</span>
+<span id="cb1-32"><a></a>    plt.grid(<span class="va">True</span>)</span>
+<span id="cb1-33"><a></a>    plt.title(<span class="st">'Traslación'</span>)</span>
+<span id="cb1-34"><a></a>    plt.show()</span>
+<span id="cb1-35"><a></a></span>
+<span id="cb1-36"><a></a>graficar(letra_F, F_trasladada)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="03_representacion2Dy3D_files/figure-revealjs/cell-2-output-1.png" width="531" height="505"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h4 id="escalado_2d">Escalado</h4>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Cambia el tamaño de un objeto. Si el factor de escalado es mayor que 1, el objeto se agranda; si es menor que 1, el objeto se reduce.</p></li>
+<li><p>Puede ser uniforme (mismo factor de escala en ambas direcciones) o no uniforme (factores de escala diferentes en <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>).</p>
+<p><span class="math display">\[
+  \begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} s_x &amp; 0 \\ 0 &amp; s_y \end{pmatrix} \cdot \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} s_x \cdot x \\ s_y \cdot y \end{pmatrix}
+  \]</span></p>
+<p>Donde <span class="math inline">\(s_x\)</span> es el factor de escalado en el eje <span class="math inline">\(x\)</span> y <span class="math inline">\(s_y\)</span> es el factor de escalado en el eje <span class="math inline">\(y\)</span>.</p>
+<p>Si <span class="math inline">\(s_x = s_y\)</span>, el escalado es uniforme; si <span class="math inline">\(s_x \neq s_y\)</span>, es no uniforme.</p></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/escalado.gif" style="width:100.0%"></p>
+<figcaption>Escalado</figcaption>
+</figure>
+</div>
+<p><em>Imagen de <a href="https://towardsdatascience.com/understanding-transformations-in-computer-vision-b001f49a9e61/">towardsdatascience.com</a></em></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<div id="08025297" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="co"># Aplicar escala</span></span>
+<span id="cb2-2"><a></a><span class="kw">def</span> escalar(objeto, escala_x, escala_y):</span>
+<span id="cb2-3"><a></a>    matriz_escala <span class="op">=</span> np.array([[escala_x, <span class="dv">0</span>], </span>
+<span id="cb2-4"><a></a>                    [<span class="dv">0</span>, escala_y]])</span>
+<span id="cb2-5"><a></a>    <span class="cf">return</span> objeto<span class="op">@</span>matriz_escala.T</span>
+<span id="cb2-6"><a></a></span>
+<span id="cb2-7"><a></a>F_escalada <span class="op">=</span> escalar(letra_F, <span class="fl">0.5</span>, <span class="fl">0.5</span>)</span>
+<span id="cb2-8"><a></a>graficar(letra_F, F_escalada)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="03_representacion2Dy3D_files/figure-revealjs/cell-3-output-1.png" width="531" height="505"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h4 id="rotacion_2d">Rotación</h4>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>La <strong>rotación</strong> de un objeto en 2D ocurre alrededor de un punto, típicamente el origen <span class="math inline">\((0, 0)\)</span>, en un ángulo <span class="math inline">\(\theta\)</span>. Para realizar una rotación, utilizamos una matriz de rotación que depende del ángulo <span class="math inline">\(\theta\)</span>.</p>
+<ul>
+<li>La matriz de rotación en 2D es:</li>
+</ul>
+<p><span class="math display">\[
+  R(\theta) = \begin{pmatrix} \cos(\theta) &amp; -\sin(\theta) \\ \sin(\theta) &amp; \cos(\theta) \end{pmatrix}
+  \]</span></p>
+<p>Multiplicando esta matriz por el vector de coordenadas <span class="math inline">\((x, y)\)</span>, obtenemos las nuevas coordenadas <span class="math inline">\((x', y')\)</span>:</p>
+<p><span class="math display">\[
+  \begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} \cos(\theta) &amp; -\sin(\theta) \\ \sin(\theta) &amp; \cos(\theta) \end{pmatrix} \cdot \begin{pmatrix} x \\ y \end{pmatrix}
+  \]</span></p>
+<p>Este proceso rota el punto <span class="math inline">\((x, y)\)</span> en sentido antihorario por un ángulo <span class="math inline">\(\theta\)</span> alrededor del origen.</p></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/rotacion.gif" style="width:100.0%"></p>
+<figcaption>Rotacion</figcaption>
+</figure>
+</div>
+<p><em>Imagen de <a href="https://towardsdatascience.com/understanding-transformations-in-computer-vision-b001f49a9e61/">towardsdatascience.com</a></em></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<div id="05307fa3" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="co"># Aplicar rotación</span></span>
+<span id="cb3-2"><a></a><span class="kw">def</span> rotacion(objeto, angulo):</span>
+<span id="cb3-3"><a></a>    rad <span class="op">=</span> np.deg2rad(angulo)</span>
+<span id="cb3-4"><a></a>    matriz_rotacion <span class="op">=</span> np.array([</span>
+<span id="cb3-5"><a></a>        [np.cos(rad), <span class="op">-</span>np.sin(rad)],</span>
+<span id="cb3-6"><a></a>        [np.sin(rad), np.cos(rad)]</span>
+<span id="cb3-7"><a></a>    ])</span>
+<span id="cb3-8"><a></a>    <span class="cf">return</span> objeto<span class="op">@</span>matriz_rotacion.T</span>
+<span id="cb3-9"><a></a></span>
+<span id="cb3-10"><a></a><span class="co"># Rotamos la "F" 15 grados en sentido horario</span></span>
+<span id="cb3-11"><a></a>F_rotada <span class="op">=</span> rotacion(letra_F, <span class="op">-</span><span class="dv">15</span>)</span>
+<span id="cb3-12"><a></a></span>
+<span id="cb3-13"><a></a>graficar(letra_F, F_rotada)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="03_representacion2Dy3D_files/figure-revealjs/cell-4-output-1.png" width="531" height="505"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h4 id="reflexion_2d">Reflexión</h4>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Es una transformación que invierte las coordenadas en relación con un eje de simetría. Puede reflejarse respecto a los ejes <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> o cualquier otra línea.</p></li>
+<li><p>La matriz de reflexión sobre el eje <span class="math inline">\(x\)</span> es:</p>
+<p><span class="math display">\[
+  M_{x} = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}
+  \]</span></p>
+<p>Esto invierte la coordenada <span class="math inline">\(y\)</span>, pero deja la coordenada <span class="math inline">\(x\)</span> sin cambios.</p></li>
+<li><p>Para la reflexión sobre el eje <span class="math inline">\(y\)</span>, la matriz sería:</p>
+<p><span class="math display">\[
+  M_{y} = \begin{pmatrix} -1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}
+  \]</span></p>
+<p>Esto invierte la coordenada <span class="math inline">\(x\)</span> y deja la coordenada <span class="math inline">\(y\)</span> sin cambios.</p></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/mirror.gif" style="width:100.0%"></p>
+<figcaption>Reflexión</figcaption>
+</figure>
+</div>
+<p><em>Imagen de <a href="https://courses.washington.edu/arch481/1.Tapestry%20Reader/1.3D%20Data/3.Editing/4.Mirroring.html">courses.washington.edu</a></em></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<div id="a197784e" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="co"># Aplicar reflexión</span></span>
+<span id="cb4-2"><a></a><span class="kw">def</span> reflexion(objeto, reflejo_x<span class="op">=</span><span class="va">True</span>, reflejo_y<span class="op">=</span><span class="va">False</span>):</span>
+<span id="cb4-3"><a></a>    matriz_reflexion <span class="op">=</span> np.array([</span>
+<span id="cb4-4"><a></a>        [<span class="op">-</span><span class="dv">1</span> <span class="cf">if</span> reflejo_y <span class="cf">else</span> <span class="dv">1</span>, <span class="dv">0</span>],</span>
+<span id="cb4-5"><a></a>        [<span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span> <span class="cf">if</span> reflejo_x <span class="cf">else</span> <span class="dv">1</span>]</span>
+<span id="cb4-6"><a></a>    ])</span>
+<span id="cb4-7"><a></a>    <span class="cf">return</span> objeto<span class="op">@</span>matriz_reflexion.T</span>
+<span id="cb4-8"><a></a></span>
+<span id="cb4-9"><a></a><span class="co"># Reflejar la "F" en ejes x y y </span></span>
+<span id="cb4-10"><a></a>F_reflejada <span class="op">=</span> reflexion(letra_F, reflejo_x<span class="op">=</span><span class="dv">1</span>, reflejo_y<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb4-11"><a></a></span>
+<span id="cb4-12"><a></a>graficar(letra_F, F_reflejada)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="03_representacion2Dy3D_files/figure-revealjs/cell-5-output-1.png" width="531" height="505"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="shearing_2d">Skew (o shearing)</h3>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Es una transformación que inclina un objeto a lo largo de uno de los ejes, de modo que las líneas horizontales y verticales en el objeto ya no siguen siendo estrictamente horizontales o verticales, sino que se “inclinan” en un ángulo.</p>
+<p><span class="math display">\[
+  \text{Skew}_{xy} = \begin{pmatrix} 1 &amp; \text{skew}_x \\ \text{skew}_y &amp; 1 \end{pmatrix}
+  \]</span></p>
+<p>Donde <span class="math inline">\(\text{skew}_x\)</span> es el factor de sesgo en la dirección <span class="math inline">\(x\)</span> y <span class="math inline">\(\text{skew}_y\)</span> es el ángulo o factor de sesgo en la dirección <span class="math inline">\(y\)</span>.</p></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/shear.gif" style="width:100.0%"></p>
+<figcaption>Shearing</figcaption>
+</figure>
+</div>
+<p><em>Imagen de <a href="https://towardsdatascience.com/understanding-transformations-in-computer-vision-b001f49a9e61/">towardsdatascience.com</a></em></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<div id="70ce5315" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="kw">def</span> skew(objeto, skew_x, skew_y):</span>
+<span id="cb5-2"><a></a>    matriz_skew <span class="op">=</span> np.array([[<span class="dv">1</span>, skew_x], </span>
+<span id="cb5-3"><a></a>                            [skew_y, <span class="dv">1</span>]])</span>
+<span id="cb5-4"><a></a>    <span class="cf">return</span> objeto<span class="op">@</span>matriz_skew.T</span>
+<span id="cb5-5"><a></a></span>
+<span id="cb5-6"><a></a>skew_x <span class="op">=</span> np.deg2rad(<span class="dv">45</span>)</span>
+<span id="cb5-7"><a></a>F_skew <span class="op">=</span> skew(letra_F, skew_x, <span class="dv">0</span>)</span>
+<span id="cb5-8"><a></a>graficar(letra_F, F_skew)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="03_representacion2Dy3D_files/figure-revealjs/cell-6-output-1.png" width="531" height="505"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="resumen">Resumen</h3>
+<p><span class="math inline">\(\newcommand{\p}{\mathbf{p}}\)</span></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 44%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Transformación</strong></th>
+<th><strong>Matriz de Transformación</strong></th>
+<th><strong>Descripción</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Traslación</strong></td>
+<td><span class="math display">\[ \mathbf{p} + \begin{pmatrix} t_x \\ t_y \end{pmatrix} \]</span></td>
+<td>Desplaza el objeto sin cambiar su forma ni orientación.</td>
+</tr>
+<tr class="even">
+<td><strong>Escalado</strong></td>
+<td><span class="math display">\[ \begin{pmatrix} s_x &amp; 0 \\ 0 &amp; s_y \end{pmatrix} \mathbf{p} \]</span></td>
+<td>Cambia el tamaño del objeto (puede ser uniforme o no uniforme).</td>
+</tr>
+<tr class="odd">
+<td><strong>Rotación</strong></td>
+<td><span class="math display">\[ \begin{pmatrix} \cos(\theta) &amp; -\sin(\theta) \\ \sin(\theta) &amp; \cos(\theta) \end{pmatrix} \mathbf{p} \]</span></td>
+<td>Rota el objeto en 2D en torno al origen por un ángulo <span class="math display">\[ \theta \]</span>.</td>
+</tr>
+<tr class="even">
+<td><strong>Reflexión</strong></td>
+<td><span class="math display">\[ \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix} \mathbf{p} \]</span> (respecto al eje <span class="math inline">\(x\)</span>)</td>
+<td>Invierte las coordenadas con respecto a un eje de simetría.</td>
+</tr>
+<tr class="odd">
+<td><strong>Skew (Shearing)</strong></td>
+<td><span class="math display">\[ \begin{pmatrix} 1 &amp; m \\ n &amp; 1 \end{pmatrix} \mathbf{p} \]</span></td>
+<td>Inclina el objeto en una dirección determinada sin cambiar el área ni romper la paralelidad de las líneas.</td>
+</tr>
+</tbody>
+</table>
+<p>Donde <span class="math inline">\(\p = (x, y)^T\)</span></p>
+</section>
+<section class="slide level2">
+
+<h3 id="combinacion_2d">Combinación de transformaciones afines</h3>
+<ul>
+<li><p>En aplicaciones de visualización gráfica, las transformaciones rara vez consisten en una sola transformación afín básica. Por lo general, involucran dos o más transformaciones.</p></li>
+<li><p>Las transformaciones afines pueden combinarse mediante la multiplicación de matrices (<strong>transformaciones compuestas</strong>).</p></li>
+<li><p>Por ejemplo, si deseas aplicar primero un escalado y luego una rotación a un objeto, la matriz de transformación combinada sería el producto de las matrices de escalado y rotación:</p></li>
+</ul>
+<p><span class="math display">\[
+T_{\text{combinada}} = R(\theta) \cdot S
+\]</span></p>
+<p><strong>Pregunta: ¿Qué beneficio obtenemos de esto?</strong></p>
+</section>
+<section class="slide level2">
+
+<h3 id="por-ejemplo">Por ejemplo:</h3>
+<p>Supongamos que queremos:<br>
+1. Escalar un objeto isotrópicamente con un factor de 2. <strong>¿Cuál es la matriz para escalar?</strong> 1. Luego, rotarlo 45 grados. <strong>¿Cuál es la matriz de rotación?</strong></p>
+</section>
+<section class="slide level2">
+
+<p><strong>Matriz de rotación <span class="math inline">\(R(45°)\)</span></strong><br>
+<span class="math display">\[
+R(45°) =
+\begin{bmatrix}
+\frac{\sqrt{2}}{2} &amp; -\frac{\sqrt{2}}{2} \\
+\frac{\sqrt{2}}{2} &amp; \frac{\sqrt{2}}{2}
+\end{bmatrix}
+\]</span></p>
+<p><strong>Matriz de Escalado <span class="math inline">\(S(2, 2)\)</span></strong><br>
+<span class="math display">\[
+S(2,2) =
+\begin{bmatrix}
+2 &amp; 0 \\
+0 &amp; 2
+\end{bmatrix}
+\]</span></p>
+</section>
+<section class="slide level2">
+
+<ul>
+<li><strong>Forma menos eficiente:</strong> Aplicar una matriz tras otra en cada punto <span class="math inline">\(\mathbf{p}\)</span>:<br>
+<span class="math display">\[
+  S(2,2) \cdot (R(45°) \cdot \mathbf{p})
+  \]</span></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li><strong>Forma eficiente:</strong> Aprovechar la propiedad asociativa de la multiplicación de matrices:<br>
+<span class="math display">\[
+  (S(2,2) \cdot R(45°)) \cdot \mathbf{p}
+  \]</span><br>
+Es decir, <strong>calcular la matriz compuesta una sola vez</strong> y luego aplicarla directamente a todos los vértices del objeto.</li>
+</ul>
+<p>Esto funciona OK para las transformaciones afines que se representan mediante matrices.</p>
+<p><strong>Pregunta: ¿Qué expresión usaríamos para combinar traslación con rotación?</strong></p>
+</section>
+<section class="slide level2">
+
+<h3 id="qué-pasa-con-la-traslación">¿Qué pasa con la traslación ❌ ?</h3>
+<p>El problema es que la <strong>traslación</strong> no puede expresarse como una transformación lineal pura (no es posible describirla solo con una matriz de <span class="math inline">\(2 \times 2\)</span>):</p>
+<p><span class="math display">\[
+\begin{bmatrix}
+x' \\
+y'
+\end{bmatrix}
+=
+\begin{bmatrix}
+a &amp; b \\
+c &amp; d
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+\]</span></p>
+<p>Esta forma solo permite representar rotaciones, escalados, reflexiones o skew.</p>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><strong>La traslación requiere sumar un vector adicional:</strong></p>
+<p><span class="math display">\[
+\begin{bmatrix}
+x' \\
+y'
+\end{bmatrix}
+=
+\begin{bmatrix}
+a &amp; b \\
+c &amp; d
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
++
+\begin{bmatrix}
+t_x \\
+t_y
+\end{bmatrix}
+\]</span></p>
+<p><strong>No podemos incluir la traslación directamente</strong> en una transformación compuesta.</p>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/chemms.jpg" style="width:60.0%"></p>
+<figcaption>chemms.jpg</figcaption>
+</figure>
+</div>
+<p><em>Imagen de <a href="">redes sociales</a></em></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<p>Afortunadamente, existe una solución <em>simple</em>: <strong>usar coordenadas homogéneas</strong>.</p>
+</section>
+<section id="coordenadas_homogeneas" class="slide level2">
+<h2>Coordenadas homogéneas</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>El matemático alemán <strong>August Möbius</strong> (sí, el mismo de la <strong>banda de Möbius</strong> 🌀) introdujo las coordenadas homogéneas en 1827 en su obra <em>“Der barycentrische Calcul”</em> para simplificar el estudio de la geometría proyectiva. Su objetivo era trabajar con <strong>puntos en el infinito</strong> de manera tan natural como con puntos finitos.</li>
+</ul>
+</div><div class="column" style="width:38%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/caminando_moebius-1.gif" style="width:60.0%"></p>
+<figcaption>Banda de Möbius</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/4/4f/August_Ferdinand_M%C3%B6bius.png" style="width:60.0%"></p>
+<figcaption>Moebius.jpg</figcaption>
+</figure>
+</div>
+<p><em>Imágenes de <a href="https://es.wikipedia.org/wiki/August_M%C3%B6bius">wikipedia.org</a> y de <a href="https://matematicascercanas.com/2019/01/20/caminando-banda-moebius/">matematicascercanas.com</a></em></p>
+</div></div>
+<ul>
+<li><p>Para transformaciones 2D, las coordenadas homogéneas permiten que las <strong>traslaciones</strong> se comporten como transformaciones lineales puras.</p></li>
+<li><p>En la geometría proyectiva, las coordenadas homogéneas permiten representar los puntos al infinito como si fueran parte del espacio habitual, resolviendo problemas complejos con mayor facilidad.</p></li>
+</ul>
+<p><em>Las GPU pueden realizar millones de transformaciones por segundo gracias a la eficiencia que brindan estas coordenadas🎮🚀.</em></p>
+</section>
+<section class="slide level2">
+
+<h3 id="def_homogeneas">Definición de coordenadas homogéneas</h3>
+<p>Para trabajar con <strong>coordenadas homogéneas</strong> en el espacio 2D, añadimos una tercera coordenada:</p>
+<p><span class="math display">\[
+(x, y) \quad \longrightarrow \quad (x, y, 1)
+\]</span></p>
+<p>Esto nos permite representar <strong>todas las transformaciones (rotación, escalado, traslación, etc.)</strong> como una <strong>única multiplicación de matrices</strong> <span class="math inline">\(3 \times 3\)</span>.</p>
+</section>
+<section class="slide level2">
+
+<h3 id="transformaciones_homogeneas">Transformaciones en coordenadas homogéneas</h3>
+<p>Un punto en 2D, que normalmente escribiríamos como <span class="math inline">\((x, y)\)</span>, se representa en coordenadas homogéneas añadiendo un tercer componente:</p>
+<p><span class="math display">\[
+\mathbf{p} = \begin{bmatrix} x \\ y \\ 1 \end{bmatrix}
+\]</span></p>
+<p>Este “1” adicional:<br>
+- <strong>No cambia la posición del punto</strong> en el espacio.<br>
+- <strong>Facilita la representación de traslaciones</strong>, que no se pueden expresar solo con matrices <span class="math inline">\(2 \times 2\)</span>.</p>
+</section>
+<section class="slide level2">
+
+<p>Cualquier transformación afín se puede expresar de la siguiente manera:</p>
+<p><span class="math display">\[
+\begin{bmatrix} x' \\ y' \\ 1 \end{bmatrix} =
+\begin{bmatrix} a &amp; b &amp; e \\ c &amp; d &amp; f \\ 0 &amp; 0 &amp; 1 \end{bmatrix}
+\begin{bmatrix} x \\ y \\ 1 \end{bmatrix}
+\]</span></p>
+<p>Donde:<br>
+- <span class="math inline">\((x, y)\)</span> son las coordenadas originales del punto.<br>
+- <span class="math inline">\((x', y')\)</span> son las coordenadas transformadas después de aplicar la matriz.<br>
+- La matriz de <span class="math inline">\(3 \times 3\)</span> es la <strong>matriz de transformación homogénea</strong>. La fila <span class="math inline">\((0, 0, 1)\)</span> asegura que las operaciones de traslación, rotación y escalado puedan coexistir en la misma matriz.</p>
+</section>
+<section class="slide level2">
+
+<h4 id="traslación">Traslación</h4>
+<p><span class="math display">\[
+\begin{bmatrix}
+x' \\
+y' \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 &amp; 0 &amp; t_x \\
+0 &amp; 1 &amp; t_y \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+x + t_x \\
+y + t_y \\
+1
+\end{bmatrix}
+\]</span></p>
+<p>Donde:<br>
+- <span class="math inline">\(t_x\)</span> y <span class="math inline">\(t_y\)</span> son los desplazamientos en los ejes <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, respectivamente.</p>
+</section>
+<section class="slide level2">
+
+<h4 id="rotación">Rotación</h4>
+<p><span class="math display">\[
+\begin{bmatrix}
+x' \\
+y' \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+\cos(\theta) &amp; -\sin(\theta) &amp; 0 \\
+\sin(\theta) &amp; \cos(\theta) &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+1
+\end{bmatrix}
+\]</span></p>
+<p>Donde:<br>
+- <span class="math inline">\(\theta\)</span> es el ángulo de rotación en radianes.</p>
+</section>
+<section class="slide level2">
+
+<h4 id="escalado">Escalado</h4>
+<p><span class="math display">\[
+\begin{bmatrix}
+x' \\
+y' \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+s_x &amp; 0 &amp; 0 \\
+0 &amp; s_y &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+s_x \cdot x \\
+s_y \cdot y \\
+1
+\end{bmatrix}
+\]</span></p>
+<p>Donde:<br>
+- <span class="math inline">\(s_x\)</span> y <span class="math inline">\(s_y\)</span> son los factores de escala en los ejes <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span>.<br>
+- Si <span class="math inline">\(s_x = s_y\)</span>, el escalado es <strong>isotrópico</strong> (proporcional en todas las direcciones).</p>
+</section>
+<section class="slide level2">
+
+<h4 id="shearing-o-skew">Shearing (o Skew)</h4>
+<p><span class="math display">\[
+\begin{bmatrix}
+x' \\
+y' \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 &amp; \text{skew}_x &amp; 0 \\
+\text{skew}_y &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+1
+\end{bmatrix}
+\]</span></p>
+<p>Donde:<br>
+- <span class="math inline">\(\text{skew}_x\)</span> controla el sesgo horizontal (shear en <span class="math inline">\(x\)</span>).<br>
+- <span class="math inline">\(\text{skew}_y\)</span> controla el sesgo vertical (shear en <span class="math inline">\(y\)</span>).</p>
+</section>
+<section class="slide level2">
+
+<h4 id="reflexión">Reflexión</h4>
+<ul>
+<li><strong>Reflexión respecto al eje <span class="math inline">\(x\)</span>:</strong></li>
+</ul>
+<p><span class="math display">\[
+\begin{bmatrix}
+x' \\
+y' \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+x \\
+- y \\
+1
+\end{bmatrix}
+\]</span></p>
+</section>
+<section class="slide level2">
+
+<ul>
+<li><strong>Reflexión respecto al eje <span class="math inline">\(y\)</span>:</strong></li>
+</ul>
+<p><span class="math display">\[
+\begin{bmatrix}
+x' \\
+y' \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+-1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+- x \\
+y \\
+1
+\end{bmatrix}
+\]</span></p>
+</section>
+<section class="slide level2">
+
+<p>Supongamos que queremos:<br>
+1. <strong>Rotar</strong> un punto <span class="math inline">\((2, 3)\)</span> 90° en sentido antihorario.<br>
+2. Luego, <strong>trasladarlo</strong> 5 unidades a la derecha y 2 unidades hacia arriba.</p>
+</section>
+<section class="slide level2">
+
+<h3 id="composicion_2d">Composición de transformaciones homogeneas</h3>
+<ul>
+<li>Las transformaciones afines pueden combinarse simplemente multiplicando sus matrices.</li>
+<li>Esta propiedad es útil para modelar movimientos en gráficos por computadora, robótica y simulación.</li>
+<li>Una de las transformaciones compuestas más populares es la de <strong>rotación + traslación</strong> y la conversión entre <strong>sistemas de coordenadas</strong>.</li>
+</ul>
+<p><strong>IMPORTANTE: recordar que las transformaciones no son conmutativas.</strong></p>
+
+<img data-src="imgs/rotar_trasladar.png" style="width:60.0%" class="r-stretch quarto-figure-center"><p class="caption">rotar_trasladar.png</p><p><em>Imagen de <a href="https://math.hws.edu/graphicsbook">Introduction to computer graphics</a></em></p>
+<ul>
+<li>IZQ: rotar(90); transladar(4,0)</li>
+<li>DER: transladar(4,0): rotar(90)</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="rotación-traslación">Rotación + traslación</h3>
+<ul>
+<li>En coordenadas homogéneas, una transformación compuesta de <strong>rotación</strong> seguida de <strong>traslación</strong> se expresa mediante una matriz de transformación afín:</li>
+</ul>
+<p><span class="math display">\[
+\begin{bmatrix} x' \\ y' \\ 1 \end{bmatrix} =
+\begin{bmatrix} \cos(\theta) &amp; -\sin(\theta) &amp; t_x \\
+                \sin(\theta) &amp; \cos(\theta) &amp; t_y \\
+                0 &amp; 0 &amp; 1 \end{bmatrix}
+\begin{bmatrix} x \\ y \\ 1 \end{bmatrix}
+\]</span></p>
+<p>Donde: - <span class="math inline">\(\theta\)</span>: Ángulo de rotación (en radianes o grados). - <span class="math inline">\(t_x, t_y\)</span>: Componentes de traslación a lo largo de los ejes <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>.</p>
+<p>Esta matriz primero <strong>rota</strong> un punto alrededor del origen y luego <strong>lo traslada</strong> a una nueva ubicación.</p>
+</section>
+<section class="slide level2">
+
+<p>Dado un triángulo con vértices:</p>
+<p><span class="math display">\[
+A(0, 0), \quad B(4, 1), \quad C(3, 5)
+\]</span></p>
+<p>Queremos: 1. Rotarlo 90° en sentido antihorario alrededor del origen. 2. Trasladarlo en <span class="math inline">\((4,1)\)</span>.</p>
+</section>
+<section class="slide level2">
+
+<p>La matriz de rotación+traslación es:</p>
+<p><span class="math display">\[
+R(90^\circ) =
+\begin{bmatrix}
+0 &amp; -1 &amp; 4 \\
+1 &amp;  0 &amp; 1 \\
+0 &amp;  0 &amp; 1
+\end{bmatrix}
+\]</span></p>
+</section>
+<section class="slide level2">
+
+<p>Aplicamos esta matriz a cada vértice del triángulo.</p>
+<div id="a6c81133" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="kw">def</span> rotacionH(theta):</span>
+<span id="cb6-2"><a></a>    rad <span class="op">=</span> np.deg2rad(theta)</span>
+<span id="cb6-3"><a></a>    <span class="cf">return</span> np.array([[np.cos(rad), <span class="op">-</span>np.sin(rad), <span class="dv">0</span>], </span>
+<span id="cb6-4"><a></a>                     [np.sin(rad), np.cos(rad), <span class="dv">0</span>], </span>
+<span id="cb6-5"><a></a>                     [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>]])</span>
+<span id="cb6-6"><a></a></span>
+<span id="cb6-7"><a></a><span class="kw">def</span> traslacionH(tx, ty):</span>
+<span id="cb6-8"><a></a>    <span class="cf">return</span> np.array([[<span class="dv">1</span>, <span class="dv">0</span>, tx], </span>
+<span id="cb6-9"><a></a>                     [<span class="dv">0</span>, <span class="dv">1</span>, ty], </span>
+<span id="cb6-10"><a></a>                     [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>]])</span>
+<span id="cb6-11"><a></a></span>
+<span id="cb6-12"><a></a><span class="kw">def</span> escaladoH(sx, sy):</span>
+<span id="cb6-13"><a></a>    <span class="cf">return</span> np.array([[sx, <span class="dv">0</span>, <span class="dv">0</span>], </span>
+<span id="cb6-14"><a></a>                     [<span class="dv">0</span>, sy, <span class="dv">0</span>], </span>
+<span id="cb6-15"><a></a>                     [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>]])</span>
+<span id="cb6-16"><a></a></span>
+<span id="cb6-17"><a></a>t1 <span class="op">=</span> rotacionH(<span class="dv">90</span>)</span>
+<span id="cb6-18"><a></a>t2 <span class="op">=</span> traslacionH(<span class="dv">4</span>, <span class="dv">1</span>)</span>
+<span id="cb6-19"><a></a>t_compuesta <span class="op">=</span> t2<span class="op">@</span>t1</span>
+<span id="cb6-20"><a></a></span>
+<span id="cb6-21"><a></a>triangulo <span class="op">=</span> np.array([[<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>], </span>
+<span id="cb6-22"><a></a>                      [<span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>], </span>
+<span id="cb6-23"><a></a>                      [<span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">1</span>], </span>
+<span id="cb6-24"><a></a>                      [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>]])</span>
+<span id="cb6-25"><a></a></span>
+<span id="cb6-26"><a></a>rectangulo <span class="op">=</span> np.array([[<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>], </span>
+<span id="cb6-27"><a></a>                      [<span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>], </span>
+<span id="cb6-28"><a></a>                      [<span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">1</span>], </span>
+<span id="cb6-29"><a></a>                      [<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">1</span>], </span>
+<span id="cb6-30"><a></a>                      [<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>]])</span>
+<span id="cb6-31"><a></a>triangulo_transformado <span class="op">=</span> triangulo<span class="op">@</span>t_compuesta.T</span>
+<span id="cb6-32"><a></a></span>
+<span id="cb6-33"><a></a>tr1 <span class="op">=</span> rotacionH(<span class="op">-</span><span class="dv">45</span>)</span>
+<span id="cb6-34"><a></a>tr2 <span class="op">=</span> escaladoH(<span class="dv">2</span>, <span class="dv">2</span>)</span>
+<span id="cb6-35"><a></a>tr3 <span class="op">=</span> traslacionH(<span class="dv">3</span>, <span class="op">-</span><span class="dv">2</span>)</span>
+<span id="cb6-36"><a></a>tr_compuesta <span class="op">=</span> tr3<span class="op">@</span>tr2<span class="op">@</span>tr1</span>
+<span id="cb6-37"><a></a>rectangulo_transformado <span class="op">=</span> rectangulo<span class="op">@</span>tr_compuesta.T</span>
+<span id="cb6-38"><a></a>graficar(rectangulo, rectangulo_transformado)</span>
+<span id="cb6-39"><a></a><span class="bu">print</span>(rectangulo_transformado)</span>
+<span id="cb6-40"><a></a><span class="bu">print</span>(<span class="st">"m compuesta"</span>, tr_compuesta)</span>
+<span id="cb6-41"><a></a>triangulo2 <span class="op">=</span> np.array([[<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">1</span>], </span>
+<span id="cb6-42"><a></a>                      [<span class="dv">6</span>, <span class="dv">2</span>, <span class="dv">1</span>], </span>
+<span id="cb6-43"><a></a>                      [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">1</span>], </span>
+<span id="cb6-44"><a></a>                      [<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">1</span>]])</span>
+<span id="cb6-45"><a></a>t1 <span class="op">=</span> traslacionH(<span class="op">-</span><span class="dv">4</span>, <span class="op">-</span><span class="dv">3</span>)</span>
+<span id="cb6-46"><a></a>t2 <span class="op">=</span> rotacionH(<span class="op">-</span><span class="dv">60</span>)</span>
+<span id="cb6-47"><a></a>t3 <span class="op">=</span> traslacionH(<span class="dv">4</span>, <span class="dv">3</span>)</span>
+<span id="cb6-48"><a></a>t_compuesta <span class="op">=</span> t3<span class="op">@</span>t2<span class="op">@</span>t1</span>
+<span id="cb6-49"><a></a><span class="bu">print</span>(<span class="st">"triangulo"</span>)</span>
+<span id="cb6-50"><a></a>triangulo_transformado2 <span class="op">=</span> triangulo2<span class="op">@</span>t_compuesta.T</span>
+<span id="cb6-51"><a></a><span class="bu">print</span>(triangulo_transformado2)</span>
+<span id="cb6-52"><a></a>graficar(triangulo2, triangulo_transformado2)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="03_representacion2Dy3D_files/figure-revealjs/cell-7-output-1.png" width="531" height="505"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[ 5.82842712 -2.          1.        ]
+ [10.07106781 -6.24264069  1.        ]
+ [12.89949494 -3.41421356  1.        ]
+ [ 8.65685425  0.82842712  1.        ]
+ [ 5.82842712 -2.          1.        ]]
+m compuesta [[ 1.41421356  1.41421356  3.        ]
+ [-1.41421356  1.41421356 -2.        ]
+ [ 0.          0.          1.        ]]
+triangulo
+[[2.1339746  4.23205081 1.        ]
+ [4.1339746  0.76794919 1.        ]
+ [5.73205081 4.         1.        ]
+ [2.1339746  4.23205081 1.        ]]</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="03_representacion2Dy3D_files/figure-revealjs/cell-7-output-3.png" width="531" height="505"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="transformaciones-entre-sistemas-de-coordenadas" class="slide level2">
+<h2>Transformaciones entre sistemas de coordenadas</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>En gráficos por computadora / visión computacional / robótica, es común trabajar con varios sistemas de coordenadas.</li>
+<li>Una matriz de transformación permite convertir puntos de un sistema <span class="math inline">\(i\)</span> a otro <span class="math inline">\(g\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+\mathbf{v}_g = M \cdot \mathbf{v}_i
+\]</span></p>
+<p><span class="math display">\[
+\mathbf{v}_i = M^{-1} \cdot \mathbf{v}_g
+\]</span></p>
+<p>Donde: - <span class="math inline">\(\mathbf{v}_i\)</span>: punto en el sistema original. - <span class="math inline">\(\mathbf{v}_g\)</span>: punto en el nuevo sistema. - <span class="math inline">\(M\)</span>: Matriz de transformación.</p>
+</div><div class="column" style="width:38%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/cambio-de-sistema-de-coordenadas.png" style="width:60.0%"></p>
+<figcaption>Cambio de sistema de coordenadas</figcaption>
+</figure>
+</div>
+<p><em>Imagen de <a href="https://www.inf.ed.ac.uk/teaching/courses/cg/index2019.html">www.inf.ed.ac.uk</a></em></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<p><strong>PREGUNTAS:</strong> - ¿Cuál es la matriz de transformación que convierte a un punto al sistema coordenado <em>g</em>? - ¿Cuál es la matriz de transformación que convierte a un punto al sistema coordenado <em>i</em>? - ¿Cuál es la posición de XI en el sistema coordenado g? - ¿Cuál es la posición de XG en el sistema coordenado i?</p>
+</section>
+<section class="slide level2">
+
+<p><span class="math display">\[
+M = \begin{bmatrix}
+\frac{1}{\sqrt{2}} &amp; \frac{1}{\sqrt{2}} &amp; 2 \\
+-\frac{1}{\sqrt{2}} &amp; \frac{1}{\sqrt{2}} &amp; 2 \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}, \quad
+M^{-1} = \begin{bmatrix}
+\frac{1}{\sqrt{2}} &amp; -\frac{1}{\sqrt{2}} &amp; 0 \\
+\frac{1}{\sqrt{2}} &amp; \frac{1}{\sqrt{2}} &amp; 2\sqrt{2} \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\]</span></p>
+</section>
+<section class="slide level2">
+
+<p>Para el punto <span class="math inline">\((1, 1)\)</span> del sistema coordenado i al g:</p>
+<p><span class="math display">\[
+M \cdot \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix} = \begin{bmatrix} \frac{1}{\sqrt{2}} + \frac{1}{\sqrt{2}} + 2 \\ \frac{1}{\sqrt{2}} - \frac{1}{\sqrt{2}} + 2 \\ 1 \end{bmatrix} = \begin{bmatrix} 2 + \sqrt{2} \\ 2 \\ 1 \end{bmatrix}
+\]</span></p>
+<p>Para el punto <span class="math inline">\((1, 2)\)</span> del sistema coordenado i al g:</p>
+<p><span class="math display">\[
+M^{-1} \cdot \begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix} = \begin{bmatrix} \frac{1}{\sqrt{2}} - \frac{2}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} + \frac{2}{\sqrt{2}} + 2\sqrt{2} \\ 1 \end{bmatrix} = \begin{bmatrix} \frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} \\ 1 \end{bmatrix}
+\]</span></p>
+</section>
+<section id="referencias-bibliográficas" class="slide level2">
+<h2>Referencias bibliográficas</h2>
+<ul>
+<li><p>Eck, D. J. (2023). <em>Introduction to computer graphics</em> (Version 1.4). Hobart and William Smith Colleges. Recuperado de <a href="https://math.hws.edu/graphicsbook">https://math.hws.edu/graphicsbook</a></p></li>
+<li><p>Foley, J. D., van Dam, A., Feiner, S. K., &amp; Hughes, J. F. (2013). <em>Computer graphics: Principles and practice</em> (3rd ed.). Addison-Wesley.</p></li>
+<li><p>Komura, T. (2013). <em>Computer graphics – Course notes</em>. University of Edinburgh. Disponible en <a href="https://www.inf.ed.ac.uk/teaching/courses/cg/lectures/cg3_2013.pdf">https://www.inf.ed.ac.uk/teaching/courses/cg/lectures/cg3_2013.pdf</a></p></li>
+</ul>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="imgs/logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1600,
+
+        height: 900,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 5.0e-2,
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+
+        maxScale: 3,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiado");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiado");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
