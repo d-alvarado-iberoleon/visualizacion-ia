@@ -360,7 +360,7 @@ Dra. Dora Alvarado
 </section>
 <section class="slide level2">
 
-<div id="528cfa3a" class="cell" data-execution_count="1">
+<div id="de74649d" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a></a></span>
@@ -432,7 +432,7 @@ Dra. Dora Alvarado
 </section>
 <section class="slide level2">
 
-<div id="08025297" class="cell" data-execution_count="2">
+<div id="876f307c" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="co"># Aplicar escala</span></span>
 <span id="cb2-2"><a></a><span class="kw">def</span> escalar(objeto, escala_x, escala_y):</span>
 <span id="cb2-3"><a></a>    matriz_escala <span class="op">=</span> np.array([[escala_x, <span class="dv">0</span>], </span>
@@ -481,7 +481,7 @@ Dra. Dora Alvarado
 </section>
 <section class="slide level2">
 
-<div id="05307fa3" class="cell" data-execution_count="3">
+<div id="31c55e64" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="co"># Aplicar rotación</span></span>
 <span id="cb3-2"><a></a><span class="kw">def</span> rotacion(objeto, angulo):</span>
 <span id="cb3-3"><a></a>    rad <span class="op">=</span> np.deg2rad(angulo)</span>
@@ -534,7 +534,7 @@ Dra. Dora Alvarado
 </section>
 <section class="slide level2">
 
-<div id="a197784e" class="cell" data-execution_count="4">
+<div id="1175da67" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="co"># Aplicar reflexión</span></span>
 <span id="cb4-2"><a></a><span class="kw">def</span> reflexion(objeto, reflejo_x<span class="op">=</span><span class="va">True</span>, reflejo_y<span class="op">=</span><span class="va">False</span>):</span>
 <span id="cb4-3"><a></a>    matriz_reflexion <span class="op">=</span> np.array([</span>
@@ -580,7 +580,7 @@ Dra. Dora Alvarado
 </section>
 <section class="slide level2">
 
-<div id="70ce5315" class="cell" data-execution_count="5">
+<div id="78ce53b4" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="kw">def</span> skew(objeto, skew_x, skew_y):</span>
 <span id="cb5-2"><a></a>    matriz_skew <span class="op">=</span> np.array([[<span class="dv">1</span>, skew_x], </span>
 <span id="cb5-3"><a></a>                            [skew_y, <span class="dv">1</span>]])</span>
@@ -821,10 +821,14 @@ t_y
 \begin{bmatrix} a &amp; b &amp; e \\ c &amp; d &amp; f \\ 0 &amp; 0 &amp; 1 \end{bmatrix}
 \begin{bmatrix} x \\ y \\ 1 \end{bmatrix}
 \]</span></p>
-<p>Donde:<br>
-- <span class="math inline">\((x, y)\)</span> son las coordenadas originales del punto.<br>
-- <span class="math inline">\((x', y')\)</span> son las coordenadas transformadas después de aplicar la matriz.<br>
-- La matriz de <span class="math inline">\(3 \times 3\)</span> es la <strong>matriz de transformación homogénea</strong>. La fila <span class="math inline">\((0, 0, 1)\)</span> asegura que las operaciones de traslación, rotación y escalado puedan coexistir en la misma matriz.</p>
+<p>Donde:</p>
+<ul>
+<li><span class="math inline">\((x, y)\)</span> son las coordenadas originales del punto.<br>
+</li>
+<li><span class="math inline">\((x', y')\)</span> son las coordenadas transformadas después de aplicar la matriz.<br>
+</li>
+<li>La matriz de <span class="math inline">\(3 \times 3\)</span> es la <strong>matriz de transformación homogénea</strong>. La fila <span class="math inline">\((0, 0, 1)\)</span> asegura que las operaciones de traslación, rotación y escalado puedan coexistir en la misma matriz.</li>
+</ul>
 </section>
 <section class="slide level2">
 
@@ -853,8 +857,10 @@ y + t_y \\
 1
 \end{bmatrix}
 \]</span></p>
-<p>Donde:<br>
-- <span class="math inline">\(t_x\)</span> y <span class="math inline">\(t_y\)</span> son los desplazamientos en los ejes <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, respectivamente.</p>
+<p>Donde:</p>
+<ul>
+<li><span class="math inline">\(t_x\)</span> y <span class="math inline">\(t_y\)</span> son los desplazamientos en los ejes <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, respectivamente.</li>
+</ul>
 </section>
 <section class="slide level2">
 
@@ -877,8 +883,10 @@ y \\
 1
 \end{bmatrix}
 \]</span></p>
-<p>Donde:<br>
-- <span class="math inline">\(\theta\)</span> es el ángulo de rotación en radianes.</p>
+<p>Donde:</p>
+<ul>
+<li><span class="math inline">\(\theta\)</span> es el ángulo de rotación en radianes.</li>
+</ul>
 </section>
 <section class="slide level2">
 
@@ -907,9 +915,12 @@ s_y \cdot y \\
 1
 \end{bmatrix}
 \]</span></p>
-<p>Donde:<br>
-- <span class="math inline">\(s_x\)</span> y <span class="math inline">\(s_y\)</span> son los factores de escala en los ejes <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span>.<br>
-- Si <span class="math inline">\(s_x = s_y\)</span>, el escalado es <strong>isotrópico</strong> (proporcional en todas las direcciones).</p>
+<p>Donde:</p>
+<ul>
+<li><span class="math inline">\(s_x\)</span> y <span class="math inline">\(s_y\)</span> son los factores de escala en los ejes <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span>.<br>
+</li>
+<li>Si <span class="math inline">\(s_x = s_y\)</span>, el escalado es <strong>isotrópico</strong> (proporcional en todas las direcciones).</li>
+</ul>
 </section>
 <section class="slide level2">
 
@@ -932,9 +943,12 @@ y \\
 1
 \end{bmatrix}
 \]</span></p>
-<p>Donde:<br>
-- <span class="math inline">\(\text{skew}_x\)</span> controla el sesgo horizontal (shear en <span class="math inline">\(x\)</span>).<br>
-- <span class="math inline">\(\text{skew}_y\)</span> controla el sesgo vertical (shear en <span class="math inline">\(y\)</span>).</p>
+<p>Donde:</p>
+<ul>
+<li><span class="math inline">\(\text{skew}_x\)</span> controla el sesgo horizontal (shear en <span class="math inline">\(x\)</span>).<br>
+</li>
+<li><span class="math inline">\(\text{skew}_y\)</span> controla el sesgo vertical (shear en <span class="math inline">\(y\)</span>).</li>
+</ul>
 </section>
 <section class="slide level2">
 
@@ -1032,7 +1046,11 @@ y \\
                 0 &amp; 0 &amp; 1 \end{bmatrix}
 \begin{bmatrix} x \\ y \\ 1 \end{bmatrix}
 \]</span></p>
-<p>Donde: - <span class="math inline">\(\theta\)</span>: Ángulo de rotación (en radianes o grados). - <span class="math inline">\(t_x, t_y\)</span>: Componentes de traslación a lo largo de los ejes <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>.</p>
+<p>Donde:</p>
+<ul>
+<li><span class="math inline">\(\theta\)</span>: Ángulo de rotación (en radianes o grados).</li>
+<li><span class="math inline">\(t_x, t_y\)</span>: Componentes de traslación a lo largo de los ejes <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>.</li>
+</ul>
 <p>Esta matriz primero <strong>rota</strong> un punto alrededor del origen y luego <strong>lo traslada</strong> a una nueva ubicación.</p>
 </section>
 <section class="slide level2">
@@ -1058,7 +1076,7 @@ R(90^\circ) =
 <section class="slide level2">
 
 <p>Aplicamos esta matriz a cada vértice del triángulo.</p>
-<div id="a6c81133" class="cell" data-execution_count="6">
+<div id="f7f7cb8d" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="kw">def</span> rotacionH(theta):</span>
 <span id="cb6-2"><a></a>    rad <span class="op">=</span> np.deg2rad(theta)</span>
 <span id="cb6-3"><a></a>    <span class="cf">return</span> np.array([[np.cos(rad), <span class="op">-</span>np.sin(rad), <span class="dv">0</span>], </span>
@@ -1156,7 +1174,12 @@ triangulo
 <p><span class="math display">\[
 \mathbf{v}_i = M^{-1} \cdot \mathbf{v}_g
 \]</span></p>
-<p>Donde: - <span class="math inline">\(\mathbf{v}_i\)</span>: punto en el sistema original. - <span class="math inline">\(\mathbf{v}_g\)</span>: punto en el nuevo sistema. - <span class="math inline">\(M\)</span>: Matriz de transformación.</p>
+<p>Donde:</p>
+<ul>
+<li><span class="math inline">\(\mathbf{v}_i\)</span>: punto en el sistema original.</li>
+<li><span class="math inline">\(\mathbf{v}_g\)</span>: punto en el nuevo sistema.</li>
+<li><span class="math inline">\(M\)</span>: Matriz de transformación.</li>
+</ul>
 </div><div class="column" style="width:38%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1169,7 +1192,13 @@ triangulo
 </section>
 <section class="slide level2">
 
-<p><strong>PREGUNTAS:</strong> - ¿Cuál es la matriz de transformación que convierte a un punto al sistema coordenado <em>g</em>? - ¿Cuál es la matriz de transformación que convierte a un punto al sistema coordenado <em>i</em>? - ¿Cuál es la posición de XI en el sistema coordenado g? - ¿Cuál es la posición de XG en el sistema coordenado i?</p>
+<p><strong>PREGUNTAS:</strong></p>
+<ul>
+<li>¿Cuál es la matriz de transformación que convierte a un punto al sistema coordenado <em>g</em>?</li>
+<li>¿Cuál es la matriz de transformación que convierte a un punto al sistema coordenado <em>i</em>?</li>
+<li>¿Cuál es la posición de XI en el sistema coordenado g?</li>
+<li>¿Cuál es la posición de XG en el sistema coordenado i?</li>
+</ul>
 </section>
 <section class="slide level2">
 
@@ -1196,6 +1225,553 @@ M \cdot \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix} = \begin{bmatrix} \frac{1}{\sq
 <p><span class="math display">\[
 M^{-1} \cdot \begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix} = \begin{bmatrix} \frac{1}{\sqrt{2}} - \frac{2}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} + \frac{2}{\sqrt{2}} + 2\sqrt{2} \\ 1 \end{bmatrix} = \begin{bmatrix} \frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} \\ 1 \end{bmatrix}
 \]</span></p>
+</section>
+<section id="en-sesiones-anteriores" class="slide level2">
+<h2>En sesiones anteriores…</h2>
+<ul>
+<li><p>Vimos como las transformaciones de objetos 2D pueden representarse a través de modelos vectoriales y matriciales.</p></li>
+<li><p>Las transformaciones geométricas en 2D nos permiten modificar la posición, escala y orientación de los objetos en un espacio bidimensional.</p></li>
+<li><p>Las transformaciones pueden combinarse multiplicando sus matrices en el orden adecuado. Por ejemplo, para rotar y luego trasladar un objeto: <span class="math inline">\(P' = T \cdot R \cdot P\)</span>.</p></li>
+<li><p>El orden de las transformaciones es importante, ya que la multiplicación matricial no es conmutativa.</p></li>
+<li><p>Para representar todas las transformaciones de manera uniforme, se usa la notación de <strong>coordenadas homogéneas</strong>, donde los puntos se representan con una coordenada adicional:</p></li>
+</ul>
+<p><span class="math display">\[
+P(x, y) \rightarrow P_h(x, y, 1)
+\]</span></p>
+</section>
+<section id="transformaciones3d" class="slide level2">
+<h2>Transformaciones en 3D</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Las transformaciones en el espacio tridimensional son una extensión de las transformaciones 2D.</li>
+<li>Se representan mediante matrices <span class="math inline">\(4 \times 4\)</span> utilizando coordenadas homogéneas para facilitar su combinación mediante multiplicaciones matriciales.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/nested3dtransformation.gif" style="width:100.0%"></p>
+<figcaption>Visualización gráfica</figcaption>
+</figure>
+</div>
+<p><em>Imagen de <a href="https://behreajj.medium.com/3d-transformations-in-processing-de11acdd1fbc">medium.com</a></em></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<h3 id="representación-de-puntos-en-3d">Representación de puntos en 3D</h3>
+<p>En un espacio tridimensional, un punto se representa como: <span class="math display">\[
+\mathbf{p} = \begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}
+\]</span></p>
+<p><span class="math display">\[
+\newcommand{\p}{\mathbf{p}}
+\]</span></p>
+</section>
+<section class="slide level2">
+
+<h3 id="transformaciones-básicas-en-3d">Transformaciones básicas en 3D</h3>
+<h4 id="traslación-1">Traslación</h4>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Se traslada un punto en 3D sumando valores a sus coordenadas: <span class="math display">\[
+\mathbf{T}(t_x, t_y, t_z) = \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; t_x \\
+                      0 &amp; 1 &amp; 0 &amp; t_y \\
+                      0 &amp; 0 &amp; 1 &amp; t_z \\
+                      0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]</span></p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/singleaxis_translate.gif" style="width:60.0%"></p>
+<figcaption>Visualización gráfica</figcaption>
+</figure>
+</div>
+<p><em>Imagen de <a href="https://ed.ilogues.com/2018/06/27/translate-rotate-and-scale-manipulators-in-3d-modelling-programs">ed.ilogues.com</a></em></p>
+</div></div>
+<p><span style="background-color: #fffdaf; margin-left:auto; margin-right:auto; width: 100%;">📢<strong>Pregunta:</strong> ¿Cual sería la operación inversa de una traslación con componentes <span class="math inline">\(\mathbf{d} = [d_x, d_y, d_z]^T\)</span>?</span></p>
+</section>
+<section class="slide level2">
+
+<h4 id="escalado-1">Escalado</h4>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Se modifica el tamaño de un objeto respecto a los ejes: <span class="math display">\[
+S = \begin{bmatrix} s_x &amp; 0 &amp; 0 &amp; 0 \\
+                      0 &amp; s_y &amp; 0 &amp; 0 \\
+                      0 &amp; 0 &amp; s_z &amp; 0 \\
+                      0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]</span></p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/scale.gif" style="width:100.0%"></p>
+<figcaption>Visualización gráfica</figcaption>
+</figure>
+</div>
+<p><em>Imagen de <a href="https://ed.ilogues.com/2018/06/27/translate-rotate-and-scale-manipulators-in-3d-modelling-programs">ed.ilogues.com</a></em></p>
+</div></div>
+<p>📢<strong>Pregunta:</strong> ¿Cual sería la operación inversa de escalar con componentes <span class="math inline">\(\mathbf{s} = [s_x, s_y, s_z]^T\)</span>?</p>
+</section>
+<section class="slide level2">
+
+<h4 id="rotación-1">Rotación</h4>
+<p><em>Recordatorio Rotación 2D</em></p>
+<ul>
+<li>En la rotación 2D, aplicar una matriz de rotación a un punto <span class="math inline">\((x, y)\)</span> significa que simplemente lo giramos alrededor del origen en el plano <span class="math inline">\(XY\)</span>.</li>
+<li>Desde un punto de vista en 3D, es como si la rotación 2D se diera SIEMPRE sobre el eje <span class="math inline">\(z\)</span> (que es perpendicular al plano <span class="math inline">\(XY\)</span>).</li>
+<li>Para rotar en 3D, necesitamos definir la rotación alrededor de cada uno de los ejes principales (<span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>, <span class="math inline">\(z\)</span>). Cada una de estas rotaciones se representa mediante una matriz de rotación específica.</li>
+</ul>
+
+<img data-src="imgs/transformations2d.png" style="width:100.0%" class="r-stretch quarto-figure-center"><p class="caption">Visualización gráfica</p><p><em>Imagen de <a href="https://prateekvjoshi.com/2014/06/13/the-concept-of-homogeneous-coordinates/">rateekvjoshi.com</a></em></p>
+</section>
+<section class="slide level2">
+
+<div id="7720f355" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb8-2"><a></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb8-3"><a></a></span>
+<span id="cb8-4"><a></a><span class="kw">def</span> rotacion2DH(theta):</span>
+<span id="cb8-5"><a></a>    rad <span class="op">=</span> np.deg2rad(theta)</span>
+<span id="cb8-6"><a></a>    <span class="cf">return</span> np.array([[np.cos(rad), <span class="op">-</span>np.sin(rad), <span class="dv">0</span>], </span>
+<span id="cb8-7"><a></a>                     [np.sin(rad), np.cos(rad), <span class="dv">0</span>], </span>
+<span id="cb8-8"><a></a>                     [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>]])</span>
+<span id="cb8-9"><a></a></span>
+<span id="cb8-10"><a></a><span class="kw">def</span> traslacion2DH(tx, ty):</span>
+<span id="cb8-11"><a></a>    <span class="cf">return</span> np.array([[<span class="dv">1</span>, <span class="dv">0</span>, tx], </span>
+<span id="cb8-12"><a></a>                     [<span class="dv">0</span>, <span class="dv">1</span>, ty], </span>
+<span id="cb8-13"><a></a>                     [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>]])</span>
+<span id="cb8-14"><a></a></span>
+<span id="cb8-15"><a></a><span class="co"># Un cuadrado en 2D...</span></span>
+<span id="cb8-16"><a></a>cuadrado2d <span class="op">=</span> np.array([[<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>],</span>
+<span id="cb8-17"><a></a>                      [<span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>],</span>
+<span id="cb8-18"><a></a>                      [<span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>],</span>
+<span id="cb8-19"><a></a>                      [<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>],</span>
+<span id="cb8-20"><a></a>                      [<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>]])  </span>
+<span id="cb8-21"><a></a></span>
+<span id="cb8-22"><a></a></span>
+<span id="cb8-23"><a></a>theta <span class="op">=</span> <span class="dv">45</span>  <span class="co"># 45 grados</span></span>
+<span id="cb8-24"><a></a>R_2d <span class="op">=</span> rotacion2DH(theta)</span>
+<span id="cb8-25"><a></a>cuadrado2d_rotado <span class="op">=</span> (R_2d <span class="op">@</span> cuadrado2d.T).T <span class="co"># Aplicar rotacion</span></span>
+<span id="cb8-26"><a></a></span>
+<span id="cb8-27"><a></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">5</span>, <span class="dv">5</span>))</span>
+<span id="cb8-28"><a></a>plt.plot(cuadrado2d[:, <span class="dv">0</span>], cuadrado2d[:, <span class="dv">1</span>], <span class="st">'bo-'</span>, label<span class="op">=</span><span class="st">"Original"</span>)</span>
+<span id="cb8-29"><a></a>plt.plot(cuadrado2d_rotado[:, <span class="dv">0</span>], cuadrado2d_rotado[:, <span class="dv">1</span>], <span class="st">'ro-'</span>, label<span class="op">=</span><span class="st">"Rotado"</span>)</span>
+<span id="cb8-30"><a></a>plt.title(<span class="st">"Rotación en 2D (Z)"</span>)</span>
+<span id="cb8-31"><a></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb8-32"><a></a>plt.xlim(<span class="op">-</span><span class="dv">5</span>, <span class="dv">5</span>)</span>
+<span id="cb8-33"><a></a>plt.ylim(<span class="op">-</span><span class="dv">5</span>, <span class="dv">5</span>)</span>
+<span id="cb8-34"><a></a>plt.legend()</span>
+<span id="cb8-35"><a></a>plt.show()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="03_representacion2Dy3D_files/figure-revealjs/cell-8-output-1.png" width="420" height="431"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><em>Rotación 3D</em> - En la rotación 3D hay <strong>tres posibles ejes de rotación</strong>: <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span> y <span class="math inline">\(Z\)</span>. - Cada eje tiene su propia matriz de rotación: - <strong>Rotación alrededor del eje X</strong> (afecta <span class="math inline">\(y\)</span> y <span class="math inline">\(z\)</span>, pero no <span class="math inline">\(x\)</span>): <span class="math display">\[
+       R_x(\theta) = \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; \cos\theta &amp; -\sin\theta &amp; 0 \\ 0 &amp; \sin\theta &amp; \cos\theta &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+       \]</span> - <strong>Rotación alrededor del eje Y</strong> (afecta <span class="math inline">\(x\)</span> y <span class="math inline">\(z\)</span>, pero no <span class="math inline">\(y\)</span>): <span class="math display">\[
+       R_y(\theta) = \begin{bmatrix} \cos\theta &amp; 0 &amp; \sin\theta &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ -\sin\theta &amp; 0 &amp; \cos\theta &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+       \]</span> - <strong>Rotación alrededor del eje Z</strong> (afecta <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, pero no <span class="math inline">\(z\)</span>, similar a la rotación 2D): <span class="math display">\[
+       R_z(\theta) = \begin{bmatrix} \cos\theta &amp; -\sin\theta &amp; 0 &amp; 0 \\ \sin\theta &amp; \cos\theta &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+       \]</span></p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/rotate.gif" style="width:100.0%"></p>
+<figcaption>Visualización gráfica</figcaption>
+</figure>
+</div>
+<p><em>Imagen de <a href="https://ed.ilogues.com/2018/06/27/translate-rotate-and-scale-manipulators-in-3d-modelling-programs">ed.ilogues.com</a></em></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<div id="7dbcf61d" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="im">from</span> mpl_toolkits.mplot3d <span class="im">import</span> Axes3D</span>
+<span id="cb9-2"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb9-3"><a></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb9-4"><a></a></span>
+<span id="cb9-5"><a></a></span>
+<span id="cb9-6"><a></a><span class="kw">def</span> traslacion3DH(tx, ty, tz):</span>
+<span id="cb9-7"><a></a>    <span class="cf">return</span> np.array([[<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, tx], </span>
+<span id="cb9-8"><a></a>                     [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, ty], </span>
+<span id="cb9-9"><a></a>                     [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, tz], </span>
+<span id="cb9-10"><a></a>                     [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>]])</span>
+<span id="cb9-11"><a></a></span>
+<span id="cb9-12"><a></a><span class="kw">def</span> rotacion3DH(theta, eje):</span>
+<span id="cb9-13"><a></a>    rad <span class="op">=</span> np.deg2rad(theta)</span>
+<span id="cb9-14"><a></a>    <span class="cf">if</span> eje.lower()<span class="op">==</span><span class="st">'x'</span>:</span>
+<span id="cb9-15"><a></a>        <span class="cf">return</span> np.array([[<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>],</span>
+<span id="cb9-16"><a></a>                   [<span class="dv">0</span>, np.cos(rad), <span class="op">-</span>np.sin(rad), <span class="dv">0</span>],</span>
+<span id="cb9-17"><a></a>                   [<span class="dv">0</span>, np.sin(rad), np.cos(rad), <span class="dv">0</span>],</span>
+<span id="cb9-18"><a></a>                   [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>]])</span>
+<span id="cb9-19"><a></a>    <span class="cf">elif</span> eje.lower()<span class="op">==</span><span class="st">"y"</span>:</span>
+<span id="cb9-20"><a></a>        <span class="cf">return</span> np.array([[np.cos(rad), <span class="dv">0</span>, np.sin(rad), <span class="dv">0</span>],</span>
+<span id="cb9-21"><a></a>                             [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>],</span>
+<span id="cb9-22"><a></a>                             [<span class="op">-</span>np.sin(rad), <span class="dv">0</span>, np.cos(rad), <span class="dv">0</span>], </span>
+<span id="cb9-23"><a></a>                             [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>]]) </span>
+<span id="cb9-24"><a></a>    <span class="cf">elif</span> eje.lower()<span class="op">==</span><span class="st">"z"</span>:</span>
+<span id="cb9-25"><a></a>            <span class="cf">return</span> np.array([[np.cos(rad), <span class="op">-</span>np.sin(rad), <span class="dv">0</span>, <span class="dv">0</span>], </span>
+<span id="cb9-26"><a></a>                             [np.sin(rad), np.cos(rad), <span class="dv">0</span>, <span class="dv">0</span>], </span>
+<span id="cb9-27"><a></a>                             [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>], </span>
+<span id="cb9-28"><a></a>                             [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>]])</span>
+<span id="cb9-29"><a></a>    <span class="cf">else</span>:</span>
+<span id="cb9-30"><a></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"Indica un eje de rotación (x, y, o z)"</span>)</span>
+<span id="cb9-31"><a></a></span>
+<span id="cb9-32"><a></a></span>
+<span id="cb9-33"><a></a><span class="co"># para dibujar los ejes de colores</span></span>
+<span id="cb9-34"><a></a><span class="kw">def</span> dibujar_ejes(ax, length<span class="op">=</span><span class="fl">0.5</span>):</span>
+<span id="cb9-35"><a></a>    ax.quiver(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, length, <span class="dv">0</span>, <span class="dv">0</span>, color<span class="op">=</span><span class="st">'r'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, linewidth<span class="op">=</span><span class="dv">1</span>, label<span class="op">=</span><span class="st">"Eje X"</span>)  <span class="co"># Rojo para X</span></span>
+<span id="cb9-36"><a></a>    ax.quiver(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, length, <span class="dv">0</span>, color<span class="op">=</span><span class="st">'g'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, linewidth<span class="op">=</span><span class="dv">1</span>, label<span class="op">=</span><span class="st">"Eje Y"</span>)  <span class="co"># Verde para Y</span></span>
+<span id="cb9-37"><a></a>    ax.quiver(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, length, color<span class="op">=</span><span class="st">'b'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, linewidth<span class="op">=</span><span class="dv">1</span>, label<span class="op">=</span><span class="st">"Eje Z"</span>)  <span class="co"># Azul para Z</span></span>
+<span id="cb9-38"><a></a></span>
+<span id="cb9-39"><a></a><span class="co"># Un cuadrado en 3D...</span></span>
+<span id="cb9-40"><a></a>theta <span class="op">=</span> <span class="dv">45</span></span>
+<span id="cb9-41"><a></a></span>
+<span id="cb9-42"><a></a>cuadrado3d <span class="op">=</span> np.array([[<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>],</span>
+<span id="cb9-43"><a></a>                      [<span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>],</span>
+<span id="cb9-44"><a></a>                      [<span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>],</span>
+<span id="cb9-45"><a></a>                      [<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>],</span>
+<span id="cb9-46"><a></a>                      [<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>]])</span>
+<span id="cb9-47"><a></a></span>
+<span id="cb9-48"><a></a>R_3d_x <span class="op">=</span> rotacion3DH(theta, <span class="st">"x"</span>)</span>
+<span id="cb9-49"><a></a>R_3d_y <span class="op">=</span> rotacion3DH(theta, <span class="st">"y"</span>)</span>
+<span id="cb9-50"><a></a>R_3d_z <span class="op">=</span> rotacion3DH(theta, <span class="st">"z"</span>)</span>
+<span id="cb9-51"><a></a>cuadrado3d_rx <span class="op">=</span> (R_3d_x <span class="op">@</span> cuadrado3d.T).T</span>
+<span id="cb9-52"><a></a>cuadrado3d_ry <span class="op">=</span> (R_3d_y <span class="op">@</span> cuadrado3d.T).T</span>
+<span id="cb9-53"><a></a>cuadrado3d_rz <span class="op">=</span> (R_3d_z <span class="op">@</span> cuadrado3d.T).T</span>
+<span id="cb9-54"><a></a></span>
+<span id="cb9-55"><a></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">5</span>))</span>
+<span id="cb9-56"><a></a></span>
+<span id="cb9-57"><a></a><span class="co"># Rotación en 3D (Eje X)</span></span>
+<span id="cb9-58"><a></a>ax1 <span class="op">=</span> fig.add_subplot(<span class="dv">131</span>, projection<span class="op">=</span><span class="st">'3d'</span>)</span>
+<span id="cb9-59"><a></a>ax1.plot(cuadrado3d[:, <span class="dv">0</span>], cuadrado3d[:, <span class="dv">1</span>], cuadrado3d[:, <span class="dv">2</span>], <span class="st">'blue'</span>, label<span class="op">=</span><span class="st">"Original"</span>)</span>
+<span id="cb9-60"><a></a>ax1.plot(cuadrado3d_rx[:, <span class="dv">0</span>], cuadrado3d_rx[:, <span class="dv">1</span>], cuadrado3d_rx[:, <span class="dv">2</span>], <span class="st">'red'</span>, label<span class="op">=</span><span class="st">"Rotado X"</span>)</span>
+<span id="cb9-61"><a></a>ax1.set_title(<span class="st">"Rotación en 3D (X)"</span>)</span>
+<span id="cb9-62"><a></a>dibujar_ejes(ax1)</span>
+<span id="cb9-63"><a></a>ax1.legend()</span>
+<span id="cb9-64"><a></a></span>
+<span id="cb9-65"><a></a><span class="co"># Rotación en 3D (Eje Y)</span></span>
+<span id="cb9-66"><a></a>ax2 <span class="op">=</span> fig.add_subplot(<span class="dv">132</span>, projection<span class="op">=</span><span class="st">'3d'</span>)</span>
+<span id="cb9-67"><a></a>ax2.plot(cuadrado3d[:, <span class="dv">0</span>], cuadrado3d[:, <span class="dv">1</span>], cuadrado3d[:, <span class="dv">2</span>], <span class="st">'blue'</span>, label<span class="op">=</span><span class="st">"Original"</span>)</span>
+<span id="cb9-68"><a></a>ax2.plot(cuadrado3d_ry[:, <span class="dv">0</span>], cuadrado3d_ry[:, <span class="dv">1</span>], cuadrado3d_ry[:, <span class="dv">2</span>], <span class="st">'red'</span>, label<span class="op">=</span><span class="st">"Rotado Y"</span>)</span>
+<span id="cb9-69"><a></a>ax2.set_title(<span class="st">"Rotación en 3D (Y)"</span>)</span>
+<span id="cb9-70"><a></a>dibujar_ejes(ax2)</span>
+<span id="cb9-71"><a></a>ax2.legend()</span>
+<span id="cb9-72"><a></a></span>
+<span id="cb9-73"><a></a><span class="co"># Rotación en 3D (Eje Z)</span></span>
+<span id="cb9-74"><a></a>ax3 <span class="op">=</span> fig.add_subplot(<span class="dv">133</span>, projection<span class="op">=</span><span class="st">'3d'</span>)</span>
+<span id="cb9-75"><a></a>ax3.plot(cuadrado3d[:, <span class="dv">0</span>], cuadrado3d[:, <span class="dv">1</span>], cuadrado3d[:, <span class="dv">2</span>], <span class="st">'blue'</span>, label<span class="op">=</span><span class="st">"Original"</span>)</span>
+<span id="cb9-76"><a></a>ax3.plot(cuadrado3d_rz[:, <span class="dv">0</span>], cuadrado3d_rz[:, <span class="dv">1</span>], cuadrado3d_rz[:, <span class="dv">2</span>], <span class="st">'r'</span>, label<span class="op">=</span><span class="st">"Rotado Y"</span>)</span>
+<span id="cb9-77"><a></a>ax3.set_title(<span class="st">"Rotación en 3D (Z)"</span>)</span>
+<span id="cb9-78"><a></a>ax3.set_zlim(<span class="op">-</span><span class="fl">1.5</span>, <span class="fl">1.5</span>)</span>
+<span id="cb9-79"><a></a>ax3.set_box_aspect([<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>]) </span>
+<span id="cb9-80"><a></a>dibujar_ejes(ax3)</span>
+<span id="cb9-81"><a></a>ax3.legend()</span>
+<span id="cb9-82"><a></a></span>
+<span id="cb9-83"><a></a></span>
+<span id="cb9-84"><a></a>plt.show()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="03_representacion2Dy3D_files/figure-revealjs/cell-9-output-1.png" width="1144" height="391"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h4 id="reflexión-en-3d">Reflexión en 3D</h4>
+<p>Se pueden reflejar objetos respecto a los planos principales:</p>
+<ul>
+<li>Reflexión en el plano XY: <span class="math display">\[
+M_{xy} = \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\
+                        0 &amp; 1 &amp; 0 &amp; 0 \\
+                        0 &amp; 0 &amp; -1 &amp; 0 \\
+                        0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]</span></li>
+<li>Reflexión en el plano XZ: <span class="math display">\[
+M_{xz} = \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\
+                        0 &amp; -1 &amp; 0 &amp; 0 \\
+                        0 &amp; 0 &amp; 1 &amp; 0 \\
+                        0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]</span></li>
+<li>Reflexión en el plano YZ: <span class="math display">\[
+M_{yz} = \begin{bmatrix} -1 &amp; 0 &amp; 0 &amp; 0 \\
+                        0 &amp; 1 &amp; 0 &amp; 0 \\
+                        0 &amp; 0 &amp; 1 &amp; 0 \\
+                        0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]</span></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<div id="c4e06b9b" class="cell" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="kw">def</span> reflexion3D(plano):</span>
+<span id="cb10-2"><a></a>    <span class="cf">if</span> plano<span class="op">==</span><span class="st">'xy'</span>:</span>
+<span id="cb10-3"><a></a>        <span class="cf">return</span> np.array([[<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>],</span>
+<span id="cb10-4"><a></a>                         [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>],</span>
+<span id="cb10-5"><a></a>                         [<span class="dv">0</span>, <span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>],</span>
+<span id="cb10-6"><a></a>                         [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>]])</span>
+<span id="cb10-7"><a></a>    <span class="cf">elif</span> plano<span class="op">==</span><span class="st">"xz"</span>:</span>
+<span id="cb10-8"><a></a>        <span class="cf">return</span> np.array([[<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>],</span>
+<span id="cb10-9"><a></a>                         [<span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>],</span>
+<span id="cb10-10"><a></a>                         [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>],</span>
+<span id="cb10-11"><a></a>                         [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>]])</span>
+<span id="cb10-12"><a></a>    <span class="cf">elif</span> plano<span class="op">==</span><span class="st">"yz"</span>:</span>
+<span id="cb10-13"><a></a>        <span class="cf">return</span> np.array([[<span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>],</span>
+<span id="cb10-14"><a></a>                         [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>],</span>
+<span id="cb10-15"><a></a>                         [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>],</span>
+<span id="cb10-16"><a></a>                         [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>]])</span>
+<span id="cb10-17"><a></a>    <span class="cf">else</span>:</span>
+<span id="cb10-18"><a></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"Indica un plano válido: 'xy', 'xz' o 'yz'."</span>)</span>
+<span id="cb10-19"><a></a></span>
+<span id="cb10-20"><a></a>cubo <span class="op">=</span> np.array([[<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>],</span>
+<span id="cb10-21"><a></a>                 [<span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>],</span>
+<span id="cb10-22"><a></a>                 [<span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>],</span>
+<span id="cb10-23"><a></a>                 [<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>],</span>
+<span id="cb10-24"><a></a>                 [<span class="dv">1</span>, <span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>],</span>
+<span id="cb10-25"><a></a>                 [<span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>],</span>
+<span id="cb10-26"><a></a>                 [<span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>],</span>
+<span id="cb10-27"><a></a>                 [<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>]])</span>
+<span id="cb10-28"><a></a></span>
+<span id="cb10-29"><a></a>cubo_t <span class="op">=</span> (traslacion3DH(<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>)<span class="op">@</span>cubo.T).T</span>
+<span id="cb10-30"><a></a></span>
+<span id="cb10-31"><a></a>cubo_xy <span class="op">=</span> (reflexion3D(<span class="st">"xy"</span>) <span class="op">@</span> cubo_t.T).T</span>
+<span id="cb10-32"><a></a>cubo_xz <span class="op">=</span> (reflexion3D(<span class="st">"xz"</span>) <span class="op">@</span> cubo_t.T).T</span>
+<span id="cb10-33"><a></a>cubo_yz <span class="op">=</span> (reflexion3D(<span class="st">"yz"</span>) <span class="op">@</span> cubo_t.T).T</span>
+<span id="cb10-34"><a></a></span>
+<span id="cb10-35"><a></a><span class="kw">def</span> graficar_cubo(ax, cubo, color<span class="op">=</span><span class="st">'b'</span>, label<span class="op">=</span><span class="st">"Cubo"</span>):</span>
+<span id="cb10-36"><a></a>    <span class="co"># Conectar los vértices para formar un cubo</span></span>
+<span id="cb10-37"><a></a>    edges <span class="op">=</span> [(<span class="dv">0</span>,<span class="dv">1</span>), (<span class="dv">1</span>,<span class="dv">2</span>), (<span class="dv">2</span>,<span class="dv">3</span>), (<span class="dv">3</span>,<span class="dv">0</span>), (<span class="dv">4</span>,<span class="dv">5</span>), (<span class="dv">5</span>,<span class="dv">6</span>), (<span class="dv">6</span>,<span class="dv">7</span>), (<span class="dv">7</span>,<span class="dv">4</span>),</span>
+<span id="cb10-38"><a></a>             (<span class="dv">0</span>,<span class="dv">4</span>), (<span class="dv">1</span>,<span class="dv">5</span>), (<span class="dv">2</span>,<span class="dv">6</span>), (<span class="dv">3</span>,<span class="dv">7</span>)]</span>
+<span id="cb10-39"><a></a>    <span class="cf">for</span> edge <span class="kw">in</span> edges:</span>
+<span id="cb10-40"><a></a>        ax.plot([cubo[edge[<span class="dv">0</span>], <span class="dv">0</span>], cubo[edge[<span class="dv">1</span>], <span class="dv">0</span>]],</span>
+<span id="cb10-41"><a></a>                [cubo[edge[<span class="dv">0</span>], <span class="dv">1</span>], cubo[edge[<span class="dv">1</span>], <span class="dv">1</span>]],</span>
+<span id="cb10-42"><a></a>                [cubo[edge[<span class="dv">0</span>], <span class="dv">2</span>], cubo[edge[<span class="dv">1</span>], <span class="dv">2</span>]], color<span class="op">=</span>color)</span>
+<span id="cb10-43"><a></a>    ax.set_title(label)</span>
+<span id="cb10-44"><a></a>    ax.set_xlabel(<span class="st">"X"</span>)</span>
+<span id="cb10-45"><a></a>    ax.set_ylabel(<span class="st">"Y"</span>)</span>
+<span id="cb10-46"><a></a>    ax.set_zlabel(<span class="st">"Z"</span>)    </span>
+<span id="cb10-47"><a></a></span>
+<span id="cb10-48"><a></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">4</span>))</span>
+<span id="cb10-49"><a></a></span>
+<span id="cb10-50"><a></a>ax1 <span class="op">=</span> fig.add_subplot(<span class="dv">131</span>, projection<span class="op">=</span><span class="st">'3d'</span>)</span>
+<span id="cb10-51"><a></a>graficar_cubo(ax1, cubo, <span class="st">'b'</span>, <span class="st">"Original"</span>)</span>
+<span id="cb10-52"><a></a>graficar_cubo(ax1, cubo_xy, <span class="st">'r'</span>, <span class="st">"Reflejado en XY"</span>)</span>
+<span id="cb10-53"><a></a></span>
+<span id="cb10-54"><a></a>ax2 <span class="op">=</span> fig.add_subplot(<span class="dv">132</span>, projection<span class="op">=</span><span class="st">'3d'</span>)</span>
+<span id="cb10-55"><a></a>graficar_cubo(ax2, cubo, <span class="st">'b'</span>, <span class="st">"Original"</span>)</span>
+<span id="cb10-56"><a></a>graficar_cubo(ax2, cubo_xz, <span class="st">'r'</span>, <span class="st">"Reflejado en XZ"</span>)</span>
+<span id="cb10-57"><a></a></span>
+<span id="cb10-58"><a></a>ax3 <span class="op">=</span> fig.add_subplot(<span class="dv">133</span>, projection<span class="op">=</span><span class="st">'3d'</span>)</span>
+<span id="cb10-59"><a></a>graficar_cubo(ax3, cubo, <span class="st">'b'</span>, <span class="st">"Original"</span>)</span>
+<span id="cb10-60"><a></a>graficar_cubo(ax3, cubo_yz, <span class="st">'r'</span>, <span class="st">"Reflejado en YZ"</span>)</span>
+<span id="cb10-61"><a></a></span>
+<span id="cb10-62"><a></a>plt.show()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="03_representacion2Dy3D_files/figure-revealjs/cell-10-output-1.png" width="930" height="317"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h4 id="shearing-en-3d">Shearing en 3D</h4>
+<p>El shearing inclina el objeto en una dirección sin modificar su escala. En 3D, se pueden aplicar en los tres ejes: - Shearing en X: <span class="math display">\[
+Sh_x = \begin{bmatrix} 1 &amp; k_{xy} &amp; k_{xz} &amp; 0 \\
+                      0 &amp; 1 &amp; 0 &amp; 0 \\
+                      0 &amp; 0 &amp; 1 &amp; 0 \\
+                      0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]</span> - Shearing en Y: <span class="math display">\[
+Sh_y = \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\
+                      k_{yx} &amp; 1 &amp; k_{yz} &amp; 0 \\
+                      0 &amp; 0 &amp; 1 &amp; 0 \\
+                      0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]</span> - Shearing en Z: <span class="math display">\[
+Sh_z = \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\
+                      0 &amp; 1 &amp; 0 &amp; 0 \\
+                      k_{zx} &amp; k_{zy} &amp; 1 &amp; 0 \\
+                      0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]</span></p>
+<p>Nota: Los parámetros <span class="math inline">\(k_{xy}, k_{xz}, k_{yx}, k_{yz}, k_{zx}, k_{zy}\)</span> en la matriz determinan el grado de inclinación del objeto en cada eje en relación con los demás. Se pueden calcular a partir de un ángulo de inclinación mediante la tangente del ángulo correspondiente.</p>
+<p><span class="math display">\[
+k = \tan(\alpha)
+\]</span></p>
+</section>
+<section class="slide level2">
+
+<h3 id="composición-de-transformaciones">Composición de transformaciones</h3>
+<p>Las transformaciones se pueden combinar multiplicando matrices en el orden adecuado. Por ejemplo, para rotar un objeto y luego trasladarlo: <span class="math display">\[
+T \cdot R_z \cdot R_y \cdot R_x \cdot S
+\]</span></p>
+</section>
+<section id="proyecciones" class="slide level2">
+<h2>Proyecciones</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>En el proceso de visualización, en algún punto los modelos tridimensionales deben representarse en dispositivos de salida bidimensionales (pantallas, impresoras, etc.).</li>
+<li>Para lograr esto, se emplean <strong>proyecciones</strong>, que son operaciones que transforman una escena 3D en una imagen 2D, simulando la percepción humana o una vista técnica.</li>
+</ul>
+<p>Existen dos tipos principales de proyecciones:</p>
+<ul>
+<li><strong>Proyecciones paralelas</strong>: No consideran la distancia entre el observador y el objeto.</li>
+<li><strong>Proyecciones en perspectiva</strong>: Simulan la forma en que el ojo humano percibe la profundidad.</li>
+</ul>
+</div><div class="column" style="width:38%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/projection.png" style="width:100.0%"></p>
+<figcaption>Visualización gráfica</figcaption>
+</figure>
+</div>
+<p><em>Imagen de <a href="https://stackoverflow.com/questions/15588860/what-exactly-are-eye-space-coordinates">stackoverflow.com</a></em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/parallel-vs-perspective.jpg" style="width:100.0%"></p>
+<figcaption>Visualización gráfica</figcaption>
+</figure>
+</div>
+<p>Imagen de <a href="https://motenv.wordpress.com/2023/11/16/types-of-parallel-and-perspective-projection/">motenv.wordpress.com</a></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<h3 id="proyección-paralela">Proyección paralela</h3>
+<p>En este tipo de proyección, las líneas paralelas en el mundo 3D permanecen paralelas en la imagen 2D. <em>Por ejemplo:</em> Dibujo técnico y CAD.</p>
+<ul>
+<li><p><strong>Tipos de proyección paralela:</strong></p>
+<ul>
+<li><p><strong>Proyección ortográfica:</strong> Las líneas de proyección son perpendiculares al plano de proyección. No hay distorsión en la escala de los objetos.</p></li>
+<li><p><strong>Proyección oblicua:</strong> Las líneas de proyección no son perpendiculares al plano de proyección, lo que genera un efecto de inclinación en la imagen proyectada.</p></li>
+</ul></li>
+</ul>
+<p><em>Nota: las líneas de proyección son líneas imaginarias que se proyectan desde cada punto del objeto hacia el plano de proyección, manteniendo siempre la misma dirección.</em></p>
+
+<img data-src="imgs/orthographic-vs-oblique.jpg" class="r-stretch quarto-figure-center"><p class="caption">imgs/orthographic-vs-oblique.jpg</p></section>
+<section class="slide level2 scrollable">
+
+<p><strong>Proyección ortográfica:</strong></p>
+<ul>
+<li><p>Dependiendo del <strong>plano de proyección</strong>, la matriz de proyección cambia de la siguiente manera:</p>
+<ol type="1">
+<li><p><strong>sobre el plano XY</strong> (elimina <span class="math inline">\(z\)</span> y se obtiene una vista desde arriba):<br>
+<span class="math display">\[
+P_{xy} = \begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\]</span></p></li>
+<li><p><strong>sobre el plano XZ</strong> (elimina <span class="math inline">\(y\)</span> y se obtiene una vista lateral):<br>
+<span class="math display">\[
+P_{xz} = \begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\]</span></p></li>
+<li><p><strong>sobre el plano YZ</strong> (elimina <span class="math inline">\(x\)</span> y se obtiene otra vista lateral):<br>
+<span class="math display">\[
+P_{yz} = \begin{bmatrix}
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\]</span></p></li>
+</ol></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p><strong>Proyección oblicua:</strong></p>
+<p><span class="math display">\[
+P_{obl} = \begin{bmatrix}
+1 &amp; 0 &amp; DOP_x / DOP_z &amp; 0 \\
+0 &amp; 1 &amp; DOP_y / DOP_z &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\]</span></p>
+<ul>
+<li>Donde <span class="math inline">\(DOP\)</span> es un vector que define la dirección en la que los puntos del objeto se proyectan sobre el plano de proyección en la proyección oblicua. Sus tres componentes <span class="math inline">\(DOP_x, DOP_y, DOP_z\)</span> indican la inclinación de la proyección en los ejes <span class="math inline">\(x, y, z\)</span>.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="proyección-en-perspectiva-1">Proyección en perspectiva</h3>
+<ul>
+<li><p>Simula cómo los objetos parecen más pequeños a medida que se alejan del observador (perspective shortening). Por ejemplo, en Videojuegos, renderizado 3D.</p></li>
+<li><p>A diferencia de la proyección paralela, las líneas de proyección convergen en un punto de fuga, simulando la profundidad de la escena.</p></li>
+<li><p><strong>Plano de proyección sobre <span class="math inline">\(Z = d\)</span></strong>: <span class="math display">\[
+P_z = \begin{bmatrix} d &amp; 0 &amp; 0 &amp; 0 \\
+                      0 &amp; d &amp; 0 &amp; 0 \\
+                      0 &amp; 0 &amp; 0 &amp; 1 \\
+                      0 &amp; 0 &amp; -1/d &amp; 0 \end{bmatrix}
+\]</span> Donde <span class="math inline">\(d\)</span> es la distancia del observador al plano de proyección.</p></li>
+<li><p><strong>Plano de proyección sobre <span class="math inline">\(X = d\)</span></strong>:</p></li>
+</ul>
+<p><span class="math display">\[
+P_x = \begin{bmatrix}
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; d &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; d &amp; 0 \\
+-1/d &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\]</span></p>
+<ul>
+<li><strong>Plano de proyección sobre <span class="math inline">\(Y = d\)</span></strong>:</li>
+</ul>
+<p><span class="math display">\[
+P_y = \begin{bmatrix}
+d &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; d &amp; 0 \\
+0 &amp; -1/d &amp; 0 &amp; 0
+\end{bmatrix}
+\]</span></p>
+<p><em>La normalización es necesaria después de la multiplicación.</em></p>
+</section>
+<section class="slide level2">
+
+<h3 id="por-qué-la-matriz-de-proyección-no-da-directamente-un-punto-2d">¿Por qué la matriz de proyección no da directamente un punto 2D?</h3>
+<ul>
+<li>La matriz de proyección <em>debe generar una imagen 2D a partir de un modelo 3D</em>, pero el resultado sigue teniendo una tercera coordenada porque la proyección en perspectiva conserva información de profundidad.</li>
+</ul>
+<p><span class="math display">\[
+P \cdot \begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix} =
+\begin{bmatrix} d x \\ d y \\ z \\ -z/d \end{bmatrix}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(z'\)</span> aún se conserva para ayudar a calcular profundidad relativa (como en el <strong>Z-buffer</strong>, para ocultar objetos detrás de otros).</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="cómo-obtenemos-la-imagen-final-en-2d">¿Cómo obtenemos la imagen final en 2D?</h3>
+<p>Para obtener un punto 2D real, <strong>normalizamos</strong> dividiendo todo por el último componente:</p>
+<p><span class="math display">\[
+x'' = = \frac{x d}{z}, \quad y'' = \frac{y d}{z}
+\]</span></p>
+<ul>
+<li>Este es el paso final que convierte los puntos a coordenadas <strong>2D en la imagen</strong>.</li>
+</ul>
 </section>
 <section id="referencias-bibliográficas" class="slide level2">
 <h2>Referencias bibliográficas</h2>

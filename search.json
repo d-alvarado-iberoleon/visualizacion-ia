@@ -172,7 +172,28 @@
     "href": "clases/03_representacion2Dy3D.html#transformaciones-entre-sistemas-de-coordenadas",
     "title": "03 - Representación en 2D y 3D",
     "section": "Transformaciones entre sistemas de coordenadas",
-    "text": "Transformaciones entre sistemas de coordenadas\n\n\n\nEn gráficos por computadora / visión computacional / robótica, es común trabajar con varios sistemas de coordenadas.\nUna matriz de transformación permite convertir puntos de un sistema \\(i\\) a otro \\(g\\):\n\n\\[\n\\mathbf{v}_g = M \\cdot \\mathbf{v}_i\n\\]\n\\[\n\\mathbf{v}_i = M^{-1} \\cdot \\mathbf{v}_g\n\\]\nDonde: - \\(\\mathbf{v}_i\\): punto en el sistema original. - \\(\\mathbf{v}_g\\): punto en el nuevo sistema. - \\(M\\): Matriz de transformación.\n\n\n\n\nCambio de sistema de coordenadas\n\n\nImagen de www.inf.ed.ac.uk"
+    "text": "Transformaciones entre sistemas de coordenadas\n\n\n\nEn gráficos por computadora / visión computacional / robótica, es común trabajar con varios sistemas de coordenadas.\nUna matriz de transformación permite convertir puntos de un sistema \\(i\\) a otro \\(g\\):\n\n\\[\n\\mathbf{v}_g = M \\cdot \\mathbf{v}_i\n\\]\n\\[\n\\mathbf{v}_i = M^{-1} \\cdot \\mathbf{v}_g\n\\]\nDonde:\n\n\\(\\mathbf{v}_i\\): punto en el sistema original.\n\\(\\mathbf{v}_g\\): punto en el nuevo sistema.\n\\(M\\): Matriz de transformación.\n\n\n\n\n\nCambio de sistema de coordenadas\n\n\nImagen de www.inf.ed.ac.uk"
+  },
+  {
+    "objectID": "clases/03_representacion2Dy3D.html#en-sesiones-anteriores",
+    "href": "clases/03_representacion2Dy3D.html#en-sesiones-anteriores",
+    "title": "03 - Representación en 2D y 3D",
+    "section": "En sesiones anteriores…",
+    "text": "En sesiones anteriores…\n\nVimos como las transformaciones de objetos 2D pueden representarse a través de modelos vectoriales y matriciales.\nLas transformaciones geométricas en 2D nos permiten modificar la posición, escala y orientación de los objetos en un espacio bidimensional.\nLas transformaciones pueden combinarse multiplicando sus matrices en el orden adecuado. Por ejemplo, para rotar y luego trasladar un objeto: \\(P' = T \\cdot R \\cdot P\\).\nEl orden de las transformaciones es importante, ya que la multiplicación matricial no es conmutativa.\nPara representar todas las transformaciones de manera uniforme, se usa la notación de coordenadas homogéneas, donde los puntos se representan con una coordenada adicional:\n\n\\[\nP(x, y) \\rightarrow P_h(x, y, 1)\n\\]"
+  },
+  {
+    "objectID": "clases/03_representacion2Dy3D.html#transformaciones3d",
+    "href": "clases/03_representacion2Dy3D.html#transformaciones3d",
+    "title": "03 - Representación en 2D y 3D",
+    "section": "Transformaciones en 3D",
+    "text": "Transformaciones en 3D\n\n\n\nLas transformaciones en el espacio tridimensional son una extensión de las transformaciones 2D.\nSe representan mediante matrices \\(4 \\times 4\\) utilizando coordenadas homogéneas para facilitar su combinación mediante multiplicaciones matriciales.\n\n\n\n\n\nVisualización gráfica\n\n\nImagen de medium.com"
+  },
+  {
+    "objectID": "clases/03_representacion2Dy3D.html#proyecciones",
+    "href": "clases/03_representacion2Dy3D.html#proyecciones",
+    "title": "03 - Representación en 2D y 3D",
+    "section": "Proyecciones",
+    "text": "Proyecciones\n\n\n\nEn el proceso de visualización, en algún punto los modelos tridimensionales deben representarse en dispositivos de salida bidimensionales (pantallas, impresoras, etc.).\nPara lograr esto, se emplean proyecciones, que son operaciones que transforman una escena 3D en una imagen 2D, simulando la percepción humana o una vista técnica.\n\nExisten dos tipos principales de proyecciones:\n\nProyecciones paralelas: No consideran la distancia entre el observador y el objeto.\nProyecciones en perspectiva: Simulan la forma en que el ojo humano percibe la profundidad.\n\n\n\n\n\nVisualización gráfica\n\n\nImagen de stackoverflow.com\n\n\n\nVisualización gráfica\n\n\nImagen de motenv.wordpress.com"
   },
   {
     "objectID": "clases/03_representacion2Dy3D.html#referencias-bibliográficas",
