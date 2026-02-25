@@ -360,7 +360,7 @@ Dra. Dora Alvarado
 </section>
 <section class="slide level2">
 
-<div id="de74649d" class="cell" data-execution_count="1">
+<div id="d95ce751" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a></a></span>
@@ -432,7 +432,7 @@ Dra. Dora Alvarado
 </section>
 <section class="slide level2">
 
-<div id="876f307c" class="cell" data-execution_count="2">
+<div id="78bb2acd" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="co"># Aplicar escala</span></span>
 <span id="cb2-2"><a></a><span class="kw">def</span> escalar(objeto, escala_x, escala_y):</span>
 <span id="cb2-3"><a></a>    matriz_escala <span class="op">=</span> np.array([[escala_x, <span class="dv">0</span>], </span>
@@ -481,7 +481,7 @@ Dra. Dora Alvarado
 </section>
 <section class="slide level2">
 
-<div id="31c55e64" class="cell" data-execution_count="3">
+<div id="626168b6" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="co"># Aplicar rotación</span></span>
 <span id="cb3-2"><a></a><span class="kw">def</span> rotacion(objeto, angulo):</span>
 <span id="cb3-3"><a></a>    rad <span class="op">=</span> np.deg2rad(angulo)</span>
@@ -534,7 +534,7 @@ Dra. Dora Alvarado
 </section>
 <section class="slide level2">
 
-<div id="1175da67" class="cell" data-execution_count="4">
+<div id="b3b27a5f" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="co"># Aplicar reflexión</span></span>
 <span id="cb4-2"><a></a><span class="kw">def</span> reflexion(objeto, reflejo_x<span class="op">=</span><span class="va">True</span>, reflejo_y<span class="op">=</span><span class="va">False</span>):</span>
 <span id="cb4-3"><a></a>    matriz_reflexion <span class="op">=</span> np.array([</span>
@@ -580,7 +580,7 @@ Dra. Dora Alvarado
 </section>
 <section class="slide level2">
 
-<div id="78ce53b4" class="cell" data-execution_count="5">
+<div id="f8621cca" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="kw">def</span> skew(objeto, skew_x, skew_y):</span>
 <span id="cb5-2"><a></a>    matriz_skew <span class="op">=</span> np.array([[<span class="dv">1</span>, skew_x], </span>
 <span id="cb5-3"><a></a>                            [skew_y, <span class="dv">1</span>]])</span>
@@ -1076,7 +1076,7 @@ R(90^\circ) =
 <section class="slide level2">
 
 <p>Aplicamos esta matriz a cada vértice del triángulo.</p>
-<div id="f7f7cb8d" class="cell" data-execution_count="6">
+<div id="ddf85447" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="kw">def</span> rotacionH(theta):</span>
 <span id="cb6-2"><a></a>    rad <span class="op">=</span> np.deg2rad(theta)</span>
 <span id="cb6-3"><a></a>    <span class="cf">return</span> np.array([[np.cos(rad), <span class="op">-</span>np.sin(rad), <span class="dv">0</span>], </span>
@@ -1326,7 +1326,7 @@ S = \begin{bmatrix} s_x &amp; 0 &amp; 0 &amp; 0 \\
 </section>
 <section class="slide level2">
 
-<div id="7720f355" class="cell" data-execution_count="7">
+<div id="ae1093b0" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb8-2"><a></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb8-3"><a></a></span>
@@ -1375,13 +1375,21 @@ S = \begin{bmatrix} s_x &amp; 0 &amp; 0 &amp; 0 \\
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><em>Rotación 3D</em> - En la rotación 3D hay <strong>tres posibles ejes de rotación</strong>: <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span> y <span class="math inline">\(Z\)</span>. - Cada eje tiene su propia matriz de rotación: - <strong>Rotación alrededor del eje X</strong> (afecta <span class="math inline">\(y\)</span> y <span class="math inline">\(z\)</span>, pero no <span class="math inline">\(x\)</span>): <span class="math display">\[
-       R_x(\theta) = \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; \cos\theta &amp; -\sin\theta &amp; 0 \\ 0 &amp; \sin\theta &amp; \cos\theta &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
-       \]</span> - <strong>Rotación alrededor del eje Y</strong> (afecta <span class="math inline">\(x\)</span> y <span class="math inline">\(z\)</span>, pero no <span class="math inline">\(y\)</span>): <span class="math display">\[
-       R_y(\theta) = \begin{bmatrix} \cos\theta &amp; 0 &amp; \sin\theta &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ -\sin\theta &amp; 0 &amp; \cos\theta &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
-       \]</span> - <strong>Rotación alrededor del eje Z</strong> (afecta <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, pero no <span class="math inline">\(z\)</span>, similar a la rotación 2D): <span class="math display">\[
-       R_z(\theta) = \begin{bmatrix} \cos\theta &amp; -\sin\theta &amp; 0 &amp; 0 \\ \sin\theta &amp; \cos\theta &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
-       \]</span></p>
+<p><em>Rotación 3D</em> - En la rotación 3D hay <strong>tres posibles ejes de rotación</strong>: <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span> y <span class="math inline">\(Z\)</span>.</p>
+<ul>
+<li><p>Cada eje tiene su propia matriz de rotación:</p>
+<ul>
+<li><p><strong>Rotación alrededor del eje X</strong> (afecta <span class="math inline">\(y\)</span> y <span class="math inline">\(z\)</span>, pero no <span class="math inline">\(x\)</span>): <span class="math display">\[
+R_x(\theta) = \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; \cos\theta &amp; -\sin\theta &amp; 0 \\ 0 &amp; \sin\theta &amp; \cos\theta &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]</span></p></li>
+<li><p><strong>Rotación alrededor del eje Y</strong> (afecta <span class="math inline">\(x\)</span> y <span class="math inline">\(z\)</span>, pero no <span class="math inline">\(y\)</span>): <span class="math display">\[
+R_y(\theta) = \begin{bmatrix} \cos\theta &amp; 0 &amp; \sin\theta &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ -\sin\theta &amp; 0 &amp; \cos\theta &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]</span></p></li>
+<li><p><strong>Rotación alrededor del eje Z</strong> (afecta <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, pero no <span class="math inline">\(z\)</span>, similar a la rotación 2D): <span class="math display">\[
+R_z(\theta) = \begin{bmatrix} \cos\theta &amp; -\sin\theta &amp; 0 &amp; 0 \\ \sin\theta &amp; \cos\theta &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]</span></p></li>
+</ul></li>
+</ul>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1394,7 +1402,7 @@ S = \begin{bmatrix} s_x &amp; 0 &amp; 0 &amp; 0 \\
 </section>
 <section class="slide level2">
 
-<div id="7dbcf61d" class="cell" data-execution_count="8">
+<div id="1fdabda4" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="im">from</span> mpl_toolkits.mplot3d <span class="im">import</span> Axes3D</span>
 <span id="cb9-2"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb9-3"><a></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -1515,7 +1523,7 @@ M_{yz} = \begin{bmatrix} -1 &amp; 0 &amp; 0 &amp; 0 \\
 </section>
 <section class="slide level2">
 
-<div id="c4e06b9b" class="cell" data-execution_count="9">
+<div id="e762b848" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="kw">def</span> reflexion3D(plano):</span>
 <span id="cb10-2"><a></a>    <span class="cf">if</span> plano<span class="op">==</span><span class="st">'xy'</span>:</span>
 <span id="cb10-3"><a></a>        <span class="cf">return</span> np.array([[<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>],</span>
@@ -1590,22 +1598,27 @@ M_{yz} = \begin{bmatrix} -1 &amp; 0 &amp; 0 &amp; 0 \\
 <section class="slide level2">
 
 <h4 id="shearing-en-3d">Shearing en 3D</h4>
-<p>El shearing inclina el objeto en una dirección sin modificar su escala. En 3D, se pueden aplicar en los tres ejes: - Shearing en X: <span class="math display">\[
+<p>El shearing inclina el objeto en una dirección sin modificar su escala. En 3D, se pueden aplicar en los tres ejes:</p>
+<ul>
+<li><p>Shearing en X: <span class="math display">\[
 Sh_x = \begin{bmatrix} 1 &amp; k_{xy} &amp; k_{xz} &amp; 0 \\
-                      0 &amp; 1 &amp; 0 &amp; 0 \\
-                      0 &amp; 0 &amp; 1 &amp; 0 \\
-                      0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
-\]</span> - Shearing en Y: <span class="math display">\[
+                    0 &amp; 1 &amp; 0 &amp; 0 \\
+                    0 &amp; 0 &amp; 1 &amp; 0 \\
+                    0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]</span></p></li>
+<li><p>Shearing en Y: <span class="math display">\[
 Sh_y = \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\
-                      k_{yx} &amp; 1 &amp; k_{yz} &amp; 0 \\
-                      0 &amp; 0 &amp; 1 &amp; 0 \\
-                      0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
-\]</span> - Shearing en Z: <span class="math display">\[
+                    k_{yx} &amp; 1 &amp; k_{yz} &amp; 0 \\
+                    0 &amp; 0 &amp; 1 &amp; 0 \\
+                    0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]</span></p></li>
+<li><p>Shearing en Z: <span class="math display">\[
 Sh_z = \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\
-                      0 &amp; 1 &amp; 0 &amp; 0 \\
-                      k_{zx} &amp; k_{zy} &amp; 1 &amp; 0 \\
-                      0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
-\]</span></p>
+                    0 &amp; 1 &amp; 0 &amp; 0 \\
+                    k_{zx} &amp; k_{zy} &amp; 1 &amp; 0 \\
+                    0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]</span></p></li>
+</ul>
 <p>Nota: Los parámetros <span class="math inline">\(k_{xy}, k_{xz}, k_{yx}, k_{yz}, k_{zx}, k_{zy}\)</span> en la matriz determinan el grado de inclinación del objeto en cada eje en relación con los demás. Se pueden calcular a partir de un ángulo de inclinación mediante la tangente del ángulo correspondiente.</p>
 <p><span class="math display">\[
 k = \tan(\alpha)
@@ -1668,7 +1681,7 @@ T \cdot R_z \cdot R_y \cdot R_x \cdot S
 <ul>
 <li><p>Dependiendo del <strong>plano de proyección</strong>, la matriz de proyección cambia de la siguiente manera:</p>
 <ol type="1">
-<li><p><strong>sobre el plano XY</strong> (elimina <span class="math inline">\(z\)</span> y se obtiene una vista desde arriba):<br>
+<li><p><strong>Vista superior (plano XY)</strong> (elimina <span class="math inline">\(z\)</span> y se obtiene una vista desde arriba):<br>
 <span class="math display">\[
 P_{xy} = \begin{bmatrix}
 1 &amp; 0 &amp; 0 &amp; 0 \\
@@ -1677,7 +1690,7 @@ P_{xy} = \begin{bmatrix}
 0 &amp; 0 &amp; 0 &amp; 1
 \end{bmatrix}
 \]</span></p></li>
-<li><p><strong>sobre el plano XZ</strong> (elimina <span class="math inline">\(y\)</span> y se obtiene una vista lateral):<br>
+<li><p><strong>Vista frontal (plano XZ)</strong> (elimina <span class="math inline">\(y\)</span> y se obtiene una vista frontal o lateral):<br>
 <span class="math display">\[
 P_{xz} = \begin{bmatrix}
 1 &amp; 0 &amp; 0 &amp; 0 \\
@@ -1686,7 +1699,7 @@ P_{xz} = \begin{bmatrix}
 0 &amp; 0 &amp; 0 &amp; 1
 \end{bmatrix}
 \]</span></p></li>
-<li><p><strong>sobre el plano YZ</strong> (elimina <span class="math inline">\(x\)</span> y se obtiene otra vista lateral):<br>
+<li><p><strong>Vista lateral (plano YZ)</strong> (elimina <span class="math inline">\(x\)</span> y se obtiene otra vista lateral):<br>
 <span class="math display">\[
 P_{yz} = \begin{bmatrix}
 0 &amp; 0 &amp; 0 &amp; 0 \\
@@ -1700,18 +1713,36 @@ P_{yz} = \begin{bmatrix}
 </section>
 <section class="slide level2">
 
+<p><strong>Por ejemplo.</strong> Un punto <span class="math inline">\(P = (3, 5, 2)\)</span> proyectado ortográficamente:</p>
+</section>
+<section class="slide level2">
+
 <p><strong>Proyección oblicua:</strong></p>
+<p>En la proyección oblicua, los rayos <strong>no son perpendiculares</strong> al plano de proyección. Esto se logra mediante una matriz de proyección que incluye términos de inclinación, como se muestra a continuación (este es el caso para proyectar sobre el plano XY):</p>
 <p><span class="math display">\[
 P_{obl} = \begin{bmatrix}
-1 &amp; 0 &amp; DOP_x / DOP_z &amp; 0 \\
-0 &amp; 1 &amp; DOP_y / DOP_z &amp; 0 \\
+1 &amp; 0 &amp; -DOP_x / DOP_z &amp; 0 \\
+0 &amp; 1 &amp; -DOP_y / DOP_z &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{bmatrix}
 \]</span></p>
 <ul>
-<li>Donde <span class="math inline">\(DOP\)</span> es un vector que define la dirección en la que los puntos del objeto se proyectan sobre el plano de proyección en la proyección oblicua. Sus tres componentes <span class="math inline">\(DOP_x, DOP_y, DOP_z\)</span> indican la inclinación de la proyección en los ejes <span class="math inline">\(x, y, z\)</span>.</li>
+<li><p><strong><span class="math inline">\(DOP\)</span> (Direction of Projection)</strong>: Vector que indica la dirección de los rayos de proyección. Por ejemplo, <span class="math inline">\(DOP = (1, 0, 1)\)</span> significa que los rayos van diagonalmente hacia adelante y a la derecha.</p></li>
+<li><p>Para proyectar sobre <strong>otro plano cualquiera</strong> definido por su normal <span class="math inline">\(\mathbf{n}\)</span> y su distancia al origen es cero<span class="math inline">\(d=0\)</span>, la matriz de proyección se puede derivar a partir de la fórmula de intersección entre una línea (definida por un punto y una dirección) y un plano.</p></li>
 </ul>
+<p><span class="math display">\[
+P =
+\begin{bmatrix}
+I - \frac{\mathbf{DOP}\mathbf{n}^T}{\mathbf{n}\cdot \mathbf{DOP}} &amp; 0 \
+0^T &amp; 1
+\end{bmatrix}
+\]</span></p>
+</section>
+<section class="slide level2">
+
+<p><strong>Ejemplo:</strong></p>
+<p>Con <span class="math inline">\(DOP = (1, 0, 2)\)</span> (inclinación de 45° y proyectando sobre el plano XY):</p>
 </section>
 <section class="slide level2">
 
@@ -1720,19 +1751,21 @@ P_{obl} = \begin{bmatrix}
 <li><p>Simula cómo los objetos parecen más pequeños a medida que se alejan del observador (perspective shortening). Por ejemplo, en Videojuegos, renderizado 3D.</p></li>
 <li><p>A diferencia de la proyección paralela, las líneas de proyección convergen en un punto de fuga, simulando la profundidad de la escena.</p></li>
 <li><p><strong>Plano de proyección sobre <span class="math inline">\(Z = d\)</span></strong>: <span class="math display">\[
-P_z = \begin{bmatrix} d &amp; 0 &amp; 0 &amp; 0 \\
-                      0 &amp; d &amp; 0 &amp; 0 \\
-                      0 &amp; 0 &amp; 0 &amp; 1 \\
-                      0 &amp; 0 &amp; -1/d &amp; 0 \end{bmatrix}
-\]</span> Donde <span class="math inline">\(d\)</span> es la distancia del observador al plano de proyección.</p></li>
+P_z = \begin{bmatrix}
+d &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; d &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; \frac{f+n}{f-n} &amp; \frac{2fn}{f-n} \\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{bmatrix}
+\]</span></p></li>
 <li><p><strong>Plano de proyección sobre <span class="math inline">\(X = d\)</span></strong>:</p></li>
 </ul>
 <p><span class="math display">\[
 P_x = \begin{bmatrix}
-0 &amp; 0 &amp; 0 &amp; 1 \\
+\frac{f+n}{f-n} &amp; 0 &amp; 0 &amp; \frac{2fn}{f-n} \\
 0 &amp; d &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; d &amp; 0 \\
--1/d &amp; 0 &amp; 0 &amp; 0
+1 &amp; 0 &amp; 0 &amp; 0
 \end{bmatrix}
 \]</span></p>
 <ul>
@@ -1741,36 +1774,26 @@ P_x = \begin{bmatrix}
 <p><span class="math display">\[
 P_y = \begin{bmatrix}
 d &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; \frac{f+n}{f-n} &amp; 0 &amp; \frac{2fn}{f-n} \\
 0 &amp; 0 &amp; d &amp; 0 \\
-0 &amp; -1/d &amp; 0 &amp; 0
+0 &amp; 1 &amp; 0 &amp; 0
 \end{bmatrix}
 \]</span></p>
+<p>Donde <span class="math inline">\(d\)</span> es la distancia del observador al plano de proyección, <span class="math inline">\(f\)</span> y <span class="math inline">\(n\)</span> son las distancias al plano de proyección del plano lejano y cercano, respectivamente.</p>
 <p><em>La normalización es necesaria después de la multiplicación.</em></p>
+</section>
+<section class="slide level2">
+
+<p><strong>Ejemplo:</strong></p>
+<p>Queremos proyectar dos puntos sobre el plano <span class="math inline">\(Z=d\)</span> con <span class="math inline">\(d = 5\)</span>: - Punto cercano: <span class="math inline">\(P_1 = (3, 4, 10)\)</span> - Punto lejano: <span class="math inline">\(P_2 = (3, 4, 20)\)</span></p>
 </section>
 <section class="slide level2">
 
 <h3 id="por-qué-la-matriz-de-proyección-no-da-directamente-un-punto-2d">¿Por qué la matriz de proyección no da directamente un punto 2D?</h3>
 <ul>
-<li>La matriz de proyección <em>debe generar una imagen 2D a partir de un modelo 3D</em>, pero el resultado sigue teniendo una tercera coordenada porque la proyección en perspectiva conserva información de profundidad.</li>
-</ul>
-<p><span class="math display">\[
-P \cdot \begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix} =
-\begin{bmatrix} d x \\ d y \\ z \\ -z/d \end{bmatrix}
-\]</span></p>
-<ul>
-<li><span class="math inline">\(z'\)</span> aún se conserva para ayudar a calcular profundidad relativa (como en el <strong>Z-buffer</strong>, para ocultar objetos detrás de otros).</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="cómo-obtenemos-la-imagen-final-en-2d">¿Cómo obtenemos la imagen final en 2D?</h3>
-<p>Para obtener un punto 2D real, <strong>normalizamos</strong> dividiendo todo por el último componente:</p>
-<p><span class="math display">\[
-x'' = = \frac{x d}{z}, \quad y'' = \frac{y d}{z}
-\]</span></p>
-<ul>
-<li>Este es el paso final que convierte los puntos a coordenadas <strong>2D en la imagen</strong>.</li>
+<li><p>La matriz de proyección <em>debe generar una imagen 2D a partir de un modelo 3D</em>, pero el resultado sigue teniendo una tercera coordenada porque la proyección en perspectiva conserva información de profundidad.</p></li>
+<li><p><span class="math inline">\(z'\)</span> aún se conserva para ayudar a calcular profundidad relativa (como en el <strong>Z-buffer</strong>, para ocultar objetos detrás de otros).</p></li>
+<li><p>Para obtener las coordenadas 2D finales, se realiza una <strong>normalización de perspectiva</strong> dividiendo por la coordenada <span class="math inline">\(z'\)</span>.</p></li>
 </ul>
 </section>
 <section id="referencias-bibliográficas" class="slide level2">
