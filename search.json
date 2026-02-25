@@ -126,186 +126,95 @@
     "text": "8 Actividad del curso\n\nSemana actual: 1 / 16\nTema en curso: Introducción a la visualización gráfica"
   },
   {
-    "objectID": "clases/03_representacion2Dy3D.html#en-la-sesión-anterior",
-    "href": "clases/03_representacion2Dy3D.html#en-la-sesión-anterior",
-    "title": "03 - Representación en 2D y 3D",
-    "section": "En la sesión anterior…",
-    "text": "En la sesión anterior…\n\nExploramos los conceptos básicos sobre imágenes digitales y cómo las imágenes pueden representarse de diferentes formas, ya sea a través de gráficas de ráster o gráficas vectoriales.\nAhora, vamos a ver cómo estas representaciones se manipulan y transforman mediante transformaciones geométricas, que son herramientas esenciales para la creación y edición de gráficos digitales.\n\n\nImagen de amosunov.wordpress.com"
+    "objectID": "clases/04_visualizacion_datos.html#que_es_dataviz",
+    "href": "clases/04_visualizacion_datos.html#que_es_dataviz",
+    "title": "04 - Visualización de Datos",
+    "section": "¿Qué es la visualización de datos?",
+    "text": "¿Qué es la visualización de datos?\n\n\n\nEs la representación visual de información para reforzar la cognición humana y facilitar el análisis y la comunicación.\n\nEdward Tufte\n\n\nImagen de policyviz.com"
   },
   {
-    "objectID": "clases/03_representacion2Dy3D.html#representación-en-2d-y-3d",
-    "href": "clases/03_representacion2Dy3D.html#representación-en-2d-y-3d",
-    "title": "03 - Representación en 2D y 3D",
-    "section": "03: Representación en 2D y 3D",
-    "text": "03: Representación en 2D y 3D\n\nImagen de Introduction to computer graphics\nEn una visualización digital, tenemos un rectángulo hecho de píxeles, con sus coordenadas naturales, donde se mostrará una imagen. Este rectángulo se llama viewport.\nTambién tenemos un conjunto de objetos definidos en un sistema de coordenadas diferente, que generalmente usa coordenadas de números reales en lugar de enteros. Estos objetos forman la escena, mundo o modelo que queremos visualizar, y las coordenadas se llaman coordenadas del mundo o coordenadas del modelo.\n\nNo es posible mostrar una imagen de todo el plano infinito, por lo que necesitamos seleccionar un área rectangular del plano para mostrar en la imagen. A esta área la llamamos ventana o ventana de visualización."
+    "objectID": "clases/04_visualizacion_datos.html#para_que_dataviz",
+    "href": "clases/04_visualizacion_datos.html#para_que_dataviz",
+    "title": "04 - Visualización de Datos",
+    "section": "¿Para qué necesitamos la visualización de datos?",
+    "text": "¿Para qué necesitamos la visualización de datos?\nEl sistema visual humano está altamente optimizado para la detección de patrones."
   },
   {
-    "objectID": "clases/03_representacion2Dy3D.html#motivacion",
-    "href": "clases/03_representacion2Dy3D.html#motivacion",
-    "title": "03 - Representación en 2D y 3D",
-    "section": "Motivación",
-    "text": "Motivación\n\nLas transformaciones 2D y 3D permiten controlar la posición y la orientación de objetos en un espacio.\nSon la base de muchas aplicaciones prácticas en diversas áreas, por ejemplo…"
+    "objectID": "clases/04_visualizacion_datos.html#objetivo_dataviz",
+    "href": "clases/04_visualizacion_datos.html#objetivo_dataviz",
+    "title": "04 - Visualización de Datos",
+    "section": "¿Cuál el objetivo de la visualización de datos?",
+    "text": "¿Cuál el objetivo de la visualización de datos?\nO dicho de otro modo: ¿Por qué incluir a los humanos en el proceso de toma de decisiones?\n\nLa visualización permite analizar datos cuando no se sabe exactamente qué preguntas hacer de antemano.\nEn problemas mal definidos, nos ayuda a explorar visualmente los datos y encontrar patrones inesperados.\nSi bien algunos procesos pueden ser completamente automatizados, otros requieren validación y supervisión humana."
   },
   {
-    "objectID": "clases/03_representacion2Dy3D.html#aplicaciones",
-    "href": "clases/03_representacion2Dy3D.html#aplicaciones",
-    "title": "03 - Representación en 2D y 3D",
-    "section": "Aplicaciones",
-    "text": "Aplicaciones\n\n\n\nEn la creación de mundos virtuales, los objetos deben ser:\n\nposicionados\nescalados\nrotados\nreflejados\n\nPara procesar y analizar imágenes en aplicaciones de visión artificial, así como en la superposición de información digital sobre el mundo físico (como en aplicaciones de realidad aumentada).\n\n\n\n\n\nImagen de thenextweb.com"
+    "objectID": "clases/04_visualizacion_datos.html#ventajas_desventajas_dataviz",
+    "href": "clases/04_visualizacion_datos.html#ventajas_desventajas_dataviz",
+    "title": "04 - Visualización de Datos",
+    "section": "¿Ventajas y desventajas de la visualización de datos?",
+    "text": "¿Ventajas y desventajas de la visualización de datos?\n\n\n\n\n\n\n\nVentajas\nDesventajas\n\n\n\n\nFacilita la identificación de patrones.\nNo siempre permite ver valores exactos.\n\n\nPermite resaltar tendencias.\nPuede ocultar información clave.\n\n\nPuede ofrecer exploración interactiva.\nUn diseño incorrecto puede llevar a sesgos o interpretaciones erróneas."
   },
   {
-    "objectID": "clases/03_representacion2Dy3D.html#transformaciones2d",
-    "href": "clases/03_representacion2Dy3D.html#transformaciones2d",
-    "title": "03 - Representación en 2D y 3D",
-    "section": "Transformaciones 2D",
-    "text": "Transformaciones 2D\n\n\n\nSon operaciones que modifican la geometría de objetos bidimensionales en el plano.\nPermiten realizar cambios en la posición, el tamaño, la orientación y la forma de los objetos.\nExisten dos categorías:\n\ntransformaciones afines.\ntransformaciones no afines.\n\n\n\n\n\n\n2d transformation\n\n\nImagen de graphicsmill.com"
+    "objectID": "clases/04_visualizacion_datos.html#por-qué-usar-una-representación-digital-en-la-visualización",
+    "href": "clases/04_visualizacion_datos.html#por-qué-usar-una-representación-digital-en-la-visualización",
+    "title": "04 - Visualización de Datos",
+    "section": "¿Por qué usar una representación digital en la visualización?",
+    "text": "¿Por qué usar una representación digital en la visualización?\n\nLos sistemas computacionales pueden manejar grandes volúmenes de datos de manera rápida y eficiente.\nPermiten la exploración interactiva de datos, lo que sería imposible con representaciones estáticas.\nAyudan a visualizar cambios en los datos a lo largo del tiempo."
   },
   {
-    "objectID": "clases/03_representacion2Dy3D.html#coordenadas_homogeneas",
-    "href": "clases/03_representacion2Dy3D.html#coordenadas_homogeneas",
-    "title": "03 - Representación en 2D y 3D",
-    "section": "Coordenadas homogéneas",
-    "text": "Coordenadas homogéneas\n\n\n\nEl matemático alemán August Möbius (sí, el mismo de la banda de Möbius 🌀) introdujo las coordenadas homogéneas en 1827 en su obra “Der barycentrische Calcul” para simplificar el estudio de la geometría proyectiva. Su objetivo era trabajar con puntos en el infinito de manera tan natural como con puntos finitos.\n\n\n\n\n\nBanda de Möbius\n\n\n\n\n\nMoebius.jpg\n\n\nImágenes de wikipedia.org y de matematicascercanas.com\n\n\nPara transformaciones 2D, las coordenadas homogéneas permiten que las traslaciones se comporten como transformaciones lineales puras.\nEn la geometría proyectiva, las coordenadas homogéneas permiten representar los puntos al infinito como si fueran parte del espacio habitual, resolviendo problemas complejos con mayor facilidad.\n\nLas GPU pueden realizar millones de transformaciones por segundo gracias a la eficiencia que brindan estas coordenadas🎮🚀."
+    "objectID": "clases/04_visualizacion_datos.html#semantica_tipos_datos",
+    "href": "clases/04_visualizacion_datos.html#semantica_tipos_datos",
+    "title": "04 - Visualización de Datos",
+    "section": "Semántica y tipos de datos",
+    "text": "Semántica y tipos de datos\nSupongamos que tenemos los siguientes datos:\n\n\n\nNote\n\n\n14, 2.6, 30\n30, 15, 100001\n\n\n\n¿Qué representan?"
   },
   {
-    "objectID": "clases/03_representacion2Dy3D.html#transformaciones-entre-sistemas-de-coordenadas",
-    "href": "clases/03_representacion2Dy3D.html#transformaciones-entre-sistemas-de-coordenadas",
-    "title": "03 - Representación en 2D y 3D",
-    "section": "Transformaciones entre sistemas de coordenadas",
-    "text": "Transformaciones entre sistemas de coordenadas\n\n\n\nEn gráficos por computadora / visión computacional / robótica, es común trabajar con varios sistemas de coordenadas.\nUna matriz de transformación permite convertir puntos de un sistema \\(i\\) a otro \\(g\\):\n\n\\[\n\\mathbf{v}_g = M \\cdot \\mathbf{v}_i\n\\]\n\\[\n\\mathbf{v}_i = M^{-1} \\cdot \\mathbf{v}_g\n\\]\nDonde:\n\n\\(\\mathbf{v}_i\\): punto en el sistema original.\n\\(\\mathbf{v}_g\\): punto en el nuevo sistema.\n\\(M\\): Matriz de transformación.\n\n\n\n\n\nCambio de sistema de coordenadas\n\n\nImagen de www.inf.ed.ac.uk"
+    "objectID": "clases/04_visualizacion_datos.html#tipos_datasets",
+    "href": "clases/04_visualizacion_datos.html#tipos_datasets",
+    "title": "04 - Visualización de Datos",
+    "section": "Tipos de conjuntos de datos",
+    "text": "Tipos de conjuntos de datos\n\nImagen de www.cs.ubc.ca\nExisten cuatro estructuras principales en las que se organizan los datos:\n\n\n\n\n\n\n\n\nTipo\nDescripción\nEjemplo\n\n\n\n\nTablas\nConjuntos de datos organizados en filas (elementos) y columnas (atributos).\nBase de datos con nombres, edades y países.\n\n\nRedes\nRepresentan relaciones entre elementos mediante nodos y enlaces.\nRedes sociales, conexiones de aeropuertos.\n\n\nCampos\nDatos continuos definidos sobre un espacio con una cuadrícula de posiciones.\nPosición de jugador a lo largo de un partido, fuerza y dirección de un campo magnétcio\n\n\nGeometría\nDatos con información espacial explícita (puntos, líneas, superficies o volúmenes).\nMapas de elevación, modelos 3D de estructuras, temperatura en una región geográfica"
   },
   {
-    "objectID": "clases/03_representacion2Dy3D.html#en-sesiones-anteriores",
-    "href": "clases/03_representacion2Dy3D.html#en-sesiones-anteriores",
-    "title": "03 - Representación en 2D y 3D",
-    "section": "En sesiones anteriores…",
-    "text": "En sesiones anteriores…\n\nVimos como las transformaciones de objetos 2D pueden representarse a través de modelos vectoriales y matriciales.\nLas transformaciones geométricas en 2D nos permiten modificar la posición, escala y orientación de los objetos en un espacio bidimensional.\nLas transformaciones pueden combinarse multiplicando sus matrices en el orden adecuado. Por ejemplo, para rotar y luego trasladar un objeto: \\(P' = T \\cdot R \\cdot P\\).\nEl orden de las transformaciones es importante, ya que la multiplicación matricial no es conmutativa.\nPara representar todas las transformaciones de manera uniforme, se usa la notación de coordenadas homogéneas, donde los puntos se representan con una coordenada adicional:\n\n\\[\nP(x, y) \\rightarrow P_h(x, y, 1)\n\\]"
+    "objectID": "clases/04_visualizacion_datos.html#tipos_datos",
+    "href": "clases/04_visualizacion_datos.html#tipos_datos",
+    "title": "04 - Visualización de Datos",
+    "section": "Tipos de datos",
+    "text": "Tipos de datos\nLos conjuntos de datos se construyen combinando cinco tipos de datos fundamentales:\n\n\n\n\n\n\n\n\nTipo\nDescripción\nEjemplo\n\n\n\n\nElementos\nEntidades discretas individuales.\nPersonas en una base de datos, ciudades en un mapa.\n\n\nAtributos\nCaracterísticas que describen un elemento.\nEdad, temperatura, color.\n\n\nEnlaces\nRelaciones entre elementos.\nConexiones en redes sociales, rutas de transporte.\n\n\nPosiciones\nDatos espaciales que indican ubicación.\nCoordenadas geográficas (latitud, longitud).\n\n\nCuadrículas\nOrganización estructurada de datos continuos.\nImagen de un escáner médico, modelos climáticos."
   },
   {
-    "objectID": "clases/03_representacion2Dy3D.html#transformaciones3d",
-    "href": "clases/03_representacion2Dy3D.html#transformaciones3d",
-    "title": "03 - Representación en 2D y 3D",
-    "section": "Transformaciones en 3D",
-    "text": "Transformaciones en 3D\n\n\n\nLas transformaciones en el espacio tridimensional son una extensión de las transformaciones 2D.\nSe representan mediante matrices \\(4 \\times 4\\) utilizando coordenadas homogéneas para facilitar su combinación mediante multiplicaciones matriciales.\n\n\n\n\n\nVisualización gráfica\n\n\nImagen de medium.com"
+    "objectID": "clases/04_visualizacion_datos.html#tipos-de-viz",
+    "href": "clases/04_visualizacion_datos.html#tipos-de-viz",
+    "title": "04 - Visualización de Datos",
+    "section": "Tipos de visualizaciones básicas y su aplicación",
+    "text": "Tipos de visualizaciones básicas y su aplicación\n¿Qué es una visualización “básica”?\nUna visualización básica es aquella que representa datos con canales visuales simples y un número reducido de dimensiones, por ejemplo:\n\nUsar la posición en el eje Y para representar una magnitud.\nUsar el color para distinguir categorías.\nUsar el tamaño para sugerir importancia relativa.\n\nEstos gráficos son denominados “básicos” no por su simplicidad técnica, sino porque:\n\nSon ampliamente utilizados en casi todos los dominios.\nEstán bien soportados por herramientas gráficas.\nSon fácilmente interpretables por humanos."
   },
   {
-    "objectID": "clases/03_representacion2Dy3D.html#proyecciones",
-    "href": "clases/03_representacion2Dy3D.html#proyecciones",
-    "title": "03 - Representación en 2D y 3D",
-    "section": "Proyecciones",
-    "text": "Proyecciones\n\n\n\nEn el proceso de visualización, en algún punto los modelos tridimensionales deben representarse en dispositivos de salida bidimensionales (pantallas, impresoras, etc.).\nPara lograr esto, se emplean proyecciones, que son operaciones que transforman una escena 3D en una imagen 2D, simulando la percepción humana o una vista técnica.\n\nExisten dos tipos principales de proyecciones:\n\nProyecciones paralelas: No consideran la distancia entre el observador y el objeto.\nProyecciones en perspectiva: Simulan la forma en que el ojo humano percibe la profundidad.\n\n\n\n\n\nVisualización gráfica\n\n\nImagen de stackoverflow.com\n\n\n\nVisualización gráfica\n\n\nImagen de motenv.wordpress.com"
+    "objectID": "clases/04_visualizacion_datos.html#proceso_creacion",
+    "href": "clases/04_visualizacion_datos.html#proceso_creacion",
+    "title": "04 - Visualización de Datos",
+    "section": "Proceso de creación de visualizaciones efectivas",
+    "text": "Proceso de creación de visualizaciones efectivas\n\nLimpieza y estructuración de datos.\nSelección del tipo de gráfico más adecuado.\nUso de colores, etiquetas y anotaciones efectivas.\nEvitar errores comunes que distorsionan la interpretación.\nValidación del mensaje transmitido con la visualización."
   },
   {
-    "objectID": "clases/03_representacion2Dy3D.html#referencias-bibliográficas",
-    "href": "clases/03_representacion2Dy3D.html#referencias-bibliográficas",
-    "title": "03 - Representación en 2D y 3D",
-    "section": "Referencias bibliográficas",
-    "text": "Referencias bibliográficas\n\nEck, D. J. (2023). Introduction to computer graphics (Version 1.4). Hobart and William Smith Colleges. Recuperado de https://math.hws.edu/graphicsbook\nFoley, J. D., van Dam, A., Feiner, S. K., & Hughes, J. F. (2013). Computer graphics: Principles and practice (3rd ed.). Addison-Wesley.\nKomura, T. (2013). Computer graphics – Course notes. University of Edinburgh. Disponible en https://www.inf.ed.ac.uk/teaching/courses/cg/lectures/cg3_2013.pdf"
+    "objectID": "clases/04_visualizacion_datos.html#ejercicio",
+    "href": "clases/04_visualizacion_datos.html#ejercicio",
+    "title": "04 - Visualización de Datos",
+    "section": "Ejercicio",
+    "text": "Ejercicio\n\nPara ejemplificar el proceso de visualización, estaremos trabajando con el conocido dataset Titanic.\nResponde a las preguntas de análisis y realiza el código de Python que se vaya indicando durante clase. Puedes hacerlo en archivos separados (.pdf + .py) o en un notebook (.ipynb)\n\nParte 1\n\nCarga el dataset Titanic en un DataFrame de Pandas e identifica: ¿qué tipo de conjunto de datos es? ¿qué tipo de atributos tiene (responde el tipo para cada atributo)?\nIdentifica y maneja valores faltantes: ¿qué columnas tienen datos faltantes?, ¿son relevantes para el análisis y/o visualización? Si tu respuesta es sí para alguna de ellas, has una propuesta de cómo manejar los valores faltantes."
   },
   {
-    "objectID": "clases/01-introduccion-visualizacion.html",
-    "href": "clases/01-introduccion-visualizacion.html",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Horario: Lunes y Miércoles\n\n9 a 11 hrs\n11 a 13 hrs\n\n\nDocente: Dra. Dora Alvarado\n\nEmail: 27382@iberoleon.edu.mx; doraelisa.alvaradocarrillo@iberoleon.edu.mx\n\n\nAvisos, exámenes, tareas en Moodle.\n\n\n\n\n\n\n\n\n\nAplicar técnicas y herramientas para el análisis y la visualización de datos, que serán utilizados para la toma de decisiones en proyectos de inteligencia artificial.\n\n\n\n\n\n\nBases sólidas en pensamiento computacional y programación en Python\nConocimientos matemáticos básicos (estadística, cálculo, álgebra lineal)\nComprensión general del análisis de datos (limpieza, preprocesamiento, exploración).\n\nExperiencia previa con herramientas de visualización es un plus, pero no es estrictamente necesaria.\n\nAdicional a los conocimientos académicos, se espera:\n\nCapacidad de pensar críticamente y abordar problemas de manera sistemática.\nInterés en comprender cómo se construyen y explican las visualizaciones.\nDisposición para explorar distintas formas de presentar información visualmente.\n\n\n\n\n\n\n\nLo que sí veremos\n\nFundamentos de la visualización.\nTransformaciones 2D y 3D.\nVisualización de datos multidimensionales.\nInteractividad y narrativa visual.\n\n\nLo que no veremos\n\nModelado o rendering avanzado.\nMotores de videojuegos.\nDiseño gráfico profesional.\nEdición avanzada de imágenes.\n\n\n\n\n\n\n\n\n\n\n\nPipeline de visualización\n\nPercepción visual y codificaciones\n\nFormación de imagen: raster, vector, muestreo\n\nTransformaciones 2D/3D y coordenadas\n\nColor y mapeo de color\n\nProyecto U1:\n\nConstruir una pinhole camera casera y analizar cómo se forma la imagen.\n\nCrear una pequeña animación de un sistema solar usando usando únicamente transformaciones geométricas implementadas por ustedes (sin utilizar funciones prehechas de animación o gráficos).\n\n\n\n\n\n\nGráficas básicas y estadísticas\n\nInterpretación adecuada de gráficos\n\nStorytelling con datos\n\nÉtica visual y detección de manipulación\n\nProyecto U2:\n\nAnalizar visualizaciones reales de medios o artículos y detectar sesgos/diseño engañoso.\n\nDiseñar una mini–historia con datos usando varias gráficas encadenadas.\n\n\n\n\n\n\nDatos multivariados (PCA, parallel coords, t-SNE)\n\nVisualización científica (campos escalares, vectoriales, volúmenes)\n\nRenderizado volumétrico\n\nDashboards e interactividad\n\nComunicación visual de resultados\n\nProyecto U3:\n\nConstruir un dashboard interactivo con filtros y explicaciones narradas.\n\nVisualizar datos volumétricos o campos vectoriales en 3D con color, transparencia o isosuperficies.\n\nCrear una visualización interactiva para explicar resultados de un modelo de IA (embeddings, métricas, comparaciones).\n\n\n\n\n\n\n\n\n\nEvento\nFecha\n\n\n\n\n🟢 INICIO DE SEMESTRE\nMartes 13 de Enero\n\n\n🟡 1era evaluación parcial\nMiércoles 11 de febrero\n\n\n🟡 2da evaluación parcial\nMiércoles 25 de marzo\n\n\n🟡 Evaluación final\nLunes 04 de mayo\n\n\n🔵 Entrega de calificaciones finales\nMiércoles 06 de mayo\n\n\n🔴 FIN DE SEMESTRE\nViernes 08 de Mayo\n\n\n\n\n\n\n\nEVALUACIÓN PARCIAL\n\n\n\nCriterio\n%\n\n\n\n\n📚Examen\n40\n\n\n✏️Ejercicios de clase y tareas\n15\n\n\n📝Laboratorio\n30\n\n\n💬Proyecto\n15\n\n\n\nEVALUACIÓN FINAL\n\n\n\nCriterio\n%\n\n\n\n\n1er Parcial\n30\n\n\n2do Parcial\n30\n\n\nFinal\n40\n\n\n\n\n\n\n\n\nGraphics & Visualization: Principles & Algorithms — Theoharis et al.\nFundamentals of Computer Graphics — Marschner & Shirley\nComputer Graphics: Principles and Practice — Foley et al.\nFundamentals of Data Visualization — C. Wilke\nThe Visual Display of Quantitative Information — E. Tufte\nData Visualization: A Practical Introduction — K. Healy\nPython Data Science Handbook — VanderPlas\nDocumentación Pandas, NumPy, Matplotlib, Plotly\n\n\n\n\n\n\nRespetar las opiniones, antecedentes y experiencias de todos los miembros del grupo.\n\nTodas las preguntas sobre la clase son bienvenidas. Evitar lenguaje ofensivo o actitudes que desalienten la participación.\nSer responsables. Revisar notas de clase, asistir a clases, completar ejercicios y tareas, prepararse para los exámenes.\n\nSer proactivas y proactivos durante el curso. Participar en la clase y compartir el conocimiento, sin caer en el plagio.\nDurante las clases, evitar distracciones como el uso innecesario de dispositivos electrónicos.\n\nLas tareas y ejercicios deben entregarse en la fecha indicada. Los retrasos tendrán una penalización del 20% por día. Los proyectos no se aceptan después de la fecha límite, sin excepciones.\nLa asistencia se registra al inicio de la sesión. Las llegadas dentro de los primeros 10 minutos se consideran retardos. Cada conjunto de tres retardos se contabiliza como una falta en el registro oficial.\n\n\nProhibido compartir o copiar código.\n\nEsta permitido apoyarse de ejemplos en internet, pero asegúrate de entenderlos y adaptarlos a tu propio trabajo. Además, si usas recursos abiertos, debes mencionarlos explícitamente en tus entregas.\n\nTodas las entregas deben reflejar el esfuerzo y aprendizaje propios. El plagio, en cualquier forma, será sancionado según las políticas institucionales.\n\n\n\n\n\nLos incumplimientos menores, como interrupciones en clase o descuidos ocasionales, resultarán en una advertencia inicial. Si la conducta persiste, se podrá descontar la asistencia del día y/o reducir la calificación en participación.\nLas faltas graves, como el plagio o comportamientos irrespetuosos, se reportarán formalmente a las autoridades académicas y podrán implicar calificaciones de “0” en actividades específicas, e incluso la exclusión del curso en casos de gravedad o reincidencia.\n\nComunicación Oficial No. 455: Lineamientos académicos sobre plagio y fraude"
+    "objectID": "clases/04_visualizacion_datos.html#ejercicio-continuación",
+    "href": "clases/04_visualizacion_datos.html#ejercicio-continuación",
+    "title": "04 - Visualización de Datos",
+    "section": "Ejercicio (continuación)",
+    "text": "Ejercicio (continuación)\nParte 2\nAsocia cada pregunta con un tipo de gráfico y justifica por qué elegiste ese gráfico antes de implementarlo.\n- ¿Cómo se distribuyen las edades de los pasajeros? - ¿Qué tan variable fue la tarifa vs la clase? - ¿Cuántos pasajeros viajaban en cada clase? - ¿Cuántos pasajeros sobrevivieron por clase?\n(Añadiremos títulos, etiquetas, colores personalizados, etc. más adelante)"
   },
   {
-    "objectID": "clases/01-introduccion-visualizacion.html#objetivos",
-    "href": "clases/01-introduccion-visualizacion.html#objetivos",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Aplicar técnicas y herramientas para el análisis y la visualización de datos, que serán utilizados para la toma de decisiones en proyectos de inteligencia artificial."
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#prerrequisitos",
-    "href": "clases/01-introduccion-visualizacion.html#prerrequisitos",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Bases sólidas en pensamiento computacional y programación en Python\nConocimientos matemáticos básicos (estadística, cálculo, álgebra lineal)\nComprensión general del análisis de datos (limpieza, preprocesamiento, exploración).\n\nExperiencia previa con herramientas de visualización es un plus, pero no es estrictamente necesaria.\n\nAdicional a los conocimientos académicos, se espera:\n\nCapacidad de pensar críticamente y abordar problemas de manera sistemática.\nInterés en comprender cómo se construyen y explican las visualizaciones.\nDisposición para explorar distintas formas de presentar información visualmente."
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#expectativas",
-    "href": "clases/01-introduccion-visualizacion.html#expectativas",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Lo que sí veremos\n\nFundamentos de la visualización.\nTransformaciones 2D y 3D.\nVisualización de datos multidimensionales.\nInteractividad y narrativa visual.\n\n\nLo que no veremos\n\nModelado o rendering avanzado.\nMotores de videojuegos.\nDiseño gráfico profesional.\nEdición avanzada de imágenes."
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#temario",
-    "href": "clases/01-introduccion-visualizacion.html#temario",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Pipeline de visualización\n\nPercepción visual y codificaciones\n\nFormación de imagen: raster, vector, muestreo\n\nTransformaciones 2D/3D y coordenadas\n\nColor y mapeo de color\n\nProyecto U1:\n\nConstruir una pinhole camera casera y analizar cómo se forma la imagen.\n\nCrear una pequeña animación de un sistema solar usando usando únicamente transformaciones geométricas implementadas por ustedes (sin utilizar funciones prehechas de animación o gráficos).\n\n\n\n\n\n\nGráficas básicas y estadísticas\n\nInterpretación adecuada de gráficos\n\nStorytelling con datos\n\nÉtica visual y detección de manipulación\n\nProyecto U2:\n\nAnalizar visualizaciones reales de medios o artículos y detectar sesgos/diseño engañoso.\n\nDiseñar una mini–historia con datos usando varias gráficas encadenadas.\n\n\n\n\n\n\nDatos multivariados (PCA, parallel coords, t-SNE)\n\nVisualización científica (campos escalares, vectoriales, volúmenes)\n\nRenderizado volumétrico\n\nDashboards e interactividad\n\nComunicación visual de resultados\n\nProyecto U3:\n\nConstruir un dashboard interactivo con filtros y explicaciones narradas.\n\nVisualizar datos volumétricos o campos vectoriales en 3D con color, transparencia o isosuperficies.\n\nCrear una visualización interactiva para explicar resultados de un modelo de IA (embeddings, métricas, comparaciones)."
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#fechas",
-    "href": "clases/01-introduccion-visualizacion.html#fechas",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Evento\nFecha\n\n\n\n\n🟢 INICIO DE SEMESTRE\nMartes 13 de Enero\n\n\n🟡 1era evaluación parcial\nMiércoles 11 de febrero\n\n\n🟡 2da evaluación parcial\nMiércoles 25 de marzo\n\n\n🟡 Evaluación final\nLunes 04 de mayo\n\n\n🔵 Entrega de calificaciones finales\nMiércoles 06 de mayo\n\n\n🔴 FIN DE SEMESTRE\nViernes 08 de Mayo"
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#evaluacion",
-    "href": "clases/01-introduccion-visualizacion.html#evaluacion",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "EVALUACIÓN PARCIAL\n\n\n\nCriterio\n%\n\n\n\n\n📚Examen\n40\n\n\n✏️Ejercicios de clase y tareas\n15\n\n\n📝Laboratorio\n30\n\n\n💬Proyecto\n15\n\n\n\nEVALUACIÓN FINAL\n\n\n\nCriterio\n%\n\n\n\n\n1er Parcial\n30\n\n\n2do Parcial\n30\n\n\nFinal\n40"
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#bibliografia",
-    "href": "clases/01-introduccion-visualizacion.html#bibliografia",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Graphics & Visualization: Principles & Algorithms — Theoharis et al.\nFundamentals of Computer Graphics — Marschner & Shirley\nComputer Graphics: Principles and Practice — Foley et al.\nFundamentals of Data Visualization — C. Wilke\nThe Visual Display of Quantitative Information — E. Tufte\nData Visualization: A Practical Introduction — K. Healy\nPython Data Science Handbook — VanderPlas\nDocumentación Pandas, NumPy, Matplotlib, Plotly"
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#conducta",
-    "href": "clases/01-introduccion-visualizacion.html#conducta",
-    "title": "01 - Introducción a la visualización",
-    "section": "",
-    "text": "Respetar las opiniones, antecedentes y experiencias de todos los miembros del grupo.\n\nTodas las preguntas sobre la clase son bienvenidas. Evitar lenguaje ofensivo o actitudes que desalienten la participación.\nSer responsables. Revisar notas de clase, asistir a clases, completar ejercicios y tareas, prepararse para los exámenes.\n\nSer proactivas y proactivos durante el curso. Participar en la clase y compartir el conocimiento, sin caer en el plagio.\nDurante las clases, evitar distracciones como el uso innecesario de dispositivos electrónicos.\n\nLas tareas y ejercicios deben entregarse en la fecha indicada. Los retrasos tendrán una penalización del 20% por día. Los proyectos no se aceptan después de la fecha límite, sin excepciones.\nLa asistencia se registra al inicio de la sesión. Las llegadas dentro de los primeros 10 minutos se consideran retardos. Cada conjunto de tres retardos se contabiliza como una falta en el registro oficial.\n\n\nProhibido compartir o copiar código.\n\nEsta permitido apoyarse de ejemplos en internet, pero asegúrate de entenderlos y adaptarlos a tu propio trabajo. Además, si usas recursos abiertos, debes mencionarlos explícitamente en tus entregas.\n\nTodas las entregas deben reflejar el esfuerzo y aprendizaje propios. El plagio, en cualquier forma, será sancionado según las políticas institucionales.\n\n\n\n\n\nLos incumplimientos menores, como interrupciones en clase o descuidos ocasionales, resultarán en una advertencia inicial. Si la conducta persiste, se podrá descontar la asistencia del día y/o reducir la calificación en participación.\nLas faltas graves, como el plagio o comportamientos irrespetuosos, se reportarán formalmente a las autoridades académicas y podrán implicar calificaciones de “0” en actividades específicas, e incluso la exclusión del curso en casos de gravedad o reincidencia.\n\nComunicación Oficial No. 455: Lineamientos académicos sobre plagio y fraude"
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#diagnostico",
-    "href": "clases/01-introduccion-visualizacion.html#diagnostico",
-    "title": "01 - Introducción a la visualización",
-    "section": "2.1 Actividad diagnóstica",
-    "text": "2.1 Actividad diagnóstica\nAbrir formulario de diagnóstico: https://forms.office.com/r/QvQVTFwwgs\nEscanea el código QR:"
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#motivacion",
-    "href": "clases/01-introduccion-visualizacion.html#motivacion",
-    "title": "01 - Introducción a la visualización",
-    "section": "2.2 Motivación",
-    "text": "2.2 Motivación\n\n\n\nDedicamos una gran parte de nuestra atención a tareas relacionadas con la visión.\n\nLa casa en la que vivimos, el auto que conducimos, la ropa que usamos, suelen elegirse por sus cualidades visuales.\nAlrededor del 50% de las neuronas están asociadas con la visión.\nEl sistema visual humano tiene un ancho de banda equivalente a gigabits, permitiendo:\n\npercepción muy rápida,\nreconocimiento de patrones,\nidentificación de relaciones espaciales.\n\n\n\n\n\nVideo: https://www.youtube.com/watch?v=IQJL3htsDyQ\n\nVideo: https://www.youtube.com/watch?v=Cuo8eq9C3Ec"
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#def_viz",
-    "href": "clases/01-introduccion-visualizacion.html#def_viz",
-    "title": "01 - Introducción a la visualización",
-    "section": "2.3 Definición de visualización",
-    "text": "2.3 Definición de visualización\n\n\n\n\n\n\nTip\n\n\n\n\nLa visualización es el proceso de transformar datos en una forma visual que permite al espectador observar, explorar, darle sentido y comprender la información (Cambridge Dictionary).\n\n\n\n\n\n Arte rupestre en Arroyo Seco, Gto. Imagen de expansion.mx\n\n Mapa diseñado por Claudius Ptolemy (entre 85 y 165 A.C.), fue utilizado como referencia hasta el siglo XV. Imagen de interaction-design.org"
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#def_viz_gra",
-    "href": "clases/01-introduccion-visualizacion.html#def_viz_gra",
-    "title": "01 - Introducción a la visualización",
-    "section": "2.4 Definición de visualización gráfica",
-    "text": "2.4 Definición de visualización gráfica\n\n\n\n\n\n\nTip\n\n\n\n\nLa visualización gráfica es el proceso de convertir datos descriptivos (números, ecuaciones, geometría) en un conjunto de primitivas gráficas (formas, líneas, polígonos, etc.) para producir imágenes estáticas o animadas utilizando un medio computacional (Schroeder y colegas, The Visualization Toolkit).\n\n\n\n\n\n El conejo de Stanford, consiste de ~70k triángulos, usado para probar algoritmos gráficos. Imagen de researchgate.net\n\n Seguimiento del slogan republicano #JobsNotMobs, en las elecciones de mitad de periodo en EUA, 2018. Imagen de nytimes.com\n\n\n\n\nLa visualización gráfica incluye no solo la visualización de datos, sino también la creación y manipulación de modelos tridimensionales, simulaciones físicas y entornos virtuales interactivos.\nAbarca muchas disciplinas como: las gráficas por computadora, la visualización científica, los videojuegos, la animación y las tecnologías de realidad virtual y aumentada."
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#etapas-del-proceso-de-visualización-gráfica",
-    "href": "clases/01-introduccion-visualizacion.html#etapas-del-proceso-de-visualización-gráfica",
-    "title": "01 - Introducción a la visualización",
-    "section": "2.5 Etapas del proceso de visualización gráfica",
-    "text": "2.5 Etapas del proceso de visualización gráfica\nEl proceso de visualización gráfica tiene como objetivo articular el paso entre representaciones internas del sistema computacional (datos discretos, modelos) y representaciones externas perceptibles.\n \nProceso de Visualización. Imagen de Introduction to Computer Graphics, Hobart and William Smith Colleges\n\nSe inicia siempre con datos crudos: Los datos pueden originarse tanto en procesos de adquisición del mundo físico como en simulaciones científicas de gran escala.\nLos datos pueden convertirse en modelos geométricos o en imágenes:\n\nLas gráficas por computadora permiten generar imágenes a partir de modelos.\nLa visión por computadora aborda el problema inverso, extrayendo información a partir de imágenes.\nEl procesamiento de imágenes actúa como mecanismo de ajuste, análisis o post-procesamiento."
-  },
-  {
-    "objectID": "clases/01-introduccion-visualizacion.html#cierre",
-    "href": "clases/01-introduccion-visualizacion.html#cierre",
-    "title": "01 - Introducción a la visualización",
-    "section": "2.6 Cierre",
-    "text": "2.6 Cierre\n\nActividades de cierre:\n\nRealizar el ejercicio práctico 01 (actividad de clase)\nRealizar el ejercicio práctico 02 (tarea)\n\n¿Qué sigue?\n\nYa sabemos qué es la visualización gráfica. Ahora necesitamos entender cómo se construye.\n\n¿Qué significa realmente “ver” una imagen en una computadora?, ¿Qué se pierde cuando discretizamos el mundo?, ¿Cómo se forman las imágenes?\n¿Cómo se representan objetos y datos?, ¿Cómo se transforman en el espacio?\n¿Cómo se codifica información usando color y geometría?"
+    "objectID": "clases/04_visualizacion_datos.html#ejercicio-continuación-1",
+    "href": "clases/04_visualizacion_datos.html#ejercicio-continuación-1",
+    "title": "04 - Visualización de Datos",
+    "section": "Ejercicio (continuación)",
+    "text": "Ejercicio (continuación)\nParte 3\n\nMejora las gráficas anteriores añadiendo colores y etiquetas claras.\n\nAgrega anotaciones para destacar puntos.\n\n¿Cómo ayuda el color y las anotaciones a mejorar la interpretación?"
   },
   {
     "objectID": "clases/02-formacion-imagen.html#como-formar-imagen",
@@ -537,6 +446,188 @@
     "title": "02 - Formación de imagen y representación digital",
     "section": "Referencias bibliográficas",
     "text": "Referencias bibliográficas\n\nEck, D. J. (2023). Introduction to computer graphics (Version 1.4). Hobart and William Smith Colleges. Recuperado de https://math.hws.edu/graphicsbook\nFoley, J. D., van Dam, A., Feiner, S. K., & Hughes, J. F. (2013). Computer graphics: Principles and practice (3rd ed.). Addison-Wesley.\nShirley, P. (2020). Fundamentals of computer graphics (5th ed.). A K Peters/CRC Press.\nNVIDIA. (2021). Antialiasing. NVIDIA Developer Blog. Recuperado de https://www.nvidia.com"
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html",
+    "href": "clases/01-introduccion-visualizacion.html",
+    "title": "01 - Introducción a la visualización",
+    "section": "",
+    "text": "Horario: Lunes y Miércoles\n\n9 a 11 hrs\n11 a 13 hrs\n\n\nDocente: Dra. Dora Alvarado\n\nEmail: 27382@iberoleon.edu.mx; doraelisa.alvaradocarrillo@iberoleon.edu.mx\n\n\nAvisos, exámenes, tareas en Moodle.\n\n\n\n\n\n\n\n\n\nAplicar técnicas y herramientas para el análisis y la visualización de datos, que serán utilizados para la toma de decisiones en proyectos de inteligencia artificial.\n\n\n\n\n\n\nBases sólidas en pensamiento computacional y programación en Python\nConocimientos matemáticos básicos (estadística, cálculo, álgebra lineal)\nComprensión general del análisis de datos (limpieza, preprocesamiento, exploración).\n\nExperiencia previa con herramientas de visualización es un plus, pero no es estrictamente necesaria.\n\nAdicional a los conocimientos académicos, se espera:\n\nCapacidad de pensar críticamente y abordar problemas de manera sistemática.\nInterés en comprender cómo se construyen y explican las visualizaciones.\nDisposición para explorar distintas formas de presentar información visualmente.\n\n\n\n\n\n\n\nLo que sí veremos\n\nFundamentos de la visualización.\nTransformaciones 2D y 3D.\nVisualización de datos multidimensionales.\nInteractividad y narrativa visual.\n\n\nLo que no veremos\n\nModelado o rendering avanzado.\nMotores de videojuegos.\nDiseño gráfico profesional.\nEdición avanzada de imágenes.\n\n\n\n\n\n\n\n\n\n\n\nPipeline de visualización\n\nPercepción visual y codificaciones\n\nFormación de imagen: raster, vector, muestreo\n\nTransformaciones 2D/3D y coordenadas\n\nColor y mapeo de color\n\nProyecto U1:\n\nConstruir una pinhole camera casera y analizar cómo se forma la imagen.\n\nCrear una pequeña animación de un sistema solar usando usando únicamente transformaciones geométricas implementadas por ustedes (sin utilizar funciones prehechas de animación o gráficos).\n\n\n\n\n\n\nGráficas básicas y estadísticas\n\nInterpretación adecuada de gráficos\n\nStorytelling con datos\n\nÉtica visual y detección de manipulación\n\nProyecto U2:\n\nAnalizar visualizaciones reales de medios o artículos y detectar sesgos/diseño engañoso.\n\nDiseñar una mini–historia con datos usando varias gráficas encadenadas.\n\n\n\n\n\n\nDatos multivariados (PCA, parallel coords, t-SNE)\n\nVisualización científica (campos escalares, vectoriales, volúmenes)\n\nRenderizado volumétrico\n\nDashboards e interactividad\n\nComunicación visual de resultados\n\nProyecto U3:\n\nConstruir un dashboard interactivo con filtros y explicaciones narradas.\n\nVisualizar datos volumétricos o campos vectoriales en 3D con color, transparencia o isosuperficies.\n\nCrear una visualización interactiva para explicar resultados de un modelo de IA (embeddings, métricas, comparaciones).\n\n\n\n\n\n\n\n\n\nEvento\nFecha\n\n\n\n\n🟢 INICIO DE SEMESTRE\nMartes 13 de Enero\n\n\n🟡 1era evaluación parcial\nMiércoles 11 de febrero\n\n\n🟡 2da evaluación parcial\nMiércoles 25 de marzo\n\n\n🟡 Evaluación final\nLunes 04 de mayo\n\n\n🔵 Entrega de calificaciones finales\nMiércoles 06 de mayo\n\n\n🔴 FIN DE SEMESTRE\nViernes 08 de Mayo\n\n\n\n\n\n\n\nEVALUACIÓN PARCIAL\n\n\n\nCriterio\n%\n\n\n\n\n📚Examen\n40\n\n\n✏️Ejercicios de clase y tareas\n15\n\n\n📝Laboratorio\n30\n\n\n💬Proyecto\n15\n\n\n\nEVALUACIÓN FINAL\n\n\n\nCriterio\n%\n\n\n\n\n1er Parcial\n30\n\n\n2do Parcial\n30\n\n\nFinal\n40\n\n\n\n\n\n\n\n\nGraphics & Visualization: Principles & Algorithms — Theoharis et al.\nFundamentals of Computer Graphics — Marschner & Shirley\nComputer Graphics: Principles and Practice — Foley et al.\nFundamentals of Data Visualization — C. Wilke\nThe Visual Display of Quantitative Information — E. Tufte\nData Visualization: A Practical Introduction — K. Healy\nPython Data Science Handbook — VanderPlas\nDocumentación Pandas, NumPy, Matplotlib, Plotly\n\n\n\n\n\n\nRespetar las opiniones, antecedentes y experiencias de todos los miembros del grupo.\n\nTodas las preguntas sobre la clase son bienvenidas. Evitar lenguaje ofensivo o actitudes que desalienten la participación.\nSer responsables. Revisar notas de clase, asistir a clases, completar ejercicios y tareas, prepararse para los exámenes.\n\nSer proactivas y proactivos durante el curso. Participar en la clase y compartir el conocimiento, sin caer en el plagio.\nDurante las clases, evitar distracciones como el uso innecesario de dispositivos electrónicos.\n\nLas tareas y ejercicios deben entregarse en la fecha indicada. Los retrasos tendrán una penalización del 20% por día. Los proyectos no se aceptan después de la fecha límite, sin excepciones.\nLa asistencia se registra al inicio de la sesión. Las llegadas dentro de los primeros 10 minutos se consideran retardos. Cada conjunto de tres retardos se contabiliza como una falta en el registro oficial.\n\n\nProhibido compartir o copiar código.\n\nEsta permitido apoyarse de ejemplos en internet, pero asegúrate de entenderlos y adaptarlos a tu propio trabajo. Además, si usas recursos abiertos, debes mencionarlos explícitamente en tus entregas.\n\nTodas las entregas deben reflejar el esfuerzo y aprendizaje propios. El plagio, en cualquier forma, será sancionado según las políticas institucionales.\n\n\n\n\n\nLos incumplimientos menores, como interrupciones en clase o descuidos ocasionales, resultarán en una advertencia inicial. Si la conducta persiste, se podrá descontar la asistencia del día y/o reducir la calificación en participación.\nLas faltas graves, como el plagio o comportamientos irrespetuosos, se reportarán formalmente a las autoridades académicas y podrán implicar calificaciones de “0” en actividades específicas, e incluso la exclusión del curso en casos de gravedad o reincidencia.\n\nComunicación Oficial No. 455: Lineamientos académicos sobre plagio y fraude"
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#objetivos",
+    "href": "clases/01-introduccion-visualizacion.html#objetivos",
+    "title": "01 - Introducción a la visualización",
+    "section": "",
+    "text": "Aplicar técnicas y herramientas para el análisis y la visualización de datos, que serán utilizados para la toma de decisiones en proyectos de inteligencia artificial."
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#prerrequisitos",
+    "href": "clases/01-introduccion-visualizacion.html#prerrequisitos",
+    "title": "01 - Introducción a la visualización",
+    "section": "",
+    "text": "Bases sólidas en pensamiento computacional y programación en Python\nConocimientos matemáticos básicos (estadística, cálculo, álgebra lineal)\nComprensión general del análisis de datos (limpieza, preprocesamiento, exploración).\n\nExperiencia previa con herramientas de visualización es un plus, pero no es estrictamente necesaria.\n\nAdicional a los conocimientos académicos, se espera:\n\nCapacidad de pensar críticamente y abordar problemas de manera sistemática.\nInterés en comprender cómo se construyen y explican las visualizaciones.\nDisposición para explorar distintas formas de presentar información visualmente."
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#expectativas",
+    "href": "clases/01-introduccion-visualizacion.html#expectativas",
+    "title": "01 - Introducción a la visualización",
+    "section": "",
+    "text": "Lo que sí veremos\n\nFundamentos de la visualización.\nTransformaciones 2D y 3D.\nVisualización de datos multidimensionales.\nInteractividad y narrativa visual.\n\n\nLo que no veremos\n\nModelado o rendering avanzado.\nMotores de videojuegos.\nDiseño gráfico profesional.\nEdición avanzada de imágenes."
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#temario",
+    "href": "clases/01-introduccion-visualizacion.html#temario",
+    "title": "01 - Introducción a la visualización",
+    "section": "",
+    "text": "Pipeline de visualización\n\nPercepción visual y codificaciones\n\nFormación de imagen: raster, vector, muestreo\n\nTransformaciones 2D/3D y coordenadas\n\nColor y mapeo de color\n\nProyecto U1:\n\nConstruir una pinhole camera casera y analizar cómo se forma la imagen.\n\nCrear una pequeña animación de un sistema solar usando usando únicamente transformaciones geométricas implementadas por ustedes (sin utilizar funciones prehechas de animación o gráficos).\n\n\n\n\n\n\nGráficas básicas y estadísticas\n\nInterpretación adecuada de gráficos\n\nStorytelling con datos\n\nÉtica visual y detección de manipulación\n\nProyecto U2:\n\nAnalizar visualizaciones reales de medios o artículos y detectar sesgos/diseño engañoso.\n\nDiseñar una mini–historia con datos usando varias gráficas encadenadas.\n\n\n\n\n\n\nDatos multivariados (PCA, parallel coords, t-SNE)\n\nVisualización científica (campos escalares, vectoriales, volúmenes)\n\nRenderizado volumétrico\n\nDashboards e interactividad\n\nComunicación visual de resultados\n\nProyecto U3:\n\nConstruir un dashboard interactivo con filtros y explicaciones narradas.\n\nVisualizar datos volumétricos o campos vectoriales en 3D con color, transparencia o isosuperficies.\n\nCrear una visualización interactiva para explicar resultados de un modelo de IA (embeddings, métricas, comparaciones)."
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#fechas",
+    "href": "clases/01-introduccion-visualizacion.html#fechas",
+    "title": "01 - Introducción a la visualización",
+    "section": "",
+    "text": "Evento\nFecha\n\n\n\n\n🟢 INICIO DE SEMESTRE\nMartes 13 de Enero\n\n\n🟡 1era evaluación parcial\nMiércoles 11 de febrero\n\n\n🟡 2da evaluación parcial\nMiércoles 25 de marzo\n\n\n🟡 Evaluación final\nLunes 04 de mayo\n\n\n🔵 Entrega de calificaciones finales\nMiércoles 06 de mayo\n\n\n🔴 FIN DE SEMESTRE\nViernes 08 de Mayo"
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#evaluacion",
+    "href": "clases/01-introduccion-visualizacion.html#evaluacion",
+    "title": "01 - Introducción a la visualización",
+    "section": "",
+    "text": "EVALUACIÓN PARCIAL\n\n\n\nCriterio\n%\n\n\n\n\n📚Examen\n40\n\n\n✏️Ejercicios de clase y tareas\n15\n\n\n📝Laboratorio\n30\n\n\n💬Proyecto\n15\n\n\n\nEVALUACIÓN FINAL\n\n\n\nCriterio\n%\n\n\n\n\n1er Parcial\n30\n\n\n2do Parcial\n30\n\n\nFinal\n40"
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#bibliografia",
+    "href": "clases/01-introduccion-visualizacion.html#bibliografia",
+    "title": "01 - Introducción a la visualización",
+    "section": "",
+    "text": "Graphics & Visualization: Principles & Algorithms — Theoharis et al.\nFundamentals of Computer Graphics — Marschner & Shirley\nComputer Graphics: Principles and Practice — Foley et al.\nFundamentals of Data Visualization — C. Wilke\nThe Visual Display of Quantitative Information — E. Tufte\nData Visualization: A Practical Introduction — K. Healy\nPython Data Science Handbook — VanderPlas\nDocumentación Pandas, NumPy, Matplotlib, Plotly"
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#conducta",
+    "href": "clases/01-introduccion-visualizacion.html#conducta",
+    "title": "01 - Introducción a la visualización",
+    "section": "",
+    "text": "Respetar las opiniones, antecedentes y experiencias de todos los miembros del grupo.\n\nTodas las preguntas sobre la clase son bienvenidas. Evitar lenguaje ofensivo o actitudes que desalienten la participación.\nSer responsables. Revisar notas de clase, asistir a clases, completar ejercicios y tareas, prepararse para los exámenes.\n\nSer proactivas y proactivos durante el curso. Participar en la clase y compartir el conocimiento, sin caer en el plagio.\nDurante las clases, evitar distracciones como el uso innecesario de dispositivos electrónicos.\n\nLas tareas y ejercicios deben entregarse en la fecha indicada. Los retrasos tendrán una penalización del 20% por día. Los proyectos no se aceptan después de la fecha límite, sin excepciones.\nLa asistencia se registra al inicio de la sesión. Las llegadas dentro de los primeros 10 minutos se consideran retardos. Cada conjunto de tres retardos se contabiliza como una falta en el registro oficial.\n\n\nProhibido compartir o copiar código.\n\nEsta permitido apoyarse de ejemplos en internet, pero asegúrate de entenderlos y adaptarlos a tu propio trabajo. Además, si usas recursos abiertos, debes mencionarlos explícitamente en tus entregas.\n\nTodas las entregas deben reflejar el esfuerzo y aprendizaje propios. El plagio, en cualquier forma, será sancionado según las políticas institucionales.\n\n\n\n\n\nLos incumplimientos menores, como interrupciones en clase o descuidos ocasionales, resultarán en una advertencia inicial. Si la conducta persiste, se podrá descontar la asistencia del día y/o reducir la calificación en participación.\nLas faltas graves, como el plagio o comportamientos irrespetuosos, se reportarán formalmente a las autoridades académicas y podrán implicar calificaciones de “0” en actividades específicas, e incluso la exclusión del curso en casos de gravedad o reincidencia.\n\nComunicación Oficial No. 455: Lineamientos académicos sobre plagio y fraude"
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#diagnostico",
+    "href": "clases/01-introduccion-visualizacion.html#diagnostico",
+    "title": "01 - Introducción a la visualización",
+    "section": "2.1 Actividad diagnóstica",
+    "text": "2.1 Actividad diagnóstica\nAbrir formulario de diagnóstico: https://forms.office.com/r/QvQVTFwwgs\nEscanea el código QR:"
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#motivacion",
+    "href": "clases/01-introduccion-visualizacion.html#motivacion",
+    "title": "01 - Introducción a la visualización",
+    "section": "2.2 Motivación",
+    "text": "2.2 Motivación\n\n\n\nDedicamos una gran parte de nuestra atención a tareas relacionadas con la visión.\n\nLa casa en la que vivimos, el auto que conducimos, la ropa que usamos, suelen elegirse por sus cualidades visuales.\nAlrededor del 50% de las neuronas están asociadas con la visión.\nEl sistema visual humano tiene un ancho de banda equivalente a gigabits, permitiendo:\n\npercepción muy rápida,\nreconocimiento de patrones,\nidentificación de relaciones espaciales.\n\n\n\n\n\nVideo: https://www.youtube.com/watch?v=IQJL3htsDyQ\n\nVideo: https://www.youtube.com/watch?v=Cuo8eq9C3Ec"
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#def_viz",
+    "href": "clases/01-introduccion-visualizacion.html#def_viz",
+    "title": "01 - Introducción a la visualización",
+    "section": "2.3 Definición de visualización",
+    "text": "2.3 Definición de visualización\n\n\n\n\n\n\nTip\n\n\n\n\nLa visualización es el proceso de transformar datos en una forma visual que permite al espectador observar, explorar, darle sentido y comprender la información (Cambridge Dictionary).\n\n\n\n\n\n Arte rupestre en Arroyo Seco, Gto. Imagen de expansion.mx\n\n Mapa diseñado por Claudius Ptolemy (entre 85 y 165 A.C.), fue utilizado como referencia hasta el siglo XV. Imagen de interaction-design.org"
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#def_viz_gra",
+    "href": "clases/01-introduccion-visualizacion.html#def_viz_gra",
+    "title": "01 - Introducción a la visualización",
+    "section": "2.4 Definición de visualización gráfica",
+    "text": "2.4 Definición de visualización gráfica\n\n\n\n\n\n\nTip\n\n\n\n\nLa visualización gráfica es el proceso de convertir datos descriptivos (números, ecuaciones, geometría) en un conjunto de primitivas gráficas (formas, líneas, polígonos, etc.) para producir imágenes estáticas o animadas utilizando un medio computacional (Schroeder y colegas, The Visualization Toolkit).\n\n\n\n\n\n El conejo de Stanford, consiste de ~70k triángulos, usado para probar algoritmos gráficos. Imagen de researchgate.net\n\n Seguimiento del slogan republicano #JobsNotMobs, en las elecciones de mitad de periodo en EUA, 2018. Imagen de nytimes.com\n\n\n\n\nLa visualización gráfica incluye no solo la visualización de datos, sino también la creación y manipulación de modelos tridimensionales, simulaciones físicas y entornos virtuales interactivos.\nAbarca muchas disciplinas como: las gráficas por computadora, la visualización científica, los videojuegos, la animación y las tecnologías de realidad virtual y aumentada."
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#etapas-del-proceso-de-visualización-gráfica",
+    "href": "clases/01-introduccion-visualizacion.html#etapas-del-proceso-de-visualización-gráfica",
+    "title": "01 - Introducción a la visualización",
+    "section": "2.5 Etapas del proceso de visualización gráfica",
+    "text": "2.5 Etapas del proceso de visualización gráfica\nEl proceso de visualización gráfica tiene como objetivo articular el paso entre representaciones internas del sistema computacional (datos discretos, modelos) y representaciones externas perceptibles.\n \nProceso de Visualización. Imagen de Introduction to Computer Graphics, Hobart and William Smith Colleges\n\nSe inicia siempre con datos crudos: Los datos pueden originarse tanto en procesos de adquisición del mundo físico como en simulaciones científicas de gran escala.\nLos datos pueden convertirse en modelos geométricos o en imágenes:\n\nLas gráficas por computadora permiten generar imágenes a partir de modelos.\nLa visión por computadora aborda el problema inverso, extrayendo información a partir de imágenes.\nEl procesamiento de imágenes actúa como mecanismo de ajuste, análisis o post-procesamiento."
+  },
+  {
+    "objectID": "clases/01-introduccion-visualizacion.html#cierre",
+    "href": "clases/01-introduccion-visualizacion.html#cierre",
+    "title": "01 - Introducción a la visualización",
+    "section": "2.6 Cierre",
+    "text": "2.6 Cierre\n\nActividades de cierre:\n\nRealizar el ejercicio práctico 01 (actividad de clase)\nRealizar el ejercicio práctico 02 (tarea)\n\n¿Qué sigue?\n\nYa sabemos qué es la visualización gráfica. Ahora necesitamos entender cómo se construye.\n\n¿Qué significa realmente “ver” una imagen en una computadora?, ¿Qué se pierde cuando discretizamos el mundo?, ¿Cómo se forman las imágenes?\n¿Cómo se representan objetos y datos?, ¿Cómo se transforman en el espacio?\n¿Cómo se codifica información usando color y geometría?"
+  },
+  {
+    "objectID": "clases/03_representacion2Dy3D.html#en-la-sesión-anterior",
+    "href": "clases/03_representacion2Dy3D.html#en-la-sesión-anterior",
+    "title": "03 - Representación en 2D y 3D",
+    "section": "En la sesión anterior…",
+    "text": "En la sesión anterior…\n\nExploramos los conceptos básicos sobre imágenes digitales y cómo las imágenes pueden representarse de diferentes formas, ya sea a través de gráficas de ráster o gráficas vectoriales.\nAhora, vamos a ver cómo estas representaciones se manipulan y transforman mediante transformaciones geométricas, que son herramientas esenciales para la creación y edición de gráficos digitales.\n\n\nImagen de amosunov.wordpress.com"
+  },
+  {
+    "objectID": "clases/03_representacion2Dy3D.html#representación-en-2d-y-3d",
+    "href": "clases/03_representacion2Dy3D.html#representación-en-2d-y-3d",
+    "title": "03 - Representación en 2D y 3D",
+    "section": "03: Representación en 2D y 3D",
+    "text": "03: Representación en 2D y 3D\n\nImagen de Introduction to computer graphics\nEn una visualización digital, tenemos un rectángulo hecho de píxeles, con sus coordenadas naturales, donde se mostrará una imagen. Este rectángulo se llama viewport.\nTambién tenemos un conjunto de objetos definidos en un sistema de coordenadas diferente, que generalmente usa coordenadas de números reales en lugar de enteros. Estos objetos forman la escena, mundo o modelo que queremos visualizar, y las coordenadas se llaman coordenadas del mundo o coordenadas del modelo.\n\nNo es posible mostrar una imagen de todo el plano infinito, por lo que necesitamos seleccionar un área rectangular del plano para mostrar en la imagen. A esta área la llamamos ventana o ventana de visualización."
+  },
+  {
+    "objectID": "clases/03_representacion2Dy3D.html#motivacion",
+    "href": "clases/03_representacion2Dy3D.html#motivacion",
+    "title": "03 - Representación en 2D y 3D",
+    "section": "Motivación",
+    "text": "Motivación\n\nLas transformaciones 2D y 3D permiten controlar la posición y la orientación de objetos en un espacio.\nSon la base de muchas aplicaciones prácticas en diversas áreas, por ejemplo…"
+  },
+  {
+    "objectID": "clases/03_representacion2Dy3D.html#aplicaciones",
+    "href": "clases/03_representacion2Dy3D.html#aplicaciones",
+    "title": "03 - Representación en 2D y 3D",
+    "section": "Aplicaciones",
+    "text": "Aplicaciones\n\n\n\nEn la creación de mundos virtuales, los objetos deben ser:\n\nposicionados\nescalados\nrotados\nreflejados\n\nPara procesar y analizar imágenes en aplicaciones de visión artificial, así como en la superposición de información digital sobre el mundo físico (como en aplicaciones de realidad aumentada).\n\n\n\n\n\nImagen de thenextweb.com"
+  },
+  {
+    "objectID": "clases/03_representacion2Dy3D.html#transformaciones2d",
+    "href": "clases/03_representacion2Dy3D.html#transformaciones2d",
+    "title": "03 - Representación en 2D y 3D",
+    "section": "Transformaciones 2D",
+    "text": "Transformaciones 2D\n\n\n\nSon operaciones que modifican la geometría de objetos bidimensionales en el plano.\nPermiten realizar cambios en la posición, el tamaño, la orientación y la forma de los objetos.\nExisten dos categorías:\n\ntransformaciones afines.\ntransformaciones no afines.\n\n\n\n\n\n\n2d transformation\n\n\nImagen de graphicsmill.com"
+  },
+  {
+    "objectID": "clases/03_representacion2Dy3D.html#coordenadas_homogeneas",
+    "href": "clases/03_representacion2Dy3D.html#coordenadas_homogeneas",
+    "title": "03 - Representación en 2D y 3D",
+    "section": "Coordenadas homogéneas",
+    "text": "Coordenadas homogéneas\n\n\n\nEl matemático alemán August Möbius (sí, el mismo de la banda de Möbius 🌀) introdujo las coordenadas homogéneas en 1827 en su obra “Der barycentrische Calcul” para simplificar el estudio de la geometría proyectiva. Su objetivo era trabajar con puntos en el infinito de manera tan natural como con puntos finitos.\n\n\n\n\n\nBanda de Möbius\n\n\n\n\n\nMoebius.jpg\n\n\nImágenes de wikipedia.org y de matematicascercanas.com\n\n\nPara transformaciones 2D, las coordenadas homogéneas permiten que las traslaciones se comporten como transformaciones lineales puras.\nEn la geometría proyectiva, las coordenadas homogéneas permiten representar los puntos al infinito como si fueran parte del espacio habitual, resolviendo problemas complejos con mayor facilidad.\n\nLas GPU pueden realizar millones de transformaciones por segundo gracias a la eficiencia que brindan estas coordenadas🎮🚀."
+  },
+  {
+    "objectID": "clases/03_representacion2Dy3D.html#transformaciones-entre-sistemas-de-coordenadas",
+    "href": "clases/03_representacion2Dy3D.html#transformaciones-entre-sistemas-de-coordenadas",
+    "title": "03 - Representación en 2D y 3D",
+    "section": "Transformaciones entre sistemas de coordenadas",
+    "text": "Transformaciones entre sistemas de coordenadas\n\n\n\nEn gráficos por computadora / visión computacional / robótica, es común trabajar con varios sistemas de coordenadas.\nUna matriz de transformación permite convertir puntos de un sistema \\(i\\) a otro \\(g\\):\n\n\\[\n\\mathbf{v}_g = M \\cdot \\mathbf{v}_i\n\\]\n\\[\n\\mathbf{v}_i = M^{-1} \\cdot \\mathbf{v}_g\n\\]\nDonde:\n\n\\(\\mathbf{v}_i\\): punto en el sistema original.\n\\(\\mathbf{v}_g\\): punto en el nuevo sistema.\n\\(M\\): Matriz de transformación.\n\n\n\n\n\nCambio de sistema de coordenadas\n\n\nImagen de www.inf.ed.ac.uk"
+  },
+  {
+    "objectID": "clases/03_representacion2Dy3D.html#en-sesiones-anteriores",
+    "href": "clases/03_representacion2Dy3D.html#en-sesiones-anteriores",
+    "title": "03 - Representación en 2D y 3D",
+    "section": "En sesiones anteriores…",
+    "text": "En sesiones anteriores…\n\nVimos como las transformaciones de objetos 2D pueden representarse a través de modelos vectoriales y matriciales.\nLas transformaciones geométricas en 2D nos permiten modificar la posición, escala y orientación de los objetos en un espacio bidimensional.\nLas transformaciones pueden combinarse multiplicando sus matrices en el orden adecuado. Por ejemplo, para rotar y luego trasladar un objeto: \\(P' = T \\cdot R \\cdot P\\).\nEl orden de las transformaciones es importante, ya que la multiplicación matricial no es conmutativa.\nPara representar todas las transformaciones de manera uniforme, se usa la notación de coordenadas homogéneas, donde los puntos se representan con una coordenada adicional:\n\n\\[\nP(x, y) \\rightarrow P_h(x, y, 1)\n\\]"
+  },
+  {
+    "objectID": "clases/03_representacion2Dy3D.html#transformaciones3d",
+    "href": "clases/03_representacion2Dy3D.html#transformaciones3d",
+    "title": "03 - Representación en 2D y 3D",
+    "section": "Transformaciones en 3D",
+    "text": "Transformaciones en 3D\n\n\n\nLas transformaciones en el espacio tridimensional son una extensión de las transformaciones 2D.\nSe representan mediante matrices \\(4 \\times 4\\) utilizando coordenadas homogéneas para facilitar su combinación mediante multiplicaciones matriciales.\n\n\n\n\n\nVisualización gráfica\n\n\nImagen de medium.com"
+  },
+  {
+    "objectID": "clases/03_representacion2Dy3D.html#proyecciones",
+    "href": "clases/03_representacion2Dy3D.html#proyecciones",
+    "title": "03 - Representación en 2D y 3D",
+    "section": "Proyecciones",
+    "text": "Proyecciones\n\n\n\nEn el proceso de visualización, en algún punto los modelos tridimensionales deben representarse en dispositivos de salida bidimensionales (pantallas, impresoras, etc.).\nPara lograr esto, se emplean proyecciones, que son operaciones que transforman una escena 3D en una imagen 2D, simulando la percepción humana o una vista técnica.\n\nExisten dos tipos principales de proyecciones:\n\nProyecciones paralelas: No consideran la distancia entre el observador y el objeto.\nProyecciones en perspectiva: Simulan la forma en que el ojo humano percibe la profundidad.\n\n\n\n\n\nVisualización gráfica\n\n\nImagen de stackoverflow.com\n\n\n\nVisualización gráfica\n\n\nImagen de motenv.wordpress.com"
+  },
+  {
+    "objectID": "clases/03_representacion2Dy3D.html#referencias-bibliográficas",
+    "href": "clases/03_representacion2Dy3D.html#referencias-bibliográficas",
+    "title": "03 - Representación en 2D y 3D",
+    "section": "Referencias bibliográficas",
+    "text": "Referencias bibliográficas\n\nEck, D. J. (2023). Introduction to computer graphics (Version 1.4). Hobart and William Smith Colleges. Recuperado de https://math.hws.edu/graphicsbook\nFoley, J. D., van Dam, A., Feiner, S. K., & Hughes, J. F. (2013). Computer graphics: Principles and practice (3rd ed.). Addison-Wesley.\nKomura, T. (2013). Computer graphics – Course notes. University of Edinburgh. Disponible en https://www.inf.ed.ac.uk/teaching/courses/cg/lectures/cg3_2013.pdf"
   },
   {
     "objectID": "clases/index.html",
