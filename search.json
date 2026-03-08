@@ -189,6 +189,48 @@
     "text": "Tipos de visualizaciones básicas y su aplicación\n¿Qué es una visualización “básica”?\nUna visualización básica es aquella que representa datos con canales visuales simples y un número reducido de dimensiones, por ejemplo:\n\nUsar la posición en el eje Y para representar una magnitud.\nUsar el color para distinguir categorías.\nUsar el tamaño para sugerir importancia relativa.\n\nEstos gráficos son denominados “básicos” no por su simplicidad técnica, sino porque:\n\nSon ampliamente utilizados en casi todos los dominios.\nEstán bien soportados por herramientas gráficas.\nSon fácilmente interpretables por humanos."
   },
   {
+    "objectID": "clases/04_visualizacion_datos.html#herramientas-de-visualización-de-datos",
+    "href": "clases/04_visualizacion_datos.html#herramientas-de-visualización-de-datos",
+    "title": "04 - Visualización de Datos",
+    "section": "Herramientas de visualización de datos",
+    "text": "Herramientas de visualización de datos\n\nExisten muchas herramientas para crear visualizaciones de datos, cada una con sus propias ventajas y limitaciones.\nAlgunas de las más populares incluyen:\n\nMatplotlib: Biblioteca de gráficos 2D para Python, altamente personalizable.\nSeaborn: Basada en Matplotlib, ofrece gráficos estadísticos de alto nivel.\nPlotly: Permite crear gráficos interactivos y visualizaciones web.\nggplot2: Biblioteca de R para gráficos basados en la gramática de gráficos.\nTableau: Herramienta comercial para visualización de datos sin necesidad de programación.\nPower BI: Plataforma de Microsoft para análisis y visualización de datos empresariales."
+  },
+  {
+    "objectID": "clases/04_visualizacion_datos.html#dataviz-matplotlib",
+    "href": "clases/04_visualizacion_datos.html#dataviz-matplotlib",
+    "title": "04 - Visualización de Datos",
+    "section": "Visualización con Matplotlib",
+    "text": "Visualización con Matplotlib\n\nMatplotlib es la biblioteca más veterana y versátil para visualización científica en Python.\nPermite crear una amplia variedad de gráficas (estáticas, animadas).\nSu principal módulo es pyplot, que proporciona una interfaz similar a MATLAB para creación de gráficas.\nA diferencia de pandas.plot(), permite un control total sobre cada componente del gráfico:\n\n\n\n\nNote\n\n\nSi una gráfica debe ajustarse con precisión o prepararse para publicación profesional, matplotlib es la herramienta más apropiada."
+  },
+  {
+    "objectID": "clases/04_visualizacion_datos.html#dataviz-pandas",
+    "href": "clases/04_visualizacion_datos.html#dataviz-pandas",
+    "title": "04 - Visualización de Datos",
+    "section": "Visualización directa con pandas",
+    "text": "Visualización directa con pandas\nLa biblioteca pandas permite construir gráficos directamente desde un DataFrame gracias a su método .plot(), el cual está basado internamente en matplotlib. Esta funcionalidad es útil cuando:\n\nSe requiere una visualización rápida y exploratoria.\nSe desea trabajar directamente desde los datos, sin cambiar de biblioteca.\nNo se necesita personalización avanzada."
+  },
+  {
+    "objectID": "clases/04_visualizacion_datos.html#dataviz-seaborn",
+    "href": "clases/04_visualizacion_datos.html#dataviz-seaborn",
+    "title": "04 - Visualización de Datos",
+    "section": "Visualización con Seaborn",
+    "text": "Visualización con Seaborn\nSeaborn es una biblioteca de visualización de datos basada en matplotlib que proporciona una interfaz de alto nivel para dibujar gráficas estadísticas atractivas y con estilo.\n\nSe integra directamente con pandas y NumPy.\nTiene estilos por defecto que mejoran la estética.\nAgrega elementos estadísticos automáticamente (regresiones, boxplots, medias, etc.).\n\n\nimport seaborn as sns\nimport matplotlib.pyplot as plt"
+  },
+  {
+    "objectID": "clases/04_visualizacion_datos.html#dataviz-plotly",
+    "href": "clases/04_visualizacion_datos.html#dataviz-plotly",
+    "title": "04 - Visualización de Datos",
+    "section": "Visualización interactiva con Plotly",
+    "text": "Visualización interactiva con Plotly\n\nPlotly es una biblioteca de visualización gráfica interactiva basada en JavaScript, pero con interfaces disponibles para Python, R y Julia.\nA diferencia de matplotlib (enfocada en gráficos estáticos), Plotly produce gráficos que permiten:\n\nZoom interactivo y desplazamiento.\nMostrar etiquetas al pasar el cursor.\nExportar en formatos interactivos (HTML, JSON).\nCrear animaciones fácilmente."
+  },
+  {
+    "objectID": "clases/04_visualizacion_datos.html#para-cerrar-el-tema",
+    "href": "clases/04_visualizacion_datos.html#para-cerrar-el-tema",
+    "title": "04 - Visualización de Datos",
+    "section": "Para cerrar el tema…",
+    "text": "Para cerrar el tema…\nCada biblioteca tiene su propósito y estilo:\n\n\n\n\n\n\n\n\nBiblioteca\nVentajas\nUsos\n\n\n\n\npandas\nRápido, directo y útil para gráficos simples\nExploración rápida de datos tabulares\n\n\nmatplotlib\nGran control, base de muchas bibliotecas de visualización\nProducción de gráficos personalizados, publicación en medios impresos\n\n\nseaborn\nOrientado a análisis estadístico\nAnálisis visual de relaciones estadísticas entre variables\n\n\nplotly\nInteractivo, excelente para web y dashboards\nAplicaciones interactivas, dashboards, reportes en HTML\n\n\n\nLa elección depende del tipo de análisis, del público objetivo y del canal de presentación."
+  },
+  {
     "objectID": "clases/04_visualizacion_datos.html#proceso_creacion",
     "href": "clases/04_visualizacion_datos.html#proceso_creacion",
     "title": "04 - Visualización de Datos",
@@ -196,8 +238,8 @@
     "text": "Proceso de creación de visualizaciones efectivas\n\nLimpieza y estructuración de datos.\nSelección del tipo de gráfico más adecuado.\nUso de colores, etiquetas y anotaciones efectivas.\nEvitar errores comunes que distorsionan la interpretación.\nValidación del mensaje transmitido con la visualización."
   },
   {
-    "objectID": "clases/04_visualizacion_datos.html#ejercicio",
-    "href": "clases/04_visualizacion_datos.html#ejercicio",
+    "objectID": "clases/04_visualizacion_datos.html#ejercicio-1",
+    "href": "clases/04_visualizacion_datos.html#ejercicio-1",
     "title": "04 - Visualización de Datos",
     "section": "Ejercicio",
     "text": "Ejercicio\n\nPara ejemplificar el proceso de visualización, estaremos trabajando con el conocido dataset Titanic.\nResponde a las preguntas de análisis y realiza el código de Python que se vaya indicando durante clase. Puedes hacerlo en archivos separados (.pdf + .py) o en un notebook (.ipynb)\n\nParte 1\n\nCarga el dataset Titanic en un DataFrame de Pandas e identifica: ¿qué tipo de conjunto de datos es? ¿qué tipo de atributos tiene (responde el tipo para cada atributo)?\nIdentifica y maneja valores faltantes: ¿qué columnas tienen datos faltantes?, ¿son relevantes para el análisis y/o visualización? Si tu respuesta es sí para alguna de ellas, has una propuesta de cómo manejar los valores faltantes."
@@ -207,7 +249,7 @@
     "href": "clases/04_visualizacion_datos.html#ejercicio-continuación",
     "title": "04 - Visualización de Datos",
     "section": "Ejercicio (continuación)",
-    "text": "Ejercicio (continuación)\nParte 2\nAsocia cada pregunta con un tipo de gráfico y justifica por qué elegiste ese gráfico antes de implementarlo.\n- ¿Cómo se distribuyen las edades de los pasajeros? - ¿Qué tan variable fue la tarifa vs la clase? - ¿Cuántos pasajeros viajaban en cada clase? - ¿Cuántos pasajeros sobrevivieron por clase?\n(Añadiremos títulos, etiquetas, colores personalizados, etc. más adelante)"
+    "text": "Ejercicio (continuación)\nParte 2\nAsocia cada pregunta con un tipo de gráfico y justifica por qué elegiste ese gráfico antes de implementarlo.\n\n¿Cómo se distribuyen las edades de los pasajeros?\n¿Qué tan variable fue la tarifa vs la clase?\n¿Cuántos pasajeros viajaban en cada clase?\n¿Cuántos pasajeros sobrevivieron por clase?\n\n(Añadiremos títulos, etiquetas, colores personalizados, etc. más adelante)"
   },
   {
     "objectID": "clases/04_visualizacion_datos.html#ejercicio-continuación-1",
@@ -215,6 +257,20 @@
     "title": "04 - Visualización de Datos",
     "section": "Ejercicio (continuación)",
     "text": "Ejercicio (continuación)\nParte 3\n\nMejora las gráficas anteriores añadiendo colores y etiquetas claras.\n\nAgrega anotaciones para destacar puntos.\n\n¿Cómo ayuda el color y las anotaciones a mejorar la interpretación?"
+  },
+  {
+    "objectID": "clases/04_visualizacion_datos.html#ejercicio-continuación-2",
+    "href": "clases/04_visualizacion_datos.html#ejercicio-continuación-2",
+    "title": "04 - Visualización de Datos",
+    "section": "Ejercicio (continuación)",
+    "text": "Ejercicio (continuación)\nParte 4\nEn las siguientes gráficas, identifica errores o diseños incorrectos y corrige para mostrar correctamente la información.\n\n# gráfica 1\nplt.pie(df['Pclass'].value_counts(), labels=[\"3ra Clase\", \"1ra Clase\", \"2da Clase\"], autopct='%1.1f%%', explode=[0, 0.1, 0])\nplt.title(\"Distribución de pasajeros por clase\")\nplt.show()\n# gráfica 2\nplt.bar(df['Pclass'].value_counts().index, df['Pclass'].value_counts().values, color=\"skyblue\")\nplt.xlabel(\"Clase del boleto\")\nplt.ylabel(\"Cantidad de pasajeros\")\nplt.title(\"Cantidad de pasajeros por clase\")\nplt.show()"
+  },
+  {
+    "objectID": "clases/04_visualizacion_datos.html#referencias-bibliográficas",
+    "href": "clases/04_visualizacion_datos.html#referencias-bibliográficas",
+    "title": "04 - Visualización de Datos",
+    "section": "Referencias bibliográficas",
+    "text": "Referencias bibliográficas\n\nFew, S. (2012). Show me the numbers: Designing tables and graphs to enlighten. Analytics Press.\n\nTufte, E. R. (2001). The visual display of quantitative information. Graphics Press.\n\nCairo, A. (2016). The truthful art: Data, charts, and maps for communication. New Riders.\n\nMunzner, T. (2014). Visualization analysis and design. CRC Press.\nLevin, K. D. (2021). Lecture 10: matplotlib—Plotting with matplotlib. Recuperado de https://pages.stat.wisc.edu/~kdlevin/teaching/Spring2021/STAT679/slides/lecture10.pdf\nChau, D. H. (2024). Common visualization issues & how to fix them. Recuperado de https://poloclub.github.io/cse6242-2024spring-campus/slides/CSE6242-510-VisFix.pdf\nThe Matplotlib Development Team. (2023). Matplotlib: Visualization with Python. Recuperado de https://matplotlib.org/stable/contents.html\nPlotly Technologies Inc. (2023). Plotly Python Open Source Graphing Library. Recuperado de https://plotly.com/python/\nVanderPlas, J. (2016). Python data science handbook: Essential tools for working with data. O’Reilly Media. Recuperado de https://jakevdp.github.io/PythonDataScienceHandbook/index.html"
   },
   {
     "objectID": "clases/02-formacion-imagen.html#como-formar-imagen",
